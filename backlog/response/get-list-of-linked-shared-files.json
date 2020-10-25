@@ -1,0 +1,27 @@
+[
+  {
+    "created": "2009-02-27T03:26:15Z",
+    "createdUser": {
+      "id": 5686,
+      "lang": "ja",
+      "mailAddress": "takada@nulab.example",
+      "name": "takada",
+      "roleType": 2,
+      "userId": "takada"
+    },
+    "dir": "/design/",
+    "id": 4056,
+    "name": "site.png",
+    "size": 2735,
+    "type": "file",
+    "updated": "2010-05-02T17:37:10Z",
+    "updatedUser": {
+      "id": 5686,
+      "lang": "ja",
+      "mailAddress": "takada@nulab.example",
+      "name": "takada",
+      "roleType": 2,
+      "userId": "takada"
+    }
+  }
+]

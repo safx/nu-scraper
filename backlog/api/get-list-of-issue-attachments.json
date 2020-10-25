@@ -1,0 +1,18 @@
+{
+  "name": "GetListOfIssueAttachments",
+  "summary": "Get List of Issue Attachments",
+  "description": "Returns the list of issue attachments.",
+  "method": "GET",
+  "url": "/api/v2/issues/:issueIdOrKey/attachments",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-list-of-issue-attachments"
+}

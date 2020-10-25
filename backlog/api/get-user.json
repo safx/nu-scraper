@@ -1,0 +1,18 @@
+{
+  "name": "GetUser",
+  "summary": "Get User",
+  "description": "Returns information about user.",
+  "method": "GET",
+  "url": "/api/v2/users/:userId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "userId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "user ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-user"
+}

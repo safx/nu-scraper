@@ -1,0 +1,210 @@
+{
+  "directMessage": null,
+  "hasNext": false,
+  "mySpace": {
+    "isPaymentAdmin": true,
+    "myPlan": {
+      "createdAt": "2016-01-10T02:32:29Z",
+      "enabled": true,
+      "numberOfUsers": 6,
+      "plan": {
+        "key": "typetalk.free",
+        "limitNumberOfUsers": 10,
+        "limitTotalAttachmentSize": 1073741824,
+        "name": "Free Plan"
+      },
+      "totalAttachmentSize": 0,
+      "trial": null,
+      "updatedAt": "2016-12-21T10:12:18Z"
+    },
+    "myRole": "ADMIN",
+    "space": {
+      "enabled": true,
+      "imageUrl": "https://apps.nulab.com/spaces/abcdefghij/photo/large",
+      "key": "abcdefghij",
+      "name": "Joe Tech Inc."
+    }
+  },
+  "posts": [
+    {
+      "account": {
+        "createdAt": "2014-06-28T02:32:29Z",
+        "fullName": "CooperDaChopper",
+        "id": 104,
+        "imageUrl": "https://typetalk.com/accounts/104/profile_image.png?t=1403922749000",
+        "isBot": false,
+        "name": "cooper",
+        "suggestion": "CooperDaChopper",
+        "updatedAt": "2014-06-28T02:32:29Z"
+      },
+      "attachments": [],
+      "createdAt": "2014-06-30T14:32:29Z",
+      "id": 305,
+      "likes": [],
+      "links": [],
+      "mention": null,
+      "message": "And I'm a 32 year old IT-man who works in a basement. Word.",
+      "replyTo": null,
+      "talks": [
+        {
+          "backlog": null,
+          "createdAt": "2014-07-02T03:52:29Z",
+          "id": 901,
+          "name": "2nd talk",
+          "suggestion": "2nd talk",
+          "topicId": 208,
+          "updatedAt": "2014-07-02T03:55:29Z"
+        },
+        {
+          "backlog": null,
+          "createdAt": "2014-07-02T03:42:29Z",
+          "id": 900,
+          "name": "About us",
+          "suggestion": "About us",
+          "topicId": 208,
+          "updatedAt": "2014-07-02T03:52:29Z"
+        }
+      ],
+      "topicId": 208,
+      "updatedAt": "2014-06-30T14:32:29Z"
+    },
+    {
+      "account": {
+        "createdAt": "2014-06-24T02:32:29Z",
+        "fullName": "Jessica Fitzherbert",
+        "id": 100,
+        "imageUrl": "https://typetalk.com/accounts/100/profile_image.png?t=1403577149000",
+        "isBot": false,
+        "name": "jessica",
+        "suggestion": "Jessica Fitzherbert",
+        "updatedAt": "2014-06-24T02:32:29Z"
+      },
+      "attachments": [],
+      "createdAt": "2014-07-01T01:32:29Z",
+      "id": 306,
+      "likes": [
+        {
+          "account": {
+            "createdAt": "2014-06-25T02:32:29Z",
+            "fullName": "AHorowitz",
+            "id": 101,
+            "imageUrl": "https://typetalk.com/accounts/101/profile_image.png?t=1403663549000",
+            "isBot": false,
+            "name": "ahorowitz",
+            "suggestion": "AHorowitz",
+            "updatedAt": "2014-06-25T02:32:29Z"
+          },
+          "comment": null,
+          "createdAt": "2016-12-21T01:11:42Z",
+          "id": 403,
+          "postId": 306,
+          "topicId": 208
+        },
+        {
+          "account": {
+            "createdAt": "2014-06-26T02:32:29Z",
+            "fullName": "Moss",
+            "id": 102,
+            "imageUrl": "https://typetalk.com/accounts/102/profile_image.png?t=1403749949000",
+            "isBot": false,
+            "name": "moss",
+            "suggestion": "Moss",
+            "updatedAt": "2014-06-26T02:32:29Z"
+          },
+          "comment": null,
+          "createdAt": "2016-12-21T01:11:42Z",
+          "id": 404,
+          "postId": 306,
+          "topicId": 208
+        },
+        {
+          "account": {
+            "createdAt": "2014-06-27T02:32:29Z",
+            "fullName": "StefHull",
+            "id": 103,
+            "imageUrl": "https://typetalk.com/accounts/103/profile_image.png?t=1403836349000",
+            "isBot": false,
+            "name": "stefhull",
+            "suggestion": "StefHull",
+            "updatedAt": "2014-06-27T02:32:29Z"
+          },
+          "comment": null,
+          "createdAt": "2016-12-21T01:11:42Z",
+          "id": 405,
+          "postId": 306,
+          "topicId": 208
+        },
+        {
+          "account": {
+            "createdAt": "2014-06-28T02:32:29Z",
+            "fullName": "CooperDaChopper",
+            "id": 104,
+            "imageUrl": "https://typetalk.com/accounts/104/profile_image.png?t=1403922749000",
+            "isBot": false,
+            "name": "cooper",
+            "suggestion": "CooperDaChopper",
+            "updatedAt": "2014-06-28T02:32:29Z"
+          },
+          "comment": null,
+          "createdAt": "2016-12-21T01:11:42Z",
+          "id": 406,
+          "postId": 306,
+          "topicId": 208
+        },
+        {
+          "account": {
+            "createdAt": "2014-06-29T02:32:29Z",
+            "fullName": "BradMarshalls",
+            "id": 105,
+            "imageUrl": "https://typetalk.com/accounts/105/profile_image.png?t=1404009149000",
+            "isBot": false,
+            "name": "brad",
+            "suggestion": "BradMarshalls",
+            "updatedAt": "2014-06-29T02:32:29Z"
+          },
+          "comment": null,
+          "createdAt": "2016-12-21T01:11:42Z",
+          "id": 407,
+          "postId": 306,
+          "topicId": 208
+        }
+      ],
+      "links": [],
+      "mention": null,
+      "message": "Oh. What time of the month? The weekend?",
+      "replyTo": 305,
+      "talks": [
+        {
+          "backlog": null,
+          "createdAt": "2014-07-02T03:42:29Z",
+          "id": 900,
+          "name": "About us",
+          "suggestion": "About us",
+          "topicId": 208,
+          "updatedAt": "2014-07-02T03:52:29Z"
+        }
+      ],
+      "topicId": 208,
+      "updatedAt": "2014-07-01T01:32:29Z"
+    }
+  ],
+  "talk": {
+    "backlog": null,
+    "createdAt": "2014-07-02T03:42:29Z",
+    "id": 900,
+    "name": "About us",
+    "suggestion": "About us",
+    "topicId": 208,
+    "updatedAt": "2014-07-02T03:52:29Z"
+  },
+  "topic": {
+    "createdAt": "2014-06-10T02:32:29Z",
+    "description": "",
+    "id": 208,
+    "isDirectMessage": false,
+    "lastPostedAt": "2016-12-21T10:12:02Z",
+    "name": "IT Peeps",
+    "suggestion": "IT Peeps",
+    "updatedAt": "2014-06-10T02:32:29Z"
+  }
+}

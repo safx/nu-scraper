@@ -1,0 +1,18 @@
+{
+  "name": "GetProjectTeamList",
+  "summary": "Get Project Team List",
+  "description": "Returns list of project teams.",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/teams",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-project-team-list"
+}

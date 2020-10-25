@@ -1,0 +1,18 @@
+{
+  "name": "UpdateOrderOfStatus",
+  "summary": "Update Order of Status",
+  "description": "Updates order about Status.",
+  "method": "PATCH",
+  "url": "/api/v2/projects/:projectIdOrKey/statuses/updateDisplayOrder",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-order-of-status"
+}

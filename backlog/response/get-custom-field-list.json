@@ -1,0 +1,28 @@
+[
+  {
+    "allowAddItem": false,
+    "applicableIssueTypes": [],
+    "description": "",
+    "id": 1,
+    "items": [
+      {
+        "displayOrder": 0,
+        "id": 1,
+        "name": "Windows 8"
+      }
+    ],
+    "name": "custom",
+    "required": false,
+    "typeId": 6
+  },
+  {
+    "applicableIssueTypes": [
+      1
+    ],
+    "description": "",
+    "id": 2,
+    "name": "Attribute for Bug",
+    "required": false,
+    "typeId": 1
+  }
+]

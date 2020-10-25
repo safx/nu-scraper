@@ -1,0 +1,9 @@
+{
+  "name": "GetSpace",
+  "summary": "Get Space",
+  "description": "Returns information about your space.",
+  "method": "GET",
+  "url": "/api/v2/space",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-space"
+}

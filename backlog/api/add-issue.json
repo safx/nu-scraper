@@ -1,0 +1,9 @@
+{
+  "name": "AddIssue",
+  "summary": "Add Issue",
+  "description": "Adds new issue.",
+  "method": "POST",
+  "url": "/api/v2/issues",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-issue"
+}

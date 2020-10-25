@@ -1,0 +1,48 @@
+{
+  "name": "SaveUserStatus",
+  "summary": "Save user status",
+  "description": "Method",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/userStatuses",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Space key"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "emoji",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Emoji syntax"
+    },
+    {
+      "name": "message",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "Status message"
+    },
+    {
+      "name": "clearAt",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "Date time when status will be cleared at"
+    },
+    {
+      "name": "isNotificationDisabled",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Disable notification default value: false"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/save-user-status"
+}

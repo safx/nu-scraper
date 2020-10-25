@@ -1,0 +1,72 @@
+{
+  "notificationSettings": {
+    "doNotDisturb": {
+      "scheduled": {
+        "enabled": false,
+        "end": "07:00",
+        "start": "22:00"
+      }
+    },
+    "favoriteTopicMobile": false
+  },
+  "statuses": [
+    {
+      "access": {
+        "unopened": 0
+      },
+      "like": {
+        "receive": {
+          "hasUnread": false,
+          "readLikeId": 21072
+        }
+      },
+      "mySpace": {
+        "invitableRoles": [
+          "ADMIN",
+          "USER",
+          "GUEST"
+        ],
+        "isPaymentAdmin": true,
+        "myPlan": {
+          "createdAt": "2016-01-27T09:37:27Z",
+          "enabled": true,
+          "numberOfAllowedAddresses": 0,
+          "numberOfUsers": 4,
+          "plan": {
+            "key": "typetalk.standard10",
+            "limitNumberOfAllowedAddresses": 10,
+            "limitNumberOfUsers": 10,
+            "limitTotalAttachmentSize": 107374182400,
+            "name": "Standard 10 Users"
+          },
+          "totalAttachmentSize": 14356,
+          "trial": null,
+          "updatedAt": "2019-09-02T06:05:56Z"
+        },
+        "myRole": "ADMIN",
+        "space": {
+          "enabled": true,
+          "imageUrl": "https://apps.nulab.com/spaces/XXXXXX/photo/large",
+          "key": "XXXXXX",
+          "name": "Awesome Tech Inc."
+        }
+      },
+      "unreads": {
+        "dmTopicIds": [],
+        "myTopicIds": [],
+        "otherTopicIds": []
+      },
+      "userStatus": {
+        "accountId": 2500,
+        "clearAt": "2019-09-06T10:49:00Z",
+        "createdAt": "2019-09-02T06:28:02Z",
+        "emoji": ":spiral_note_pad:",
+        "id": 123,
+        "isNotificationDisabled": true,
+        "message": "Meeting",
+        "spaceId": 34,
+        "updatedAt": "2019-09-06T10:19:43Z"
+      }
+    }
+  ]
+}

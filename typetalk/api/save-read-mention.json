@@ -1,0 +1,18 @@
+{
+  "name": "SaveReadMention",
+  "summary": "Read mention",
+  "description": "Method",
+  "method": "PUT",
+  "url": "https://typetalk.com/api/v1/mentions/:mentionId",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "mentionId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Mention ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/save-read-mention"
+}

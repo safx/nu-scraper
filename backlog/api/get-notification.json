@@ -1,0 +1,46 @@
+{
+  "name": "GetNotification",
+  "summary": "Get Notification",
+  "description": "Returns own notifications.",
+  "method": "GET",
+  "url": "/api/v2/notifications",
+  "scope": null,
+  "queryParams": [
+    {
+      "name": "minId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "minimum ID"
+    },
+    {
+      "name": "maxId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "maximum ID"
+    },
+    {
+      "name": "count",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "number of records to retrieve(1-100) default=20"
+    },
+    {
+      "name": "order",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u201casc\u201d or \u201cdesc\u201d"
+    },
+    {
+      "name": "senderId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "sender ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-notification"
+}

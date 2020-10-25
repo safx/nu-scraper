@@ -1,0 +1,14 @@
+{
+  "project": {
+    "archived": false,
+    "chartEnabled": false,
+    "displayOrder": 0,
+    "id": 1,
+    "name": "test",
+    "projectKey": "TEST",
+    "projectLeaderCanEditProjectLeader": false,
+    "subtaskingEnabled": false,
+    "textFormattingRule": "markdown"
+  },
+  "updated": "2014-07-11T01:59:07Z"
+}

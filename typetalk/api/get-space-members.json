@@ -1,0 +1,18 @@
+{
+  "name": "GetSpaceMembers",
+  "summary": "Get organization members",
+  "description": "Method",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/members",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Organization Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/get-space-members"
+}

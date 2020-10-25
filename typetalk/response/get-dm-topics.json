@@ -1,0 +1,86 @@
+{
+  "topics": [
+    {
+      "directMessage": {
+        "account": {
+          "createdAt": "2016-01-27T09:55:23Z",
+          "fullName": "Moss",
+          "id": 2499,
+          "imageUrl": "https://typetalk.com/accounts/2499/profile_image.png?t=1453891379196",
+          "isBot": false,
+          "name": "Moss",
+          "suggestion": "Moss",
+          "updatedAt": "2019-09-09T02:35:18Z"
+        },
+        "status": {
+          "mobile": null,
+          "presence": "active",
+          "web": {}
+        },
+        "userStatus": {
+          "accountId": 2499,
+          "clearAt": "2019-09-09T03:35:00Z",
+          "createdAt": "2019-09-09T02:35:39Z",
+          "emoji": ":train:",
+          "id": 130,
+          "isNotificationDisabled": false,
+          "message": "In transit",
+          "spaceId": 34,
+          "updatedAt": "2019-09-09T02:35:39Z"
+        }
+      },
+      "topic": {
+        "createdAt": "2019-08-30T10:21:27Z",
+        "id": 26094,
+        "isArchived": false,
+        "isDirectMessage": true,
+        "lastPostedAt": "2019-08-30T10:21:27Z",
+        "name": "Moss,Jessica",
+        "suggestion": "Moss,Jessica",
+        "updatedAt": "2019-08-30T10:21:27Z"
+      },
+      "unread": {
+        "count": 0,
+        "isOverCountLimit": false,
+        "postId": 176258,
+        "topicId": 26094
+      }
+    },
+    {
+      "directMessage": {
+        "account": {
+          "createdAt": "2016-01-27T09:55:09Z",
+          "fullName": "Stefanie",
+          "id": 2498,
+          "imageUrl": "https://typetalk.com/accounts/2498/profile_image.png?t=1453891479138",
+          "isBot": false,
+          "name": "Stefanie",
+          "suggestion": "Stefanie",
+          "updatedAt": "2019-09-04T06:57:51Z"
+        },
+        "status": {
+          "mobile": null,
+          "presence": "away",
+          "web": null
+        },
+        "userStatus": null
+      },
+      "topic": {
+        "createdAt": "2016-07-06T02:51:03Z",
+        "id": 3917,
+        "isArchived": false,
+        "isDirectMessage": true,
+        "lastPostedAt": "2018-11-26T01:09:12Z",
+        "name": "Jessica,StefHull",
+        "suggestion": "Jessica,StefHull",
+        "updatedAt": "2016-08-17T08:30:58Z"
+      },
+      "unread": {
+        "count": 0,
+        "isOverCountLimit": false,
+        "postId": 168196,
+        "topicId": 3917
+      }
+    }
+  ]
+}

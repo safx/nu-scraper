@@ -1,0 +1,25 @@
+{
+  "name": "RemoveLinkToSharedFileFromWiki",
+  "summary": "Remove Link to Shared File from Wiki",
+  "description": "Removes link to shared file from Wiki.",
+  "method": "DELETE",
+  "url": "/api/v2/wikis/:wikiId/sharedFiles/:id",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "wikiId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Wiki page\u2019s ID"
+    },
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Shared file ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/remove-link-to-shared-file-from-wiki"
+}

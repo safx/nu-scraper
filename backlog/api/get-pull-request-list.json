@@ -1,0 +1,69 @@
+{
+  "name": "GetPullRequestList",
+  "summary": "Get Pull Request List",
+  "description": "Returns list of pull requests.",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/git/repositories/:repoIdOrName/pullRequests",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    },
+    {
+      "name": "repoIdOrName",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Repository ID or Repository name"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "statusId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Status ID"
+    },
+    {
+      "name": "assigneeId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Assignee ID"
+    },
+    {
+      "name": "issueId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Issue ID"
+    },
+    {
+      "name": "createdUserId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Created User ID"
+    },
+    {
+      "name": "offset",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": ""
+    },
+    {
+      "name": "count",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "number of records to retrieve(1-100) default=20"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-pull-request-list"
+}

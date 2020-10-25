@@ -1,0 +1,55 @@
+{
+  "name": "GetProjectRecentUpdates",
+  "summary": "Get Project Recent Updates",
+  "description": "Returns recent update in the project.",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/activities",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "activityTypeId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "type(1-26)"
+    },
+    {
+      "name": "minId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "minimum ID"
+    },
+    {
+      "name": "maxId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "maximum ID"
+    },
+    {
+      "name": "count",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "number of records to retrieve(1-100) default=20"
+    },
+    {
+      "name": "order",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-project-recent-updates"
+}

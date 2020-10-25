@@ -1,0 +1,18 @@
+{
+  "name": "UpdateWikiPage",
+  "summary": "Update Wiki Page",
+  "description": "Updates information about Wiki page.",
+  "method": "PATCH",
+  "url": "/api/v2/wikis/:wikiId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "wikiId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Wiki page ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-wiki-page"
+}

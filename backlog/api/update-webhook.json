@@ -1,0 +1,25 @@
+{
+  "name": "UpdateWebhook",
+  "summary": "Update Webhook",
+  "description": "Updates information about webhook.",
+  "method": "PATCH",
+  "url": "/api/v2/projects/:projectIdOrKey/webhooks/:webhookId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    },
+    {
+      "name": "webhookId",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Webhook ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-webhook"
+}

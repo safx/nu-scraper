@@ -1,0 +1,18 @@
+{
+  "name": "ReadNotification",
+  "summary": "Read Notification",
+  "description": "Changes notifications read.",
+  "method": "POST",
+  "url": "/api/v2/notifications/:id/markAsRead",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Notification ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/read-notification"
+}

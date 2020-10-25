@@ -1,0 +1,18 @@
+{
+  "name": "MarkWatchingAsRead",
+  "summary": "Mark Watching as Read",
+  "description": "Mark a watching as read.",
+  "method": "POST",
+  "url": "/api/v2/watchings/:watchingId/markAsRead",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "watchingId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "watching ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/mark-watching-as-read"
+}

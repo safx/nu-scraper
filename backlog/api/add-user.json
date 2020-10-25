@@ -1,0 +1,9 @@
+{
+  "name": "AddUser",
+  "summary": "Add User",
+  "description": "Adds new user to the space. \u201cProject Administrator\u201d cannot add \u201cAdmin\u201d user. You can\u2019t use this API at backlog.com space.",
+  "method": "POST",
+  "url": "/api/v2/users",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-user"
+}

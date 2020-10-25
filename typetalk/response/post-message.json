@@ -1,0 +1,44 @@
+{
+  "directMessage": null,
+  "exceedsAttachmentLimit": false,
+  "mentions": [],
+  "post": {
+    "account": {
+      "createdAt": "2016-01-27T09:55:35Z",
+      "fullName": "Jessica",
+      "id": 2500,
+      "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1454061730873",
+      "isBot": false,
+      "name": "Jessica",
+      "suggestion": "Jessica",
+      "updatedAt": "2018-11-06T07:54:44Z"
+    },
+    "attachments": [],
+    "createdAt": "2018-11-06T07:56:42Z",
+    "id": 167964,
+    "likes": [],
+    "links": [],
+    "mention": null,
+    "message": "Hi",
+    "replyTo": null,
+    "talks": [],
+    "topicId": 4829,
+    "updatedAt": "2018-11-06T07:56:42Z"
+  },
+  "space": {
+    "enabled": true,
+    "imageUrl": "https://apps.nulab.com/spaces/xxxxx/photo/large",
+    "key": "xxxxx",
+    "name": "Awesome Tech Inc."
+  },
+  "topic": {
+    "createdAt": "2017-11-13T22:27:21Z",
+    "description": "A topic for getting off-topic",
+    "id": 4829,
+    "isDirectMessage": false,
+    "lastPostedAt": "2018-11-06T07:56:42Z",
+    "name": "Coffee shop",
+    "suggestion": "Coffee shop",
+    "updatedAt": "2017-12-21T02:41:00Z"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "CountComment",
+  "summary": "Count Comment",
+  "description": "Returns number of comments in issue.",
+  "method": "GET",
+  "url": "/api/v2/issues/:issueIdOrKey/comments/count",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/count-comment"
+}

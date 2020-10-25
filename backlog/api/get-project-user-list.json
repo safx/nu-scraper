@@ -1,0 +1,27 @@
+{
+  "name": "GetProjectUserList",
+  "summary": "Get Project User List",
+  "description": "Returns list of project members.",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/users",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "excludeGroupMembers",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "Set to true to exclude members that part of project groups and false to get all members. Default is false."
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-project-user-list"
+}

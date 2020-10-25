@@ -1,0 +1,9 @@
+{
+  "name": "PostAttachmentFile",
+  "summary": "Post Attachment File",
+  "description": "Posts an attachment file for issue or wiki. Returns id of the attachment file.",
+  "method": "POST",
+  "url": "/api/v2/space/attachment",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/post-attachment-file"
+}

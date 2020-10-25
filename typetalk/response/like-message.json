@@ -1,0 +1,62 @@
+{
+  "directMessage": null,
+  "like": {
+    "account": {
+      "createdAt": "2016-01-27T09:55:35Z",
+      "fullName": "Jessica",
+      "id": 2500,
+      "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1454061730873",
+      "isBot": false,
+      "name": "Jessica",
+      "suggestion": "Jessica",
+      "updatedAt": "2018-11-27T23:50:39Z"
+    },
+    "comment": "",
+    "createdAt": "2018-11-27T23:51:44Z",
+    "id": 20050,
+    "postId": 167373,
+    "topicId": 4483
+  },
+  "post": {
+    "account": {
+      "createdAt": "2016-01-27T09:54:48Z",
+      "fullName": "Will",
+      "id": 2497,
+      "imageUrl": "https://typetalk.com/accounts/2497/profile_image.png?t=1510596200433",
+      "isBot": false,
+      "name": "Will",
+      "suggestion": "Will",
+      "updatedAt": "2018-11-13T00:26:14Z"
+    },
+    "attachments": [],
+    "createdAt": "2018-09-25T04:42:47Z",
+    "id": 167373,
+    "likes": [],
+    "links": [],
+    "mention": {
+      "id": 16805,
+      "readAt": "2018-09-25T07:08:45Z"
+    },
+    "message": "Hi @Jessica ?",
+    "replyTo": 167210,
+    "talks": [],
+    "topicId": 4483,
+    "updatedAt": "2018-09-25T04:42:47Z"
+  },
+  "space": {
+    "enabled": true,
+    "imageUrl": "https://apps.nulab.com/spaces/xxxxxxxx/photo/large",
+    "key": "xxxxxxxx",
+    "name": "Awesome Tech Inc."
+  },
+  "topic": {
+    "createdAt": "2017-03-21T20:04:45Z",
+    "description": "All about the world of visual design which include app ui/ux, website, news, tips and occasional banter among designers. Oh, and don't forget the weekend together.\n\nSome housekeeping:\n 1. Share your work and comment on others' work in a nice manners.\n 2. Report any issue to @Stefanie\n 3. Have fun typetalkin'! https://typetalk.com\n\nNote that this topic is open to everyone in the team!",
+    "id": 4483,
+    "isDirectMessage": false,
+    "lastPostedAt": "2018-09-25T04:42:47Z",
+    "name": "Design",
+    "suggestion": "Design",
+    "updatedAt": "2018-09-19T06:02:29Z"
+  }
+}

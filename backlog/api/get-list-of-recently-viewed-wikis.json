@@ -1,0 +1,32 @@
+{
+  "name": "GetListOfRecentlyViewedWikis",
+  "summary": "Get List of Recently Viewed Wikis",
+  "description": "Returns list of Wikis which the user viewed recently.",
+  "method": "GET",
+  "url": "/api/v2/users/myself/recentlyViewedWikis",
+  "scope": null,
+  "queryParams": [
+    {
+      "name": "order",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
+    },
+    {
+      "name": "offset",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": ""
+    },
+    {
+      "name": "count",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "number of records to retrieve(1-100) default=20"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-list-of-recently-viewed-wikis"
+}

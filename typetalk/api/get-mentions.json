@@ -1,0 +1,32 @@
+{
+  "name": "GetMentions",
+  "summary": "Get mention list",
+  "description": "Method",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v2/mentions",
+  "scope": "my",
+  "queryParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Space key"
+    },
+    {
+      "name": "from",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "Mention ID"
+    },
+    {
+      "name": "unread",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "true: only unread mentions, false: all mentions"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/get-mentions"
+}

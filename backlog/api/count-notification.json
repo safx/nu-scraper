@@ -1,0 +1,25 @@
+{
+  "name": "CountNotification",
+  "summary": "Count Notification",
+  "description": "Returns number of Notifications.",
+  "method": "GET",
+  "url": "/api/v2/notifications/count",
+  "scope": null,
+  "queryParams": [
+    {
+      "name": "resourceAlreadyRead",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "This parameter is optional. Set to false for unread notification count and true for already read notification count."
+    },
+    {
+      "name": "alreadyRead",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "This parameter is optional. Set this parameter to false to get unread notification count since the last time checked by user and true for already read notification count."
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/count-notification"
+}

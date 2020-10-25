@@ -1,0 +1,25 @@
+{
+  "name": "DeleteComment",
+  "summary": "Delete Comment",
+  "description": "Delete comment.",
+  "method": "DELETE",
+  "url": "/api/v2/issues/:issueIdOrKey/comments/:commentId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue Key"
+    },
+    {
+      "name": "commentId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Comment ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/delete-comment"
+}

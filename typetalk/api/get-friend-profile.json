@@ -1,0 +1,25 @@
+{
+  "name": "GetFriendProfile",
+  "summary": "Get friend profile",
+  "description": "Method",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v2/spaces/:spaceKey/profile",
+  "scope": "my",
+  "queryParams": [
+    {
+      "name": "accountName",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "Account name"
+    },
+    {
+      "name": "nulabId",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "Nulab ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/get-friend-profile"
+}

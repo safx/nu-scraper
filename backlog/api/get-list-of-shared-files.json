@@ -1,0 +1,48 @@
+{
+  "name": "GetListOfSharedFiles",
+  "summary": "Get List of Shared Files",
+  "description": "Gets list of Shared Files.",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/files/metadata/:path",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project key"
+    },
+    {
+      "name": "path",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Directory path"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "order",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
+    },
+    {
+      "name": "offset",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": ""
+    },
+    {
+      "name": "count",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "number of records to retrieve(1-100) default=20"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-list-of-shared-files"
+}

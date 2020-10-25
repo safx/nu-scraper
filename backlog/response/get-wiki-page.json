@@ -1,0 +1,74 @@
+{
+  "attachments": [
+    {
+      "created": "2014-01-06T11:10:45Z",
+      "createdUser": {
+        "id": 1,
+        "lang": "ja",
+        "mailAddress": "eguchi@nulab.example",
+        "name": "admin",
+        "roleType": 1,
+        "userId": "admin"
+      },
+      "id": 1,
+      "name": "test.json",
+      "size": 8857
+    }
+  ],
+  "content": "test",
+  "created": "2012-07-23T06:09:48Z",
+  "createdUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  },
+  "id": 1,
+  "name": "Home",
+  "projectId": 1,
+  "sharedFiles": [
+    {
+      "created": "2009-02-27T03:26:15Z",
+      "createdUser": {
+        "id": 5686,
+        "lang": "ja",
+        "mailAddress": "takada@nulab.example",
+        "name": "takada",
+        "roleType": 2,
+        "userId": "takada"
+      },
+      "dir": "/userIcon/",
+      "id": 454403,
+      "name": "01_male clerk.png",
+      "size": 2735,
+      "type": "file",
+      "updated": "2009-03-03T16:57:47Z",
+      "updatedUser": {
+        "id": 5686,
+        "lang": "ja",
+        "mailAddress": "takada@nulab.example",
+        "name": "takada",
+        "roleType": 2,
+        "userId": "takada"
+      }
+    }
+  ],
+  "stars": [],
+  "tags": [
+    {
+      "id": 12,
+      "name": "proceedings"
+    }
+  ],
+  "updated": "2012-07-23T06:09:48Z",
+  "updatedUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  }
+}

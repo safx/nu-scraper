@@ -1,0 +1,36 @@
+{
+  "count": 32,
+  "isLimited": false,
+  "posts": [
+    {
+      "account": {
+        "createdAt": "2017-09-01T01:55:05Z",
+        "fullName": "Michael Buck",
+        "id": 50117,
+        "imageUrl": "https://typetalk.com/accounts/50117/profile_image.png?t=1504408579564",
+        "isBot": false,
+        "name": "Michael",
+        "suggestion": "Michael Buck",
+        "updatedAt": "2017-10-12T07:15:40Z"
+      },
+      "attachments": [],
+      "createdAt": "2017-10-12T06:20:20Z",
+      "directMessage": null,
+      "id": 11842896,
+      "links": [],
+      "message": "It is sunny today.",
+      "replyTo": null,
+      "topic": {
+        "createdAt": "2017-09-27T09:43:29Z",
+        "id": 53692,
+        "isDirectMessage": false,
+        "lastPostedAt": "2017-10-12T06:20:40Z",
+        "name": "Awesome project",
+        "suggestion": "Awesome project",
+        "updatedAt": "2017-10-12T06:22:28Z"
+      },
+      "topicId": 53692,
+      "updatedAt": "2017-10-12T06:20:20Z"
+    }
+  ]
+}

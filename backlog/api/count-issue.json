@@ -1,0 +1,207 @@
+{
+  "name": "CountIssue",
+  "summary": "Count Issue",
+  "description": "Returns number of issues.",
+  "method": "GET",
+  "url": "/api/v2/issues/count",
+  "scope": null,
+  "queryParams": [
+    {
+      "name": "projectId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Project ID"
+    },
+    {
+      "name": "issueTypeId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Issue Type ID"
+    },
+    {
+      "name": "categoryId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Category ID"
+    },
+    {
+      "name": "versionId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Version ID"
+    },
+    {
+      "name": "milestoneId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Milestone ID"
+    },
+    {
+      "name": "statusId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Status ID"
+    },
+    {
+      "name": "priorityId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Priority ID"
+    },
+    {
+      "name": "assigneeId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Assignee ID"
+    },
+    {
+      "name": "createdUserId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Created User ID"
+    },
+    {
+      "name": "resolutionId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Resolution ID"
+    },
+    {
+      "name": "parentChild",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Subtasking\n0: All\n1: Exclude Child Issue\n2: Child Issue\n3: Neither Parent Issue nor Child Issue\n4: Parent Issue"
+    },
+    {
+      "name": "attachment",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "True to make include Issue with Attachment"
+    },
+    {
+      "name": "sharedFile",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "True to make include Issue with File"
+    },
+    {
+      "name": "sort",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "What to sort results by\n\u201cissueType\u201d\n\u201ccategory\u201d\n\u201cversion\u201d\n\u201cmilestone\u201d\n\u201csummary\u201d\n\u201cstatus\u201d\n\u201cpriority\u201d\n\u201cattachment\u201d\n\u201csharedFile\u201d\n\u201ccreated\u201d\n\u201ccreatedUser\u201d\n\u201cupdated\u201d\n\u201cupdatedUser\u201d\n\u201cassignee\u201d\n\u201cstartDate\u201d\n\u201cdueDate\u201d\n\u201cestimatedHours\u201d\n\u201cactualHours\u201d\n\u201cchildIssue\u201d\n\u201ccustomField_${id}\u201d"
+    },
+    {
+      "name": "order",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Order of the sort \u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
+    },
+    {
+      "name": "offset",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": ""
+    },
+    {
+      "name": "count",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "number of records to retrieve(1-100) default=20"
+    },
+    {
+      "name": "createdSince",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Created since (yyyy-MM-dd)"
+    },
+    {
+      "name": "createdUntil",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Created until (yyyy-MM-dd)"
+    },
+    {
+      "name": "updatedSince",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Updated since (yyyy-MM-dd)"
+    },
+    {
+      "name": "updatedUntil",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Updated until (yyyy-MM-dd)"
+    },
+    {
+      "name": "startDateSince",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Start Date since (yyyy-MM-dd)"
+    },
+    {
+      "name": "startDateUntil",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Start Date until (yyyy-MM-dd)"
+    },
+    {
+      "name": "dueDateSince",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Due Date since (yyyy-MM-dd)"
+    },
+    {
+      "name": "dueDateUntil",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Due Date until (yyyy-MM-dd)"
+    },
+    {
+      "name": "id",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Issue ID"
+    },
+    {
+      "name": "parentIssueId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Parent Issue ID"
+    },
+    {
+      "name": "keyword",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Keyword"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/count-issue"
+}

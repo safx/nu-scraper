@@ -1,0 +1,48 @@
+{
+  "name": "GetTalk",
+  "summary": "Get messages in tag",
+  "description": "Method",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/talks/:talkId/posts",
+  "scope": "topic.read",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    },
+    {
+      "name": "talkId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Tag ID"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "count",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "default value: 20, maximum: 200"
+    },
+    {
+      "name": "from",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "references Post ID"
+    },
+    {
+      "name": "direction",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u201cbackward\u201d or \u201cforward\u201d"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/get-talk"
+}

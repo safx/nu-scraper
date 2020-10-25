@@ -1,0 +1,21 @@
+{
+  "account": {
+    "createdAt": "2016-01-27T09:55:35Z",
+    "fullName": "Jessica Lee",
+    "id": 2500,
+    "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=123456789",
+    "isBot": false,
+    "lang": "en-US",
+    "mailAddress": "example@nulab.com",
+    "name": "Jessica",
+    "suggestion": "Jessica Lee",
+    "timezoneId": "Asia/Singapore",
+    "updatedAt": "2019-03-01T10:09:03Z"
+  },
+  "lang": "en-US",
+  "post": {
+    "emojiSkinTone": "skin-tone-4",
+    "useCtrl": false
+  },
+  "theme": "light"
+}

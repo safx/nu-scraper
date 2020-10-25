@@ -1,0 +1,18 @@
+{
+  "name": "GetDmTopics",
+  "summary": "Get my direct message topics",
+  "description": "Get direct message topics from users you have already sent direct messages to. Response JSON includes the partner account and online status data in \u201cdirectMessage\u201d property.",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v2/messages",
+  "scope": "my",
+  "queryParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Space key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/get-dm-topics"
+}

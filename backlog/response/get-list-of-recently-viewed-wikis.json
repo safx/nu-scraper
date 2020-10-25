@@ -1,0 +1,32 @@
+{
+  "page": {
+    "created": "2013-05-30T09:11:36Z",
+    "createdUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    },
+    "id": 112,
+    "name": "Home",
+    "projectId": 103,
+    "tags": [
+      {
+        "id": 12,
+        "name": "proceedings"
+      }
+    ],
+    "updated": "2013-05-30T09:11:36Z",
+    "updatedUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    }
+  },
+  "updated": "2014-07-16T07:18:16Z"
+}

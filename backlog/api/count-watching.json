@@ -1,0 +1,34 @@
+{
+  "name": "CountWatching",
+  "summary": "Count Watching",
+  "description": "Returns the number of your watching issues.",
+  "method": "GET",
+  "url": "/api/v2/users/:userId/watchings/count",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "userId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "User ID"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "resourceAlreadyRead",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "This parameter is optional. Set to false for unread watching count and true for already read watching count."
+    },
+    {
+      "name": "alreadyRead",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "This parameter is optional. Set this parameter to false to get unread watching count since the last time checked by user and true for already read watching count. When both alreadyRead and resourceAlreadyRead parameters set, resourceAlreadyRead will be ignored."
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/count-watching"
+}

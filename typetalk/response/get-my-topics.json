@@ -1,0 +1,188 @@
+{
+  "favoritesOnboarding": false,
+  "joinedTopics": [
+    {
+      "createdAt": "2018-11-09T00:35:59Z",
+      "exTopicGroupId": null,
+      "topic": {
+        "createdAt": "2018-11-09T00:35:59Z",
+        "id": 6931,
+        "isDirectMessage": false,
+        "lastPostedAt": null,
+        "name": "New project",
+        "suggestion": "New project",
+        "updatedAt": "2018-11-09T00:35:59Z"
+      },
+      "unread": {
+        "count": 0,
+        "isOverCountLimit": false,
+        "postId": 168021,
+        "topicId": 6931
+      }
+    }
+  ],
+  "myTopicGroups": [
+    {
+      "myTopicGroup": {
+        "id": 1638,
+        "isMuted": false,
+        "name": "Important",
+        "sortType": "recent"
+      },
+      "myTopics": []
+    },
+    {
+      "myTopicGroup": {
+        "id": 1639,
+        "isMuted": false,
+        "name": "Marketing",
+        "sortType": "recent"
+      },
+      "myTopics": []
+    },
+    {
+      "myTopicGroup": {
+        "id": 1642,
+        "isMuted": false,
+        "name": "Design",
+        "sortType": "recent"
+      },
+      "myTopics": [
+        {
+          "createdAt": "2018-09-19T05:02:16Z",
+          "exTopicGroupId": null,
+          "topic": {
+            "createdAt": "2018-09-10T02:21:46Z",
+            "id": 6196,
+            "isDirectMessage": false,
+            "lastPostedAt": "2018-09-28T10:46:10Z",
+            "name": "Visual Design",
+            "suggestion": "Visual Design",
+            "updatedAt": "2018-09-10T02:21:46Z"
+          },
+          "unread": {
+            "count": 0,
+            "isOverCountLimit": false,
+            "postId": 167418,
+            "topicId": 6196
+          }
+        },
+        {
+          "createdAt": "2018-09-19T05:02:30Z",
+          "exTopicGroupId": null,
+          "topic": {
+            "createdAt": "2018-09-10T02:24:16Z",
+            "id": 6199,
+            "isDirectMessage": false,
+            "lastPostedAt": null,
+            "name": "Announcements for Designers",
+            "suggestion": "Announcements for Designers",
+            "updatedAt": "2018-09-10T02:24:16Z"
+          },
+          "unread": {
+            "count": 0,
+            "isOverCountLimit": false,
+            "postId": 167206,
+            "topicId": 6199
+          }
+        },
+        {
+          "createdAt": "2018-09-19T05:02:40Z",
+          "exTopicGroupId": null,
+          "topic": {
+            "createdAt": "2018-09-10T02:23:40Z",
+            "id": 6198,
+            "isDirectMessage": false,
+            "lastPostedAt": null,
+            "name": "UX Team",
+            "suggestion": "UX Team",
+            "updatedAt": "2018-09-10T02:23:40Z"
+          },
+          "unread": {
+            "count": 0,
+            "isOverCountLimit": false,
+            "postId": 167206,
+            "topicId": 6198
+          }
+        },
+        {
+          "createdAt": "2018-09-19T05:03:23Z",
+          "exTopicGroupId": null,
+          "topic": {
+            "createdAt": "2018-09-10T02:22:35Z",
+            "id": 6197,
+            "isDirectMessage": false,
+            "lastPostedAt": null,
+            "name": "Mondrian Website",
+            "suggestion": "Mondrian Website",
+            "updatedAt": "2018-09-10T02:22:35Z"
+          },
+          "unread": {
+            "count": 0,
+            "isOverCountLimit": false,
+            "postId": 167206,
+            "topicId": 6197
+          }
+        },
+        {
+          "createdAt": "2018-09-19T05:02:32Z",
+          "exTopicGroupId": null,
+          "topic": {
+            "createdAt": "2018-09-10T02:21:20Z",
+            "id": 6195,
+            "isDirectMessage": false,
+            "lastPostedAt": null,
+            "name": "Designers",
+            "suggestion": "Designers",
+            "updatedAt": "2018-09-10T02:21:20Z"
+          },
+          "unread": {
+            "count": 0,
+            "isOverCountLimit": false,
+            "postId": 167206,
+            "topicId": 6195
+          }
+        }
+      ]
+    },
+    {
+      "myTopicGroup": {
+        "id": 1640,
+        "isMuted": false,
+        "name": "After Work",
+        "sortType": "recent"
+      },
+      "myTopics": []
+    },
+    {
+      "myTopicGroup": {
+        "id": 1641,
+        "isMuted": false,
+        "name": "Apps",
+        "sortType": "recent"
+      },
+      "myTopics": []
+    }
+  ],
+  "pinnedTopics": [
+    {
+      "createdAt": "2018-09-25T09:42:49Z",
+      "exTopicGroupId": 1642,
+      "topic": {
+        "createdAt": "2017-03-21T20:04:45Z",
+        "id": 4483,
+        "isDirectMessage": false,
+        "lastPostedAt": "2018-09-25T04:42:47Z",
+        "name": "Design",
+        "suggestion": "Design",
+        "updatedAt": "2018-09-19T06:02:29Z"
+      },
+      "unread": {
+        "count": 0,
+        "isOverCountLimit": false,
+        "postId": 167373,
+        "topicId": 4483
+      }
+    }
+  ]
+}

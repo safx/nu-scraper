@@ -1,0 +1,9 @@
+{
+  "name": "GetSpaceNotification",
+  "summary": "Get Space Notification",
+  "description": "Returns space notification.",
+  "method": "GET",
+  "url": "/api/v2/space/notification",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-space-notification"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GetStatusList",
+  "summary": "Get Status List",
+  "description": "warning Deprecated API\nThis API has been deprecated and is no longer recommended for use. Please replace it with Get Status List of Project.",
+  "method": "GET",
+  "url": "/api/v2/statuses",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-status-list"
+}

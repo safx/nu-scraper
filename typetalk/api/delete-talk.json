@@ -1,0 +1,25 @@
+{
+  "name": "DeleteTalk",
+  "summary": "Delete tag",
+  "description": "Method",
+  "method": "DELETE",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/talks/:talkId",
+  "scope": "topic.post",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    },
+    {
+      "name": "talkId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Tag ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/delete-talk"
+}

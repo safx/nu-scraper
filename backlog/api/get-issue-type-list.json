@@ -1,0 +1,18 @@
+{
+  "name": "GetIssueTypeList",
+  "summary": "Get Issue Type List",
+  "description": "Returns list of Issue Types in the project.",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/issueTypes",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-issue-type-list"
+}

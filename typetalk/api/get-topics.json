@@ -1,0 +1,18 @@
+{
+  "name": "GetTopics",
+  "summary": "Get topics",
+  "description": "Method",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v2/topics",
+  "scope": "my",
+  "queryParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Space key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/get-topics"
+}

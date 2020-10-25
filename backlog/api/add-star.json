@@ -1,0 +1,9 @@
+{
+  "name": "AddStar",
+  "summary": "Add Star",
+  "description": "Adds star.",
+  "method": "POST",
+  "url": "/api/v2/stars",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-star"
+}

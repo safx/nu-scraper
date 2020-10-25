@@ -1,0 +1,25 @@
+{
+  "name": "AddListItemForListTypeCustomField",
+  "summary": "Add List Item for List Type Custom Field",
+  "description": "Adds new list item for list type custom field. Only administrator can call this API if the option \u201cAdd items in adding or editing issues\u201d is disabled in settings. Calling API fails if specified custom field\u2019s type is not a list.",
+  "method": "POST",
+  "url": "/api/v2/projects/:projectIdOrKey/customFields/:id/items",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    },
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Custom field ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-list-item-for-list-type-custom-field"
+}

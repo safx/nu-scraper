@@ -1,0 +1,75 @@
+{
+  "accounts": [
+    {
+      "createdAt": "2014-06-29T02:32:29Z",
+      "fullName": "BradMarshalls",
+      "id": 105,
+      "imageUrl": "https://typetalk.com/accounts/105/profile_image.png?t=1404009149000",
+      "isBot": false,
+      "name": "brad",
+      "suggestion": "BradMarshalls",
+      "updatedAt": "2014-06-29T02:32:29Z"
+    },
+    {
+      "createdAt": "2014-06-28T02:32:29Z",
+      "fullName": "CooperDaChopper",
+      "id": 104,
+      "imageUrl": "https://typetalk.com/accounts/104/profile_image.png?t=1403922749000",
+      "isBot": false,
+      "name": "cooper",
+      "suggestion": "CooperDaChopper",
+      "updatedAt": "2014-06-28T02:32:29Z"
+    },
+    {
+      "createdAt": "2014-06-24T02:32:29Z",
+      "fullName": "Jessica Fitzherbert",
+      "id": 100,
+      "imageUrl": "https://typetalk.com/accounts/100/profile_image.png?t=1403577149000",
+      "isBot": false,
+      "name": "jessica",
+      "suggestion": "Jessica Fitzherbert",
+      "updatedAt": "2014-06-24T02:32:29Z"
+    }
+  ],
+  "accountsForApi": [],
+  "groups": [],
+  "integrations": [],
+  "invites": [],
+  "invitingAccounts": [],
+  "mySpace": {
+    "isPaymentAdmin": true,
+    "myPlan": {
+      "createdAt": "2016-01-10T02:32:29Z",
+      "enabled": true,
+      "numberOfUsers": 7,
+      "plan": {
+        "key": "typetalk.free",
+        "limitNumberOfUsers": 10,
+        "limitTotalAttachmentSize": 1073741824,
+        "name": "Free Plan"
+      },
+      "totalAttachmentSize": 0,
+      "trial": null,
+      "updatedAt": "2016-12-21T10:12:16Z"
+    },
+    "myRole": "ADMIN",
+    "space": {
+      "enabled": true,
+      "imageUrl": "https://apps.nulab.com/spaces/abcdefghij/photo/large",
+      "key": "abcdefghij",
+      "name": "Joe Tech Inc."
+    }
+  },
+  "remainingInvitations": null,
+  "teams": [],
+  "topic": {
+    "createdAt": "2014-06-10T02:32:29Z",
+    "description": "",
+    "id": 208,
+    "isDirectMessage": false,
+    "lastPostedAt": "2016-12-21T10:12:02Z",
+    "name": "IT Peeps",
+    "suggestion": "IT Peeps",
+    "updatedAt": "2014-06-10T02:32:29Z"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "GetGroup",
+  "summary": "Get Group",
+  "description": "warning Deprecated API\nThis API has been deprecated and is no longer recommended for use. Please replace it with Get Team.",
+  "method": "GET",
+  "url": "/api/v2/groups/:groupId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "groupId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Group ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-group"
+}

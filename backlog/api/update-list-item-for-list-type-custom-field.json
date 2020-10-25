@@ -1,0 +1,32 @@
+{
+  "name": "UpdateListItemForListTypeCustomField",
+  "summary": "Update List Item for List Type Custom Field",
+  "description": "Updates list item for list type custom field. Calling API fails if specified custom field\u2019s type is not a list.",
+  "method": "PATCH",
+  "url": "/api/v2/projects/:projectIdOrKey/customFields/:id/items/:itemId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    },
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Custom field ID"
+    },
+    {
+      "name": "itemId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "List item ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-list-item-for-list-type-custom-field"
+}

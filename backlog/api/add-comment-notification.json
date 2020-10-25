@@ -1,0 +1,25 @@
+{
+  "name": "AddCommentNotification",
+  "summary": "Add Comment Notification",
+  "description": "Adds notifications to the comment. Only the user who added the comment can add notifications.",
+  "method": "POST",
+  "url": "/api/v2/issues/:issueIdOrKey/comments/:commentId/notifications",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue Key"
+    },
+    {
+      "name": "commentId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Comment ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-comment-notification"
+}

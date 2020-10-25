@@ -1,0 +1,139 @@
+{
+  "exceedsAttachmentLimit": false,
+  "isPostEnabled": true,
+  "mySpace": {
+    "invitableRoles": [
+      "ADMIN",
+      "USER",
+      "GUEST"
+    ],
+    "isPaymentAdmin": true,
+    "myPlan": {
+      "createdAt": "2016-01-27T09:37:27Z",
+      "enabled": true,
+      "numberOfAllowedAddresses": 0,
+      "numberOfUsers": 4,
+      "plan": {
+        "key": "typetalk.standard10",
+        "limitNumberOfAllowedAddresses": 10,
+        "limitNumberOfUsers": 10,
+        "limitTotalAttachmentSize": 10737418240,
+        "name": "Standard 10 Users"
+      },
+      "totalAttachmentSize": 14356,
+      "trial": null,
+      "updatedAt": "2018-09-25T09:43:56Z"
+    },
+    "myRole": "ADMIN",
+    "space": {
+      "enabled": true,
+      "imageUrl": "https://apps.nulab.com/spaces/xxxxxxx/photo/large",
+      "key": "xxxxxx",
+      "name": "Awesome Tech Inc."
+    }
+  },
+  "post": {
+    "account": {
+      "createdAt": "2016-01-27T09:54:48Z",
+      "fullName": "Will",
+      "id": 2497,
+      "imageUrl": "https://typetalk.com/accounts/2497/profile_image.png?t=1510596200433",
+      "isBot": false,
+      "name": "Will",
+      "suggestion": "Will",
+      "updatedAt": "2018-09-28T20:22:05Z"
+    },
+    "attachments": [],
+    "createdAt": "2017-11-13T22:35:18Z",
+    "id": 160931,
+    "likes": [],
+    "links": [
+      {
+        "contentType": "text/html",
+        "createdAt": "2017-11-13T22:35:19Z",
+        "description": "Discover & share this Cookie Monster GIF with everyone you know. GIPHY is how you search, share, discover, and create GIFs.",
+        "embed": {
+          "author_name": "GIPHY",
+          "author_url": "https://giphy.com/",
+          "height": 180,
+          "provider_name": "GIPHY",
+          "provider_url": "https://giphy.com/",
+          "title": "Cookie Monster GIF - Find & Share on GIPHY",
+          "type": "photo",
+          "url": "https://media.giphy.com/media/bAlYQOugzX9sY/giphy.gif",
+          "width": 320
+        },
+        "id": 3550,
+        "imageUrl": "https://media.giphy.com/media/bAlYQOugzX9sY/200.gif",
+        "title": "Cookie Monster GIF - Find & Share on GIPHY",
+        "updatedAt": "2018-08-18T02:49:34Z",
+        "url": "https://media.giphy.com/media/bAlYQOugzX9sY/giphy.gif"
+      }
+    ],
+    "mention": null,
+    "message": "@Stefanie :dizzy: thank you for making my dreams come true https://media.giphy.com/media/bAlYQOugzX9sY/giphy.gif",
+    "replyTo": 160930,
+    "talks": [
+      {
+        "backlog": null,
+        "createdAt": "2017-11-13T22:38:14Z",
+        "id": 2172,
+        "name": "FOOD",
+        "suggestion": "FOOD",
+        "topicId": 4829,
+        "updatedAt": "2017-11-13T22:38:14Z"
+      }
+    ],
+    "topicId": 4829,
+    "updatedAt": "2017-11-13T22:35:18Z"
+  },
+  "replies": [
+    {
+      "account": {
+        "createdAt": "2016-01-27T09:55:09Z",
+        "fullName": "Stefanie",
+        "id": 2498,
+        "imageUrl": "https://typetalk.com/accounts/2498/profile_image.png?t=1453891479138",
+        "isBot": false,
+        "name": "Stefanie",
+        "suggestion": "Stefanie",
+        "updatedAt": "2018-08-18T01:42:19Z"
+      },
+      "attachments": [],
+      "createdAt": "2017-11-13T22:32:27Z",
+      "id": 160930,
+      "likes": [],
+      "links": [],
+      "mention": {
+        "id": 16415,
+        "readAt": "2017-11-14T07:36:56Z"
+      },
+      "message": "@all I made a few too many batches of chocolate chip cookies last night (a travesty, I know!), so I brought some in to share. They're in the kitchen! :cookie: :cookie: :cookie: :cookie: :cookie: ",
+      "replyTo": null,
+      "talks": [
+        {
+          "backlog": null,
+          "createdAt": "2017-11-13T22:38:14Z",
+          "id": 2172,
+          "name": "FOOD",
+          "suggestion": "FOOD",
+          "topicId": 4829,
+          "updatedAt": "2017-11-13T22:38:14Z"
+        }
+      ],
+      "topicId": 4829,
+      "updatedAt": "2017-11-13T22:32:27Z"
+    }
+  ],
+  "team": null,
+  "topic": {
+    "createdAt": "2017-11-13T22:27:21Z",
+    "description": "A topic for getting off-topic",
+    "id": 4829,
+    "isDirectMessage": false,
+    "lastPostedAt": "2018-11-06T07:56:42Z",
+    "name": "Coffee shop",
+    "suggestion": "Coffee shop",
+    "updatedAt": "2017-12-21T02:41:00Z"
+  }
+}

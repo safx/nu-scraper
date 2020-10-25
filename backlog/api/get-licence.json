@@ -1,0 +1,9 @@
+{
+  "name": "GetLicence",
+  "summary": "Get Licence",
+  "description": "Returns licence.",
+  "method": "GET",
+  "url": "/api/v2/space/licence",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-licence"
+}

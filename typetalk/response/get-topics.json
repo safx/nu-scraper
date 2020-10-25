@@ -1,0 +1,42 @@
+{
+  "topics": [
+    {
+      "favorite": true,
+      "topic": {
+        "createdAt": "2019-09-02T06:05:56Z",
+        "id": 26095,
+        "isArchived": false,
+        "isDirectMessage": false,
+        "lastPostedAt": "2019-09-02T06:07:35Z",
+        "name": "Coffeeshop",
+        "suggestion": "Coffeeshop",
+        "updatedAt": "2019-09-02T06:05:56Z"
+      },
+      "unread": {
+        "count": 0,
+        "isOverCountLimit": false,
+        "postId": 176297,
+        "topicId": 26095
+      }
+    },
+    {
+      "favorite": true,
+      "topic": {
+        "createdAt": "2018-09-10T02:21:20Z",
+        "id": 6195,
+        "isArchived": false,
+        "isDirectMessage": false,
+        "lastPostedAt": "2019-07-01T09:09:06Z",
+        "name": "Designers",
+        "suggestion": "Designers",
+        "updatedAt": "2018-09-10T02:21:20Z"
+      },
+      "unread": {
+        "count": 0,
+        "isOverCountLimit": false,
+        "postId": 167206,
+        "topicId": 6195
+      }
+    }
+  ]
+}

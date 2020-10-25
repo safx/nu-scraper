@@ -1,0 +1,18 @@
+{
+  "name": "GetWikiPageStar",
+  "summary": "Get Wiki Page Star",
+  "description": "Returns list of stars received on the Wiki page.",
+  "method": "GET",
+  "url": "/api/v2/wikis/:wikiId/stars",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "wikiId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Wiki Page ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-wiki-page-star"
+}

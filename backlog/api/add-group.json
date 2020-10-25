@@ -1,0 +1,9 @@
+{
+  "name": "AddGroup",
+  "summary": "Add Group",
+  "description": "warning Deprecated API\nThis API has been deprecated and is no longer recommended for use. Please replace it with Add Team.",
+  "method": "POST",
+  "url": "/api/v2/groups",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-group"
+}

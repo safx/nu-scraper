@@ -1,0 +1,97 @@
+{
+  "actualHours": null,
+  "assignee": {
+    "id": 2,
+    "lang": null,
+    "mailAddress": "eguchi@nulab.example",
+    "name": "eguchi",
+    "roleType": 2
+  },
+  "attachments": [
+    {
+      "id": 1,
+      "name": "IMGP0088.JPG",
+      "size": 85079
+    }
+  ],
+  "category": [],
+  "created": "2012-07-23T06:10:15Z",
+  "createdUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  },
+  "customFields": [],
+  "description": "",
+  "dueDate": null,
+  "estimatedHours": null,
+  "id": 1,
+  "issueKey": "BLG-1",
+  "issueType": {
+    "color": "#7ea800",
+    "displayOrder": 0,
+    "id": 2,
+    "name": "Task",
+    "projectId": 1
+  },
+  "keyId": 1,
+  "milestone": [
+    {
+      "archived": false,
+      "description": "",
+      "displayOrder": 0,
+      "id": 30,
+      "name": "wait for release",
+      "projectId": 1,
+      "releaseDueDate": null,
+      "startDate": null
+    }
+  ],
+  "parentIssueId": null,
+  "priority": {
+    "id": 3,
+    "name": "Normal"
+  },
+  "projectId": 1,
+  "resolutions": null,
+  "sharedFiles": [],
+  "stars": [
+    {
+      "comment": null,
+      "created": "2013-07-08T10:24:28Z",
+      "id": 10,
+      "presenter": {
+        "id": 2,
+        "lang": "ja",
+        "mailAddress": "eguchi@nulab.example",
+        "name": "eguchi",
+        "roleType": 2,
+        "userId": "eguchi"
+      },
+      "title": "[BLG-1] first issue | Show issue - Backlog",
+      "url": "https://xx.backlogtool.com/view/BLG-1"
+    }
+  ],
+  "startDate": null,
+  "status": {
+    "color": "#ed8077",
+    "displayOrder": 1000,
+    "id": 1,
+    "name": "Open",
+    "projectId": 1
+  },
+  "summary": "first issue",
+  "updated": "2013-02-07T08:09:49Z",
+  "updatedUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  },
+  "versions": []
+}

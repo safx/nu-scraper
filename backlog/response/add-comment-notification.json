@@ -1,0 +1,32 @@
+{
+  "changeLog": null,
+  "content": "This is a comment",
+  "created": "2013-08-05T06:15:06Z",
+  "createdUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  },
+  "id": 6586,
+  "notifications": [
+    {
+      "alreadyRead": false,
+      "id": 22,
+      "reason": 2,
+      "resourceAlreadyRead": false,
+      "user": {
+        "id": 1,
+        "lang": "ja",
+        "mailAddress": "eguchi@nulab.example",
+        "name": "admin",
+        "roleType": 1,
+        "userId": "admin"
+      }
+    }
+  ],
+  "stars": [],
+  "updated": "2013-08-05T06:15:06Z"
+}

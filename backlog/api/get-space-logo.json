@@ -1,0 +1,9 @@
+{
+  "name": "GetSpaceLogo",
+  "summary": "Get Space Logo",
+  "description": "Returns logo image of your space.",
+  "method": "GET",
+  "url": "/api/v2/space/image",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-space-logo"
+}

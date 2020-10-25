@@ -1,0 +1,66 @@
+[
+  {
+    "content": {
+      "changes": [
+        {
+          "field": "milestone",
+          "new_value": "R2014-07-23",
+          "old_value": "",
+          "type": "standard"
+        },
+        {
+          "field": "status",
+          "new_value": "4",
+          "old_value": "1",
+          "type": "standard"
+        }
+      ],
+      "comment": {
+        "content": "",
+        "id": 7237
+      },
+      "description": "",
+      "id": 4809,
+      "key_id": 121,
+      "summary": "Comment"
+    },
+    "created": "2013-12-27T07:50:44Z",
+    "createdUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    },
+    "id": 3153,
+    "notifications": [
+      {
+        "alreadyRead": false,
+        "id": 25,
+        "reason": 2,
+        "resourceAlreadyRead": false,
+        "user": {
+          "id": 5686,
+          "lang": "ja",
+          "mailAddress": "takada@nulab.example",
+          "name": "takada",
+          "roleType": 2,
+          "userId": "takada"
+        }
+      }
+    ],
+    "project": {
+      "archived": false,
+      "chartEnabled": true,
+      "displayOrder": 0,
+      "id": 92,
+      "name": "Subtasking",
+      "projectKey": "SUB",
+      "projectLeaderCanEditProjectLeader": false,
+      "subtaskingEnabled": true,
+      "textFormattingRule": null
+    },
+    "type": 2
+  }
+]

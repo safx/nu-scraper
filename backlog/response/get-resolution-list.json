@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "name": "Fixed"
+  },
+  {
+    "id": 1,
+    "name": "Won't Fix"
+  },
+  {
+    "id": 2,
+    "name": "Invalid"
+  },
+  {
+    "id": 3,
+    "name": "Duplication"
+  },
+  {
+    "id": 4,
+    "name": "Cannot Reproduce"
+  }
+]

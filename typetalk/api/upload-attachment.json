@@ -1,0 +1,27 @@
+{
+  "name": "UploadAttachment",
+  "summary": "Upload attachment file",
+  "description": "Specify \u201cmultipart/form-data\u201d as content type. You can get fileKey from the response of this.",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/attachments",
+  "scope": "topic.post",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "file",
+      "optional": false,
+      "array": false,
+      "type": "Binary",
+      "description": "max file size: 100 MB"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/upload-attachment"
+}

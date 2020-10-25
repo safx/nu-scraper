@@ -1,0 +1,9 @@
+{
+  "name": "GetSpaceDiskUsage",
+  "summary": "Get Space Disk Usage",
+  "description": "Returns information about space disk usage.",
+  "method": "GET",
+  "url": "/api/v2/space/diskUsage",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-space-disk-usage"
+}

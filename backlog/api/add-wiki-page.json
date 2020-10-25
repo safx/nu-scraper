@@ -1,0 +1,9 @@
+{
+  "name": "AddWikiPage",
+  "summary": "Add Wiki Page",
+  "description": "Adds new Wiki page.",
+  "method": "POST",
+  "url": "/api/v2/wikis",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-wiki-page"
+}

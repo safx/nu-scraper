@@ -1,0 +1,12 @@
+[
+  {
+    "archived": false,
+    "chartEnabled": false,
+    "id": 1,
+    "name": "test",
+    "projectKey": "TEST",
+    "projectLeaderCanEditProjectLeader": false,
+    "subtaskingEnabled": false,
+    "textFormattingRule": "markdown"
+  }
+]

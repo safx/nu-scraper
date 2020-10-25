@@ -1,0 +1,9 @@
+{
+  "name": "ResetUnreadNotificationCount",
+  "summary": "Reset Unread Notification Count",
+  "description": "Resets unread Notification count.",
+  "method": "POST",
+  "url": "/api/v2/notifications/markAsRead",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/reset-unread-notification-count"
+}

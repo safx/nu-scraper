@@ -1,0 +1,9 @@
+{
+  "name": "AddProject",
+  "summary": "Add Project",
+  "description": "Adds new project.",
+  "method": "POST",
+  "url": "/api/v2/projects",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-project"
+}

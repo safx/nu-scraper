@@ -1,0 +1,25 @@
+{
+  "name": "GetGitRepository",
+  "summary": "Get Git Repository",
+  "description": "Returns Git repository.",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/git/repositories/:repoIdOrName",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    },
+    {
+      "name": "repoIdOrName",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Repository ID or Repository name"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-git-repository"
+}

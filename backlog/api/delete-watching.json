@@ -1,0 +1,18 @@
+{
+  "name": "DeleteWatching",
+  "summary": "Delete Watching",
+  "description": "Deletes a own watching. User can delete a own watching.",
+  "method": "DELETE",
+  "url": "/api/v2/watchings/:watchingId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "watchingId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "watching ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/delete-watching"
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "color": "#990000",
+    "displayOrder": 0,
+    "id": 1,
+    "name": "Bug",
+    "projectId": 1,
+    "templateDescription": "Description",
+    "templateSummary": "Subject"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "RemoveLinkToSharedFileFromIssue",
+  "summary": "Remove Link to Shared File from Issue",
+  "description": "Removes link to shared file from issue.",
+  "method": "DELETE",
+  "url": "/api/v2/issues/:issueIdOrKey/sharedFiles/:id",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue key"
+    },
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Shared File ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/remove-link-to-shared-file-from-issue"
+}

@@ -1,0 +1,33 @@
+{
+  "created": "2013-05-30T09:11:36Z",
+  "createdUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  },
+  "displayOrder": null,
+  "id": 1,
+  "members": [
+    {
+      "id": 2,
+      "lang": null,
+      "mailAddress": "developer@nulab.example",
+      "name": "developer",
+      "roleType": 2,
+      "userId": "developer"
+    }
+  ],
+  "name": "test",
+  "updated": "2013-05-30T09:11:36Z",
+  "updatedUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  }
+}

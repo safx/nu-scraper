@@ -1,0 +1,9 @@
+{
+  "name": "UpdateSpaceNotification",
+  "summary": "Update Space Notification",
+  "description": "Updates space notification.",
+  "method": "PUT",
+  "url": "/api/v2/space/notification",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-space-notification"
+}

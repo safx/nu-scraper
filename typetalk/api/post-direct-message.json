@@ -1,0 +1,83 @@
+{
+  "name": "PostDirectMessage",
+  "summary": "Post direct message",
+  "description": "Method",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v2/spaces/:spaceKey/messages/@:accountName",
+  "scope": "topic.post",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Space key"
+    },
+    {
+      "name": "accountName",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Account name"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "message",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "your message, (max 4000 characters)"
+    },
+    {
+      "name": "replyTo",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "references Post ID"
+    },
+    {
+      "name": "showLinkMeta",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "show OGP data of URL included in message. default value: true"
+    },
+    {
+      "name": "ignoreHashtag",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "A value indicating whether hashtags in the message should be tags. default value: false"
+    },
+    {
+      "name": "fileKeys",
+      "optional": false,
+      "array": true,
+      "type": "String",
+      "description": "attachment file key (refer to Upload attachment file), maximum count: 5"
+    },
+    {
+      "name": "talkIds",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Tag IDs that you want to put the message in, maximum count: 5"
+    },
+    {
+      "name": "attachments[0].fileUrl",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Each message can have max. 5 file URLs (max. 10MB per file)."
+    },
+    {
+      "name": "attachments[0].fileName",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Unless the parameter specifies otherwise, filenames are automatically generated from the file URL. (maximum count: 5)"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/post-direct-message"
+}

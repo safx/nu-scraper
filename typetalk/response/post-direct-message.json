@@ -1,0 +1,55 @@
+{
+  "directMessage": {
+    "account": {
+      "createdAt": "2016-01-27T09:55:09Z",
+      "fullName": "Stefanie",
+      "id": 2498,
+      "imageUrl": "https://typetalk.com/accounts/2498/profile_image.png?t=1453891479138",
+      "isBot": false,
+      "name": "Stefanie",
+      "suggestion": "Stefanie",
+      "updatedAt": "2018-11-09T10:29:47Z"
+    }
+  },
+  "exceedsAttachmentLimit": false,
+  "mentions": [],
+  "post": {
+    "account": {
+      "createdAt": "2016-01-27T09:55:35Z",
+      "fullName": "Jessica",
+      "id": 2500,
+      "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1454061730873",
+      "isBot": false,
+      "name": "Jessica",
+      "suggestion": "Jessica",
+      "updatedAt": "2018-11-26T01:07:27Z"
+    },
+    "attachments": [],
+    "createdAt": "2018-11-26T01:09:12Z",
+    "id": 168196,
+    "likes": [],
+    "links": [],
+    "mention": null,
+    "message": "Sure!",
+    "replyTo": null,
+    "talks": [],
+    "topicId": 3917,
+    "updatedAt": "2018-11-26T01:09:12Z"
+  },
+  "space": {
+    "enabled": true,
+    "imageUrl": "https://apps.nulab.com/spaces/xxxxxxxx/photo/large",
+    "key": "xxxxxxxx",
+    "name": "Awesome Tech Inc."
+  },
+  "topic": {
+    "createdAt": "2016-07-06T02:51:03Z",
+    "description": "",
+    "id": 3917,
+    "isDirectMessage": true,
+    "lastPostedAt": "2018-11-26T01:09:12Z",
+    "name": "Jessica,StefHull",
+    "suggestion": "Jessica,StefHull",
+    "updatedAt": "2016-08-17T08:30:58Z"
+  }
+}

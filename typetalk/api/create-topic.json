@@ -1,0 +1,46 @@
+{
+  "name": "CreateTopic",
+  "summary": "Create topic",
+  "description": "Method",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/topics",
+  "scope": "topic.write",
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Topic name (max 64 characters)"
+    },
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Organization key"
+    },
+    {
+      "name": "description",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "Topic description ( max 2000 characters )"
+    },
+    {
+      "name": "addAccountIds",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Account ID (organization member only)"
+    },
+    {
+      "name": "addGroupIds",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Group ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/create-topic"
+}

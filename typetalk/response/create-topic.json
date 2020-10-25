@@ -1,0 +1,68 @@
+{
+  "accounts": [
+    {
+      "createdAt": "2014-06-30T02:32:29Z",
+      "fullName": "ChelseaB",
+      "id": 106,
+      "imageUrl": "https://typetalk.com/accounts/106/profile_image.png?t=1404095549000",
+      "isBot": false,
+      "name": "chelseab",
+      "suggestion": "ChelseaB",
+      "updatedAt": "2014-06-30T02:32:29Z"
+    }
+  ],
+  "accountsForApi": [],
+  "groups": [
+    {
+      "group": {
+        "createdAt": "2014-06-10T02:32:29Z",
+        "id": 1100,
+        "imageUrl": "https://apps.nulab.com/spaces/abcdefghij/groups/groupkey01/photo/medium",
+        "key": "groupkey01",
+        "name": "Joe Tech Inc. All",
+        "suggestion": "Joe Tech Inc. All",
+        "updatedAt": "2014-06-10T02:32:29Z"
+      },
+      "memberCount": 4
+    }
+  ],
+  "integrations": [],
+  "invites": [],
+  "invitingAccounts": [],
+  "mySpace": {
+    "isPaymentAdmin": true,
+    "myPlan": {
+      "createdAt": "2016-01-10T02:32:29Z",
+      "enabled": true,
+      "numberOfUsers": 7,
+      "plan": {
+        "key": "typetalk.free",
+        "limitNumberOfUsers": 10,
+        "limitTotalAttachmentSize": 1073741824,
+        "name": "Free Plan"
+      },
+      "totalAttachmentSize": 0,
+      "trial": null,
+      "updatedAt": "2016-01-20T02:32:29Z"
+    },
+    "myRole": "ADMIN",
+    "space": {
+      "enabled": true,
+      "imageUrl": "https://apps.nulab.com/spaces/abcdefghij/photo/large",
+      "key": "abcdefghij",
+      "name": "Joe Tech Inc."
+    }
+  },
+  "remainingInvitations": null,
+  "teams": [],
+  "topic": {
+    "createdAt": "2016-12-21T10:12:14Z",
+    "description": "",
+    "id": 223,
+    "isDirectMessage": false,
+    "lastPostedAt": null,
+    "name": "Test topic",
+    "suggestion": "Test topic",
+    "updatedAt": "2016-12-21T10:12:14Z"
+  }
+}

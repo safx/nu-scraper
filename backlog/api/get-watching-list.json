@@ -1,0 +1,62 @@
+{
+  "name": "GetWatchingList",
+  "summary": "Get Watching List",
+  "description": "Returns list of your watching issues.",
+  "method": "GET",
+  "url": "/api/v2/users/:userId/watchings",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "userId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "User ID"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "order",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Order of the sort \u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
+    },
+    {
+      "name": "sort",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "What to sort results by. The value \u201ccreated\u201d, \u201cupdated\u201d or \u201cissueUpdated\u201d are allowed. default=\u201cissueUpdated\u201d"
+    },
+    {
+      "name": "count",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Number of records to retrieve(1-100) default=20"
+    },
+    {
+      "name": "offset",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Where to start returning records from the entire results. default=0"
+    },
+    {
+      "name": "resourceAlreadyRead",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "Whether the issues already read are retrieved or not. The all watching issues are returned if this parameter is omitted. The read watching issues are returned if true. The unread watching issues are returned if false. default=null"
+    },
+    {
+      "name": "issueId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Issue ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-watching-list"
+}

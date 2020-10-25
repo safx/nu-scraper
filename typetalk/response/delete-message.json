@@ -1,0 +1,23 @@
+{
+  "account": {
+    "createdAt": "2014-06-24T02:32:29Z",
+    "fullName": "Jessica Fitzherbert",
+    "id": 100,
+    "imageUrl": "https://typetalk.com/accounts/100/profile_image.png?t=1403577149000",
+    "isBot": false,
+    "name": "jessica",
+    "suggestion": "Jessica Fitzherbert",
+    "updatedAt": "2014-06-24T02:32:29Z"
+  },
+  "attachments": [],
+  "createdAt": "2016-12-21T10:11:57Z",
+  "id": 333,
+  "likes": [],
+  "links": [],
+  "mention": null,
+  "message": "Let's party like it's 1999!",
+  "replyTo": null,
+  "talks": [],
+  "topicId": 208,
+  "updatedAt": "2016-12-21T10:11:57Z"
+}

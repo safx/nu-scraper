@@ -1,0 +1,18 @@
+{
+  "name": "DeleteProjectUser",
+  "summary": "Delete Project User",
+  "description": "Removes user from list project members.",
+  "method": "DELETE",
+  "url": "/api/v2/projects/:projectIdOrKey/users",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/delete-project-user"
+}

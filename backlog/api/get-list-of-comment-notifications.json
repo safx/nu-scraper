@@ -1,0 +1,25 @@
+{
+  "name": "GetListOfCommentNotifications",
+  "summary": "Get List of Comment Notifications",
+  "description": "Returns the list of comment notifications.",
+  "method": "GET",
+  "url": "/api/v2/issues/:issueIdOrKey/comments/:commentId/notifications",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue Key"
+    },
+    {
+      "name": "commentId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Comment ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-list-of-comment-notifications"
+}

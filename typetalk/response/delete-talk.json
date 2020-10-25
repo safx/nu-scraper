@@ -1,0 +1,21 @@
+{
+  "talk": {
+    "backlog": null,
+    "createdAt": "2016-12-21T10:12:22Z",
+    "id": 902,
+    "name": "Feedback new site design",
+    "suggestion": "Feedback new site design",
+    "topicId": 208,
+    "updatedAt": "2016-12-21T10:12:23Z"
+  },
+  "topic": {
+    "createdAt": "2014-06-10T02:32:29Z",
+    "description": "",
+    "id": 208,
+    "isDirectMessage": false,
+    "lastPostedAt": "2016-12-21T10:12:02Z",
+    "name": "IT Peeps",
+    "suggestion": "IT Peeps",
+    "updatedAt": "2014-06-10T02:32:29Z"
+  }
+}

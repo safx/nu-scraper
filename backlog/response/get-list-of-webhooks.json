@@ -1,0 +1,34 @@
+[
+  {
+    "activityTypeIds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "allEvent": false,
+    "created": "2014-11-30T01:22:21Z",
+    "createdUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    },
+    "description": "",
+    "hookUrl": "http://nulab.test/",
+    "id": 3,
+    "name": "webhook",
+    "updated": "2014-11-30T01:22:21Z",
+    "updatedUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    }
+  }
+]

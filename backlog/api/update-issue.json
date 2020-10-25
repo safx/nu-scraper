@@ -1,0 +1,18 @@
+{
+  "name": "UpdateIssue",
+  "summary": "Update Issue",
+  "description": "Updates information about issue.",
+  "method": "PATCH",
+  "url": "/api/v2/issues/:issueIdOrKey",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-issue"
+}

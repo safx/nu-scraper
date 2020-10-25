@@ -1,0 +1,20 @@
+{
+  "capacity": 1073741824,
+  "details": [
+    {
+      "file": 0,
+      "git": 0,
+      "gitLFS": 0,
+      "issue": 11931,
+      "projectId": 1,
+      "subversion": 0,
+      "wiki": 0
+    }
+  ],
+  "file": 0,
+  "git": 0,
+  "gitLFS": 0,
+  "issue": 119511,
+  "subversion": 0,
+  "wiki": 48575
+}

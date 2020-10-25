@@ -1,0 +1,25 @@
+{
+  "name": "DeleteIssueType",
+  "summary": "Delete Issue Type",
+  "description": "Deletes Issue Type.",
+  "method": "DELETE",
+  "url": "/api/v2/projects/:projectIdOrKey/issueTypes/:id",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    },
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Issue Type ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/delete-issue-type"
+}

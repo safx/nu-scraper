@@ -1,0 +1,10 @@
+{
+  "applicableIssueTypes": [
+    1
+  ],
+  "description": "",
+  "id": 2,
+  "name": "Attribute for Bug",
+  "required": false,
+  "typeId": 1
+}

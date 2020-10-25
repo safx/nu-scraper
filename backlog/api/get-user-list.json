@@ -1,0 +1,9 @@
+{
+  "name": "GetUserList",
+  "summary": "Get User List",
+  "description": "Returns list of users in your space.",
+  "method": "GET",
+  "url": "/api/v2/users",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-user-list"
+}

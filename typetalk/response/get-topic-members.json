@@ -1,0 +1,43 @@
+{
+  "accounts": [
+    {
+      "account": {
+        "createdAt": "2016-01-27T09:55:35Z",
+        "fullName": "Jessica Lee",
+        "id": 2500,
+        "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1454061730873",
+        "isBot": false,
+        "name": "Jessica",
+        "suggestion": "Jessica Lee",
+        "updatedAt": "2019-09-09T02:23:32Z"
+      },
+      "online": true,
+      "userStatus": {
+        "accountId": 2500,
+        "clearAt": "2019-09-06T10:49:00Z",
+        "createdAt": "2019-09-02T06:28:02Z",
+        "emoji": ":spiral_note_pad:",
+        "id": 123,
+        "isNotificationDisabled": true,
+        "message": "Meeting",
+        "spaceId": 34,
+        "updatedAt": "2019-09-06T10:19:43Z"
+      }
+    },
+    {
+      "account": {
+        "createdAt": "2016-01-27T09:55:23Z",
+        "fullName": "Moss",
+        "id": 2499,
+        "imageUrl": "https://typetalk.com/accounts/2499/profile_image.png?t=1453891379196",
+        "isBot": false,
+        "name": "Moss",
+        "suggestion": "Moss",
+        "updatedAt": "2019-09-04T06:57:51Z"
+      },
+      "online": false,
+      "userStatus": null
+    }
+  ],
+  "pendings": []
+}

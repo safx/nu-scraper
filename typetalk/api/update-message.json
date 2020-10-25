@@ -1,0 +1,41 @@
+{
+  "name": "UpdateMessage",
+  "summary": "Update message",
+  "description": "Method",
+  "method": "PUT",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/posts/:postId",
+  "scope": "topic.post",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    },
+    {
+      "name": "postId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Post ID"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "message",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "your message, ( max 4000 characters )"
+    },
+    {
+      "name": "showLinkMeta",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "show OGP data of URL included in message. default value: true"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/update-message"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "CountUserReceivedStars",
+  "summary": "Count User Received Stars",
+  "description": "Returns number of stars that user received.",
+  "method": "GET",
+  "url": "/api/v2/users/:userId/stars/count",
+  "scope": null,
+  "queryParams": [
+    {
+      "name": "since",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "after the given date (yyyy-MM-dd)"
+    },
+    {
+      "name": "until",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "before the given date (yyyy-MM-dd)"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/count-user-received-stars"
+}

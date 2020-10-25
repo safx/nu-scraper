@@ -1,0 +1,34 @@
+{
+  "name": "UpdateTopic",
+  "summary": "Update topic",
+  "description": "Method",
+  "method": "PUT",
+  "url": "https://typetalk.com/api/v1/topics/:topicId",
+  "scope": "topic.write",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Topic name ( max 64 characters )"
+    },
+    {
+      "name": "description",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "Topic description ( max 2000 characters )"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/update-topic"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "created": "2009-11-30T01:22:21Z",
+    "createdUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    },
+    "dir": "/PressRelease/20091130/",
+    "id": 825952,
+    "name": "20091130.txt",
+    "size": 4836,
+    "type": "file",
+    "updated": "2009-11-30T01:22:21Z",
+    "updatedUser": null
+  }
+]

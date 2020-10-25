@@ -1,0 +1,165 @@
+{
+  "assignee": {
+    "id": 5,
+    "lang": null,
+    "mailAddress": "testuser2@nulab.test",
+    "name": "testuser2",
+    "roleType": 1,
+    "userId": "testuser2"
+  },
+  "attachments": [],
+  "base": "master",
+  "baseCommit": null,
+  "branch": "develop",
+  "branchCommit": null,
+  "closeAt": null,
+  "created": "2015-04-23T03:04:14Z",
+  "createdUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  },
+  "description": "test data",
+  "id": 2,
+  "issue": {
+    "actualHours": null,
+    "assignee": {
+      "id": 2,
+      "lang": null,
+      "mailAddress": "eguchi@nulab.example",
+      "name": "eguchi",
+      "roleType": 2
+    },
+    "attachments": [
+      {
+        "id": 1,
+        "name": "IMGP0088.JPG",
+        "size": 85079
+      }
+    ],
+    "category": [],
+    "created": "2012-07-23T06:10:15Z",
+    "createdUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    },
+    "customFields": [],
+    "description": "",
+    "dueDate": null,
+    "estimatedHours": null,
+    "id": 1,
+    "issueKey": "BLG-1",
+    "issueType": {
+      "color": "#7ea800",
+      "displayOrder": 0,
+      "id": 2,
+      "name": "\u30bf\u30b9\u30af",
+      "projectId": 1
+    },
+    "keyId": 1,
+    "milestone": [
+      {
+        "archived": false,
+        "description": "",
+        "id": 30,
+        "name": "wait for release",
+        "projectId": 1,
+        "releaseDueDate": null,
+        "startDate": null
+      }
+    ],
+    "parentIssueId": null,
+    "priority": {
+      "id": 3,
+      "name": "Normal"
+    },
+    "projectId": 1,
+    "resolutions": null,
+    "sharedFiles": [
+      {
+        "created": "2009-02-27T03:26:15Z",
+        "createdUser": {
+          "id": 5686,
+          "lang": "ja",
+          "mailAddress": "takada@nulab.example",
+          "name": "takada",
+          "roleType": 2,
+          "userId": "takada"
+        },
+        "dir": "/User icon/",
+        "id": 454403,
+        "name": "male clerk 1.png",
+        "size": 2735,
+        "type": "file",
+        "updated": "2009-03-03T16:57:47Z",
+        "updatedUser": {
+          "id": 5686,
+          "lang": "ja",
+          "mailAddress": "takada@nulab.example",
+          "name": "takada",
+          "roleType": 2,
+          "userId": "takada"
+        }
+      }
+    ],
+    "stars": [
+      {
+        "comment": null,
+        "created": "2013-07-08T10:24:28Z",
+        "id": 10,
+        "presenter": {
+          "id": 2,
+          "lang": "ja",
+          "mailAddress": "eguchi@nulab.example",
+          "name": "eguchi",
+          "roleType": 2,
+          "userId": "eguchi"
+        },
+        "title": "[BLG-1] first issue | Show issue - Backlog",
+        "url": "https://xx.backlog.jp/view/BLG-1"
+      }
+    ],
+    "startDate": null,
+    "status": {
+      "id": 1,
+      "name": "\u672a\u5bfe\u5fdc"
+    },
+    "summary": "first issue",
+    "updated": "2013-02-07T08:09:49Z",
+    "updatedUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    },
+    "versions": []
+  },
+  "mergeAt": null,
+  "number": 1,
+  "projectId": 3,
+  "repositoryId": 5,
+  "stars": [],
+  "status": {
+    "id": 1,
+    "name": "Open"
+  },
+  "summary": "test",
+  "updated": "2015-04-23T03:04:14Z",
+  "updatedUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  }
+}

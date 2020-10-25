@@ -1,0 +1,9 @@
+{
+  "name": "AddWatching",
+  "summary": "Add Watching",
+  "description": "Adds a watching. User can add a own watching.",
+  "method": "POST",
+  "url": "/api/v2/watchings",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-watching"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "GetWikiPageList",
+  "summary": "Get Wiki Page List",
+  "description": "Returns list of Wiki pages.",
+  "method": "GET",
+  "url": "/api/v2/wikis",
+  "scope": null,
+  "queryParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Project ID or Project Key"
+    },
+    {
+      "name": "keyword",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Keyword"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-wiki-page-list"
+}

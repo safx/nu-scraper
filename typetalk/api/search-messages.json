@@ -1,0 +1,74 @@
+{
+  "name": "SearchMessages",
+  "summary": "Search messages",
+  "description": "You can search through posted messages with this API.",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v2/search/posts",
+  "scope": "topic.read",
+  "queryParams": [
+    {
+      "name": "q",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Keyword to search"
+    },
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Space key"
+    },
+    {
+      "name": "topicIds",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    },
+    {
+      "name": "hasAttachments",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Search only posts with attachments. default value: false"
+    },
+    {
+      "name": "accountIds",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "Account ID"
+    },
+    {
+      "name": "start",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "Start position for searching posts."
+    },
+    {
+      "name": "from",
+      "optional": true,
+      "array": false,
+      "type": "DateTime",
+      "description": "Start date for searching posts."
+    },
+    {
+      "name": "to",
+      "optional": true,
+      "array": false,
+      "type": "DateTime",
+      "description": "End date for searching posts."
+    },
+    {
+      "name": "botExclusion",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Exclude bot posts from search results. default value: false"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/search-messages"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AddTeam",
+  "summary": "Add Team",
+  "description": "Adds new team. You can\u2019t use this API at backlog.com space.",
+  "method": "POST",
+  "url": "/api/v2/teams",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-team"
+}

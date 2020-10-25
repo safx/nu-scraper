@@ -1,0 +1,27 @@
+{
+  "name": "GetGivenLikes",
+  "summary": "Get given likes",
+  "description": "Method",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/likes/give",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Space key"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "from",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "references Like ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/get-given-likes"
+}

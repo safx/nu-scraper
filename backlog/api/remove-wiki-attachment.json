@@ -1,0 +1,25 @@
+{
+  "name": "RemoveWikiAttachment",
+  "summary": "Remove Wiki Attachment",
+  "description": "Removes files attached to Wiki.",
+  "method": "DELETE",
+  "url": "/api/v2/wikis/:wikiId/attachments/:attachmentId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "wikiId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Wiki page\u2019s ID"
+    },
+    {
+      "name": "attachmentId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Attachment\u2019s ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/remove-wiki-attachment"
+}

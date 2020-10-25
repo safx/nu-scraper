@@ -1,0 +1,27 @@
+{
+  "name": "PinTopic",
+  "summary": "Pin Topic",
+  "description": "Method",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/myTopics/pin",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Space key"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/pin-topic"
+}

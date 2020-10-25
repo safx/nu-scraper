@@ -1,0 +1,18 @@
+{
+  "name": "GetOnlineStatus",
+  "summary": "Get online status",
+  "description": "Method",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/accounts/status",
+  "scope": "my",
+  "queryParams": [
+    {
+      "name": "accountIds",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Account ID (topic member only)"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/get-online-status"
+}

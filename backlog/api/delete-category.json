@@ -1,0 +1,25 @@
+{
+  "name": "DeleteCategory",
+  "summary": "Delete Category",
+  "description": "Deletes Category.",
+  "method": "DELETE",
+  "url": "/api/v2/projects/:projectIdOrKey/categories/:id",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    },
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Category ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/delete-category"
+}

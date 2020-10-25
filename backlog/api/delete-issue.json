@@ -1,0 +1,18 @@
+{
+  "name": "DeleteIssue",
+  "summary": "Delete Issue",
+  "description": "Deletes issue.",
+  "method": "DELETE",
+  "url": "/api/v2/issues/:issueIdOrKey",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/delete-issue"
+}

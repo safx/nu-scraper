@@ -1,0 +1,9 @@
+{
+  "name": "GetOwnUser",
+  "summary": "Get Own User",
+  "description": "Returns own information about user.",
+  "method": "GET",
+  "url": "/api/v2/users/myself",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-own-user"
+}

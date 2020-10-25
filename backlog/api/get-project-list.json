@@ -1,0 +1,25 @@
+{
+  "name": "GetProjectList",
+  "summary": "Get Project List",
+  "description": "Returns list of projects.",
+  "method": "GET",
+  "url": "/api/v2/projects",
+  "scope": null,
+  "queryParams": [
+    {
+      "name": "archived",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "For unspecified parameters, this form returns all projects. For \u2018false\u2019 parameters, it returns unarchived projects. For \u2018true\u2019 parameters, it returns archived projects."
+    },
+    {
+      "name": "all",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "Only applies to administrators. If \u2018true,\u2019 it returns all projects. If \u2018false,\u2019 it returns only projects they have joined (set to \u2018false\u2019 by default)."
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-project-list"
+}

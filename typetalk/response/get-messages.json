@@ -1,0 +1,207 @@
+{
+  "bookmark": {
+    "postId": 167964,
+    "updatedAt": "2018-11-06T09:31:30Z"
+  },
+  "exceedsAttachmentLimit": false,
+  "favorite": true,
+  "hasNext": false,
+  "mySpace": {
+    "invitableRoles": [
+      "ADMIN",
+      "USER",
+      "GUEST"
+    ],
+    "isPaymentAdmin": true,
+    "myPlan": {
+      "createdAt": "2016-01-27T09:37:27Z",
+      "enabled": true,
+      "numberOfAllowedAddresses": 0,
+      "numberOfUsers": 4,
+      "plan": {
+        "key": "typetalk.standard10",
+        "limitNumberOfAllowedAddresses": 10,
+        "limitNumberOfUsers": 10,
+        "limitTotalAttachmentSize": 107374182400,
+        "name": "Standard 10 Users"
+      },
+      "totalAttachmentSize": 14356,
+      "trial": null,
+      "updatedAt": "2019-09-02T06:05:56Z"
+    },
+    "myRole": "ADMIN",
+    "space": {
+      "enabled": true,
+      "imageUrl": "https://apps.nulab.com/spaces/XXXXXX/photo/large",
+      "key": "XXXXXX",
+      "name": "Awesome Tech Inc."
+    }
+  },
+  "myTopic": null,
+  "onboarding": null,
+  "postContentsSettings": {
+    "collapsedAccountIds": []
+  },
+  "posts": [
+    {
+      "account": {
+        "createdAt": "2016-01-27T09:55:23Z",
+        "fullName": "Moss",
+        "id": 2499,
+        "imageUrl": "https://typetalk.com/accounts/2499/profile_image.png?t=1453891379196",
+        "isBot": false,
+        "name": "Moss",
+        "suggestion": "Moss",
+        "updatedAt": "2019-09-04T06:57:51Z"
+      },
+      "attachments": [],
+      "contents": null,
+      "createdAt": "2017-11-13T22:29:03Z",
+      "id": 160928,
+      "likes": [],
+      "links": [
+        {
+          "contentType": "text/html",
+          "createdAt": "2017-11-13T22:24:01Z",
+          "description": "Discover & share this Justin GIF with everyone you know. GIPHY is how you search, share, discover, and create GIFs.",
+          "embed": {
+            "author_name": "Justin",
+            "author_url": "https://giphy.com/justin",
+            "height": 371,
+            "provider_name": "GIPHY",
+            "provider_url": "https://giphy.com/",
+            "title": "Its Friday GIF by Justin - Find & Share on GIPHY",
+            "type": "photo",
+            "url": "https://media.giphy.com/media/3oEjHKjVoNVsCeMoDe/giphy.gif",
+            "width": 480
+          },
+          "id": 3548,
+          "imageUrl": "https://media.giphy.com/media/3oEjHKjVoNVsCeMoDe/giphy.gif",
+          "title": "Its Friday GIF by Justin - Find & Share on GIPHY",
+          "updatedAt": "2018-08-18T02:32:28Z",
+          "url": "https://media.giphy.com/media/3oEjHKjVoNVsCeMoDe/giphy.gif"
+        }
+      ],
+      "mention": null,
+      "mentions": [],
+      "message": "In case you hadn't realized https://media.giphy.com/media/3oEjHKjVoNVsCeMoDe/giphy.gif",
+      "quotedPosts": [],
+      "replyTo": null,
+      "talks": [],
+      "topicId": 4829,
+      "updatedAt": "2017-11-13T22:29:03Z"
+    },
+    {
+      "account": {
+        "createdAt": "2016-01-27T09:55:35Z",
+        "fullName": "Jessica Lee",
+        "id": 2500,
+        "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1454061730873",
+        "isBot": false,
+        "name": "Jessica",
+        "suggestion": "Jessica Lee",
+        "updatedAt": "2019-09-05T04:21:42Z"
+      },
+      "attachments": [],
+      "contents": null,
+      "createdAt": "2017-11-13T22:29:51Z",
+      "id": 160929,
+      "likes": [
+        {
+          "account": {
+            "createdAt": "2016-01-27T09:55:23Z",
+            "fullName": "Moss",
+            "id": 2499,
+            "imageUrl": "https://typetalk.com/accounts/2499/profile_image.png?t=1453891379196",
+            "isBot": false,
+            "name": "Moss",
+            "suggestion": "Moss",
+            "updatedAt": "2019-09-04T06:57:51Z"
+          },
+          "comment": "",
+          "createdAt": "2018-02-16T08:59:30Z",
+          "id": 19747,
+          "postId": 160929,
+          "topicId": 4829
+        },
+        {
+          "account": {
+            "createdAt": "2016-01-27T09:55:35Z",
+            "fullName": "Jessica Lee",
+            "id": 2500,
+            "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1454061730873",
+            "isBot": false,
+            "name": "Jessica",
+            "suggestion": "Jessica Lee",
+            "updatedAt": "2019-09-05T04:21:42Z"
+          },
+          "comment": "",
+          "createdAt": "2019-05-07T05:22:28Z",
+          "id": 21071,
+          "postId": 160929,
+          "topicId": 4829
+        },
+        {
+          "account": {
+            "createdAt": "2016-01-27T09:55:09Z",
+            "fullName": "Stefanie",
+            "id": 2498,
+            "imageUrl": "https://typetalk.com/accounts/2498/profile_image.png?t=1453891479138",
+            "isBot": false,
+            "name": "Stefanie",
+            "suggestion": "Stefanie",
+            "updatedAt": "2019-09-04T06:57:51Z"
+          },
+          "comment": "",
+          "createdAt": "2019-05-07T05:24:03Z",
+          "id": 21072,
+          "postId": 160929,
+          "topicId": 4829
+        }
+      ],
+      "links": [
+        {
+          "contentType": "text/html",
+          "createdAt": "2017-11-13T22:29:52Z",
+          "description": "The official GIPHY channel for #TheVoice, Mondays and Tuesdays at 8/7c on NBC!",
+          "embed": {
+            "author_name": "The Voice",
+            "author_url": "https://giphy.com/thevoice",
+            "height": 281,
+            "provider_name": "GIPHY",
+            "provider_url": "https://giphy.com/",
+            "title": "Christina Aguilera Television GIF by The Voice - Find & Share on GIPHY",
+            "type": "photo",
+            "url": "https://media.giphy.com/media/111WSGoF53XKq4/giphy.gif",
+            "width": 500
+          },
+          "id": 3549,
+          "imageUrl": "https://media.giphy.com/media/111WSGoF53XKq4/giphy.gif",
+          "title": "Christina Aguilera Television GIF by The Voice - Find & Share on GIPHY",
+          "updatedAt": "2018-08-18T02:46:05Z",
+          "url": "https://media.giphy.com/media/111WSGoF53XKq4/giphy.gif"
+        }
+      ],
+      "mention": null,
+      "mentions": [],
+      "message": "https://media.giphy.com/media/111WSGoF53XKq4/giphy.gif",
+      "quotedPosts": [],
+      "replyTo": 160928,
+      "talks": [],
+      "topicId": 4829,
+      "updatedAt": "2017-11-13T22:29:51Z"
+    }
+  ],
+  "team": null,
+  "topic": {
+    "createdAt": "2017-11-13T22:27:21Z",
+    "description": "A topic for getting off-topic",
+    "id": 4829,
+    "isArchived": false,
+    "isDirectMessage": false,
+    "lastPostedAt": "2018-11-06T07:56:42Z",
+    "name": "Coffee shop",
+    "suggestion": "Coffee shop",
+    "updatedAt": "2017-12-21T02:41:00Z"
+  }
+}

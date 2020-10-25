@@ -1,0 +1,135 @@
+{
+  "bookmark": {
+    "postId": 168196,
+    "updatedAt": "2018-11-26T01:09:13Z"
+  },
+  "directMessage": {
+    "account": {
+      "createdAt": "2016-01-27T09:55:09Z",
+      "fullName": "Stefanie",
+      "id": 2498,
+      "imageUrl": "https://typetalk.com/accounts/2498/profile_image.png?t=1453891479138",
+      "isBot": false,
+      "name": "Stefanie",
+      "suggestion": "Stefanie",
+      "updatedAt": "2018-11-09T10:29:47Z"
+    },
+    "status": {
+      "mobile": null,
+      "presence": "away",
+      "web": null
+    }
+  },
+  "hasNext": false,
+  "mySpace": {
+    "invitableRoles": [
+      "ADMIN",
+      "USER",
+      "GUEST"
+    ],
+    "isPaymentAdmin": true,
+    "myPlan": {
+      "createdAt": "2016-01-27T09:37:27Z",
+      "enabled": true,
+      "numberOfAllowedAddresses": 0,
+      "numberOfUsers": 4,
+      "plan": {
+        "key": "typetalk.standard10",
+        "limitNumberOfAllowedAddresses": 10,
+        "limitNumberOfUsers": 10,
+        "limitTotalAttachmentSize": 10737418240,
+        "name": "Standard 10 Users"
+      },
+      "totalAttachmentSize": 14356,
+      "trial": null,
+      "updatedAt": "2018-11-09T10:33:30Z"
+    },
+    "myRole": "ADMIN",
+    "space": {
+      "enabled": true,
+      "imageUrl": "https://apps.nulab.com/spaces/xxxxxxxx/photo/large",
+      "key": "xxxxxxxx",
+      "name": "Awesome Tech Inc."
+    }
+  },
+  "posts": [
+    {
+      "account": {
+        "createdAt": "2016-01-27T09:55:09Z",
+        "fullName": "Stefanie",
+        "id": 2498,
+        "imageUrl": "https://typetalk.com/accounts/2498/profile_image.png?t=1453891479138",
+        "isBot": false,
+        "name": "Stefanie",
+        "suggestion": "Stefanie",
+        "updatedAt": "2018-11-09T10:29:47Z"
+      },
+      "attachments": [],
+      "createdAt": "2018-04-27T09:12:25Z",
+      "id": 164783,
+      "likes": [],
+      "links": [],
+      "mention": null,
+      "message": "Hey",
+      "replyTo": null,
+      "talks": [],
+      "topicId": 3917,
+      "updatedAt": "2018-04-27T09:12:25Z"
+    },
+    {
+      "account": {
+        "createdAt": "2016-01-27T09:55:09Z",
+        "fullName": "Stefanie",
+        "id": 2498,
+        "imageUrl": "https://typetalk.com/accounts/2498/profile_image.png?t=1453891479138",
+        "isBot": false,
+        "name": "Stefanie",
+        "suggestion": "Stefanie",
+        "updatedAt": "2018-11-09T10:29:47Z"
+      },
+      "attachments": [],
+      "createdAt": "2018-04-27T09:13:02Z",
+      "id": 164784,
+      "likes": [],
+      "links": [],
+      "mention": null,
+      "message": "Can I ask you a question?",
+      "replyTo": null,
+      "talks": [],
+      "topicId": 3917,
+      "updatedAt": "2018-04-27T09:13:02Z"
+    },
+    {
+      "account": {
+        "createdAt": "2016-01-27T09:55:35Z",
+        "fullName": "Jessica",
+        "id": 2500,
+        "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1454061730873",
+        "isBot": false,
+        "name": "Jessica",
+        "suggestion": "Jessica",
+        "updatedAt": "2018-11-26T05:12:25Z"
+      },
+      "attachments": [],
+      "createdAt": "2018-11-26T01:09:12Z",
+      "id": 168196,
+      "likes": [],
+      "links": [],
+      "mention": null,
+      "message": "Sure!",
+      "replyTo": null,
+      "talks": [],
+      "topicId": 3917,
+      "updatedAt": "2018-11-26T01:09:12Z"
+    }
+  ],
+  "topic": {
+    "createdAt": "2016-07-06T02:51:03Z",
+    "id": 3917,
+    "isDirectMessage": true,
+    "lastPostedAt": "2018-11-26T01:09:12Z",
+    "name": "Jessica,StefHull",
+    "suggestion": "Jessica,StefHull",
+    "updatedAt": "2016-08-17T08:30:58Z"
+  }
+}

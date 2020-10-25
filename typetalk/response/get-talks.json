@@ -1,0 +1,22 @@
+{
+  "talks": [
+    {
+      "backlog": null,
+      "createdAt": "2014-07-02T03:52:29Z",
+      "id": 901,
+      "name": "2nd talk",
+      "suggestion": "2nd talk",
+      "topicId": 208,
+      "updatedAt": "2014-07-02T03:55:29Z"
+    },
+    {
+      "backlog": null,
+      "createdAt": "2014-07-02T03:42:29Z",
+      "id": 900,
+      "name": "About us",
+      "suggestion": "About us",
+      "topicId": 208,
+      "updatedAt": "2014-07-02T03:52:29Z"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "assignee": {
+      "id": 5,
+      "lang": null,
+      "mailAddress": "testuser2@nulab.test",
+      "name": "testuser2",
+      "roleType": 1,
+      "userId": "testuser2"
+    },
+    "base": "master",
+    "baseCommit": null,
+    "branch": "develop",
+    "branchCommit": null,
+    "closeAt": null,
+    "created": "2015-04-23T03:04:14Z",
+    "createdUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    },
+    "description": "test data",
+    "id": 2,
+    "issue": {
+      "id": 31
+    },
+    "mergeAt": null,
+    "number": 1,
+    "projectId": 3,
+    "repositoryId": 5,
+    "status": {
+      "id": 1,
+      "name": "Open"
+    },
+    "summary": "test",
+    "updated": "2015-04-23T03:04:14Z",
+    "updatedUser": {
+      "id": 1,
+      "lang": "ja",
+      "mailAddress": "eguchi@nulab.example",
+      "name": "admin",
+      "roleType": 1,
+      "userId": "admin"
+    }
+  }
+]

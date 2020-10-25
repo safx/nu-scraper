@@ -1,0 +1,25 @@
+{
+  "like": {
+    "account": {
+      "createdAt": "2016-01-27T09:55:35Z",
+      "fullName": "Jessica Lee",
+      "id": 2500,
+      "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1454061730873",
+      "isBot": false,
+      "name": "Jessica",
+      "suggestion": "Jessica Lee",
+      "updatedAt": "2018-12-25T10:42:43Z"
+    },
+    "comment": "",
+    "createdAt": "2018-11-27T23:51:44Z",
+    "id": 20050,
+    "postId": 167373,
+    "topicId": 4483
+  },
+  "space": {
+    "enabled": true,
+    "imageUrl": "https://apps.nulab.com/spaces/xxxxxxx/photo/large",
+    "key": "xxxxxx",
+    "name": "Awesome Tech Inc."
+  }
+}

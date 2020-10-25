@@ -1,0 +1,18 @@
+{
+  "name": "GetWikiPageTagList",
+  "summary": "Get Wiki Page Tag List",
+  "description": "Returns list of tags that are used in the project.",
+  "method": "GET",
+  "url": "/api/v2/wikis/tags",
+  "scope": null,
+  "queryParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Project ID or Project Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-wiki-page-tag-list"
+}

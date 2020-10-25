@@ -1,0 +1,18 @@
+{
+  "name": "GetVersionMilestoneList",
+  "summary": "Get Version/Milestone List",
+  "description": "Returns list of Versions/Milestones in the project.",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/versions",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-version-milestone-list"
+}

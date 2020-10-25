@@ -1,0 +1,74 @@
+{
+  "directMessage": null,
+  "mentions": [],
+  "post": {
+    "account": {
+      "createdAt": "2016-01-27T09:55:35Z",
+      "fullName": "Jessica",
+      "id": 2500,
+      "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1454061730873",
+      "isBot": false,
+      "name": "Jessica",
+      "suggestion": "Jessica",
+      "updatedAt": "2018-11-28T05:59:16Z"
+    },
+    "attachments": [
+      {
+        "apiUrl": "https://typetalk.com/api/v1/topics/4483/posts/164018/attachments/1/wallpaper.jpg",
+        "attachment": {
+          "contentType": "image/jpeg",
+          "fileKey": "c5082a1da3e99ecc97b8e5119781ac2b82e18dfa",
+          "fileName": "wallpaper.jpg",
+          "fileSize": 14356
+        },
+        "thumbnails": [
+          {
+            "fileSize": 14356,
+            "height": 125,
+            "type": "small",
+            "width": 198
+          },
+          {
+            "fileSize": 14356,
+            "height": 125,
+            "type": "medium",
+            "width": 198
+          },
+          {
+            "fileSize": 14356,
+            "height": 125,
+            "type": "large",
+            "width": 198
+          }
+        ],
+        "webUrl": "https://typetalk.com/topics/4483/posts/164018/attachments/1/wallpaper.jpg"
+      }
+    ],
+    "createdAt": "2018-04-18T06:56:37Z",
+    "id": 164018,
+    "likes": [],
+    "links": [],
+    "mention": null,
+    "message": "How about this wallpaper?",
+    "replyTo": null,
+    "talks": [],
+    "topicId": 4483,
+    "updatedAt": "2018-11-28T06:01:45Z"
+  },
+  "space": {
+    "enabled": true,
+    "imageUrl": "https://apps.nulab.com/spaces/xxxxxxxxx/photo/large",
+    "key": "xxxxxxxxx",
+    "name": "Awesome Tech Inc."
+  },
+  "topic": {
+    "createdAt": "2017-03-21T20:04:45Z",
+    "description": "All about the world of visual design which include app ui/ux, website, news, tips and occasional banter among designers. Oh, and don't forget the weekend together.\n\nSome housekeeping:\n 1. Share your work and comment on others' work in a nice manners.\n 2. Report any issue to @Stefanie\n 3. Have fun typetalkin'! https://typetalk.com\n\nNote that this topic is open to everyone in the team!",
+    "id": 4483,
+    "isDirectMessage": false,
+    "lastPostedAt": "2018-11-28T06:01:45Z",
+    "name": "Design",
+    "suggestion": "Design",
+    "updatedAt": "2018-09-19T06:02:29Z"
+  }
+}

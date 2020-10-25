@@ -1,0 +1,48 @@
+{
+  "name": "GetCommentList",
+  "summary": "Get Comment List",
+  "description": "Returns list of comments in issue.",
+  "method": "GET",
+  "url": "/api/v2/issues/:issueIdOrKey/comments",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue Key"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "minId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "minimum ID"
+    },
+    {
+      "name": "maxId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "maximum ID"
+    },
+    {
+      "name": "count",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "number of records to retrieve(1-100) default=20"
+    },
+    {
+      "name": "order",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-comment-list"
+}

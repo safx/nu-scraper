@@ -1,0 +1,18 @@
+{
+  "name": "GetTalks",
+  "summary": "Get tag list",
+  "description": "Method",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/talks",
+  "scope": "topic.read",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/get-talks"
+}

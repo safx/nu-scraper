@@ -1,0 +1,69 @@
+{
+  "name": "UpdateTopicMembers",
+  "summary": "Update topic members",
+  "description": "Method",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/members/update",
+  "scope": "topic.write",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "addAccountIds",
+      "optional": false,
+      "array": true,
+      "type": "String",
+      "description": "Account ID that you want to add (organization member only)"
+    },
+    {
+      "name": "addGroupIds",
+      "optional": false,
+      "array": true,
+      "type": "String",
+      "description": "Group ID that you want to add"
+    },
+    {
+      "name": "invitations[0].email",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Email address that you want to invite"
+    },
+    {
+      "name": "invitations[0].role",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Role that you want to invite"
+    },
+    {
+      "name": "removeAccounts[0].id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Account ID that you want to remove"
+    },
+    {
+      "name": "removeAccounts[0].cancelSpaceInvitation",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "If this is true, the user invitation will be removed"
+    },
+    {
+      "name": "removeGroupIds",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Group ID that you want to remove"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/update-topic-members"
+}

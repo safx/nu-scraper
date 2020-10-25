@@ -1,0 +1,34 @@
+{
+  "name": "RemoveMessageFromTalk",
+  "summary": "Remove message from tag",
+  "description": "Method",
+  "method": "DELETE",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/talks/:talkId/posts",
+  "scope": "topic.post",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Topic ID"
+    },
+    {
+      "name": "talkId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Tag ID"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "postIds",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Post IDs that you want to remove from the tag"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/remove-message-from-talk"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "UpdatePullRequestCommentInformation",
+  "summary": "Update Pull Request Comment Information",
+  "description": "Updates pull request comment information.",
+  "method": "PATCH",
+  "url": "/api/v2/projects/:projectIdOrKey/git/repositories/:repoIdOrName/pullRequests/:number/comments/:commentId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    },
+    {
+      "name": "repoIdOrName",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Repository ID or Repository name"
+    },
+    {
+      "name": "number",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Pull request number"
+    },
+    {
+      "name": "commentId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Comment\u2019s ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-pull-request-comment-information"
+}

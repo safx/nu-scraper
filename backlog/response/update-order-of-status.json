@@ -1,0 +1,16 @@
+[
+  {
+    "color": "#ed8077",
+    "displayOrder": 1000,
+    "id": 1,
+    "name": "Open",
+    "projectId": 1
+  },
+  {
+    "color": "#ed8077",
+    "displayOrder": 1001,
+    "id": 101,
+    "name": "Ready",
+    "projectId": 1
+  }
+]

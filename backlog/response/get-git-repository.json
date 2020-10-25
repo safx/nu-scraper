@@ -1,0 +1,29 @@
+{
+  "created": "2013-05-30T09:11:36Z",
+  "createdUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  },
+  "description": "",
+  "displayOrder": 0,
+  "hookUrl": null,
+  "httpUrl": "https://xx.backlog.jp/git/BLG/app.git",
+  "id": 1,
+  "name": "app",
+  "projectId": 151,
+  "pushedAt": null,
+  "sshUrl": "xx@xx.git.backlog.jp:/BLG/app.git",
+  "updated": "2013-05-30T09:11:36Z",
+  "updatedUser": {
+    "id": 1,
+    "lang": "ja",
+    "mailAddress": "eguchi@nulab.example",
+    "name": "admin",
+    "roleType": 1,
+    "userId": "admin"
+  }
+}

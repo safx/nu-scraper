@@ -1,0 +1,124 @@
+{
+  "accounts": [
+    {
+      "createdAt": "2014-06-25T02:32:29Z",
+      "fullName": "AHorowitz",
+      "id": 101,
+      "imageUrl": "https://typetalk.com/accounts/101/profile_image.png?t=1403663549000",
+      "isBot": false,
+      "name": "ahorowitz",
+      "suggestion": "AHorowitz",
+      "updatedAt": "2014-06-25T02:32:29Z"
+    },
+    {
+      "createdAt": "2014-06-29T02:32:29Z",
+      "fullName": "BradMarshalls",
+      "id": 105,
+      "imageUrl": "https://typetalk.com/accounts/105/profile_image.png?t=1404009149000",
+      "isBot": false,
+      "name": "brad",
+      "suggestion": "BradMarshalls",
+      "updatedAt": "2014-06-29T02:32:29Z"
+    },
+    {
+      "createdAt": "2014-06-30T02:32:29Z",
+      "fullName": "ChelseaB",
+      "id": 106,
+      "imageUrl": "https://typetalk.com/accounts/106/profile_image.png?t=1404095549000",
+      "isBot": false,
+      "name": "chelseab",
+      "suggestion": "ChelseaB",
+      "updatedAt": "2014-06-30T02:32:29Z"
+    },
+    {
+      "createdAt": "2014-06-28T02:32:29Z",
+      "fullName": "CooperDaChopper",
+      "id": 104,
+      "imageUrl": "https://typetalk.com/accounts/104/profile_image.png?t=1403922749000",
+      "isBot": false,
+      "name": "cooper",
+      "suggestion": "CooperDaChopper",
+      "updatedAt": "2014-06-28T02:32:29Z"
+    },
+    {
+      "createdAt": "2014-06-24T02:32:29Z",
+      "fullName": "Jessica Fitzherbert",
+      "id": 100,
+      "imageUrl": "https://typetalk.com/accounts/100/profile_image.png?t=1403577149000",
+      "isBot": false,
+      "name": "jessica",
+      "suggestion": "Jessica Fitzherbert",
+      "updatedAt": "2014-06-24T02:32:29Z"
+    },
+    {
+      "createdAt": "2014-06-26T02:32:29Z",
+      "fullName": "Moss",
+      "id": 102,
+      "imageUrl": "https://typetalk.com/accounts/102/profile_image.png?t=1403749949000",
+      "isBot": false,
+      "name": "moss",
+      "suggestion": "Moss",
+      "updatedAt": "2014-06-26T02:32:29Z"
+    },
+    {
+      "createdAt": "2014-06-27T02:32:29Z",
+      "fullName": "StefHull",
+      "id": 103,
+      "imageUrl": "https://typetalk.com/accounts/103/profile_image.png?t=1403836349000",
+      "isBot": false,
+      "name": "stefhull",
+      "suggestion": "StefHull",
+      "updatedAt": "2014-06-27T02:32:29Z"
+    }
+  ],
+  "groups": [
+    {
+      "group": {
+        "createdAt": "2014-06-12T02:32:29Z",
+        "id": 1102,
+        "imageUrl": "https://apps.nulab.com/spaces/abcdefghij/groups/groupkey03/photo/medium",
+        "key": "groupkey03",
+        "name": "Cycling team",
+        "suggestion": "Cycling team",
+        "updatedAt": "2014-06-12T02:32:29Z"
+      },
+      "memberCount": 1
+    },
+    {
+      "group": {
+        "createdAt": "2014-06-10T02:32:29Z",
+        "id": 1100,
+        "imageUrl": "https://apps.nulab.com/spaces/abcdefghij/groups/groupkey01/photo/medium",
+        "key": "groupkey01",
+        "name": "Joe Tech Inc. All",
+        "suggestion": "Joe Tech Inc. All",
+        "updatedAt": "2014-06-10T02:32:29Z"
+      },
+      "memberCount": 4
+    },
+    {
+      "group": {
+        "createdAt": "2014-06-11T02:32:29Z",
+        "id": 1101,
+        "imageUrl": "https://apps.nulab.com/spaces/abcdefghij/groups/groupkey02/photo/medium",
+        "key": "groupkey02",
+        "name": "OSS Project",
+        "suggestion": "OSS Project",
+        "updatedAt": "2014-06-11T02:32:29Z"
+      },
+      "memberCount": 1
+    },
+    {
+      "group": {
+        "createdAt": "2014-06-13T02:32:29Z",
+        "id": 1103,
+        "imageUrl": "https://apps.nulab.com/spaces/abcdefghij/groups/groupkey04/photo/medium",
+        "key": "groupkey04",
+        "name": "WP Team",
+        "suggestion": "WP Team",
+        "updatedAt": "2014-06-13T02:32:29Z"
+      },
+      "memberCount": 1
+    }
+  ]
+}

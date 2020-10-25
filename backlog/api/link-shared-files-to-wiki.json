@@ -1,0 +1,18 @@
+{
+  "name": "LinkSharedFilesToWiki",
+  "summary": "Link Shared Files to Wiki",
+  "description": "Links Shared Files to Wiki.",
+  "method": "POST",
+  "url": "/api/v2/wikis/:wikiId/sharedFiles",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "wikiId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Wiki page\u2019s ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/link-shared-files-to-wiki"
+}
