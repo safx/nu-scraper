@@ -21,14 +21,31 @@ REGEXP_DATE = re.compile('^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$')
 
 
 class ObjectTypeInfo:
-    def __init__(self, attributeObject):
-        self.attributeObject = attributeObject
-        self.paths = set([])
+    def __init__(self, attributeObject, typename = None):
+        self.__attributeObject = attributeObject
+        self.__paths = set([])
+        self.__typename = typename
         pass
+
+    @classmethod
+    def fromJson(cls, jsonObject, typename):
+        print('--' * 80)
+        if '_meta' in jsonObject:
+            del jsonObject['_meta']
+        print(typename, jsonObject)
+        return ObjectTypeInfo(jsonObject, typename)
+
+    @property
+    def attributeObject(self):
+        return self.__attributeObject
+
+    @property
+    def paths(self):
+        return self.__paths
 
     @property
     def __jsonPaths(self):
-        return map(lambda e: e.split(':')[-1], self.paths)
+        return map(lambda e: e.split(':')[-1], self.__paths)
 
     @property
     def __leafNames(self):
@@ -41,32 +58,38 @@ class ObjectTypeInfo:
     def __names(self, genfunc):
         return list(set(filter(lambda e: e.isalnum() and not e.isdigit(), genfunc)))
 
-    def types(self):
+    def __types(self):
         single_or_list = lambda e: list(e)[0] if len(e) == 1 else (list(e) if len(e) > 1 else None)
-        return {i : single_or_list(j) for i, j in self.attributeObject.items()}
+        return {i : single_or_list(j) for i, j in self.__attributeObject.items()}
+
+    def addPath(self, filepath, keypath):
+        self.__paths.add(pathname(filepath, keypath))
 
     @property
     def typeNames(self):
         a = set(self.__names(self.__leafNames))
         if len(a) >= 1:
-            t = set([self.getTypeName()])
+            t = set([self.guessTypeName()])
             return list(map(lambda e: 'other candidate: ' + e, a - t))
         b = set(self.__names(self.__directParentNames))
         return list(map(lambda e: 'Type name `' + e + '` is generate from parent node name and probably have to be remove plural `s`.', b))
 
-    def getTypeName(self):
+    def guessTypeName(self):
         ns = self.__names(self.__leafNames)
         if len(ns) == 1 and ns[0] != '':
             return ns[0]
         elif len(ns) > 1:
             return ns[0]
         ns = self.__names(self.__directParentNames)
-        return ns[0]
+        n = ns[0]
+        if len(n) > 0:
+            n = n[0].upper() + n[1:]
+        return n
 
     def toJson(self):
-        obj = self.types()
+        obj = self.__types()
         obj['_meta'] = {
-             'files': sorted(list(self.paths))
+             'files': sorted(list(self.__paths))
         }
         if len(self.typeNames) > 0:
             obj['_meta']['typename notes'] = self.typeNames
@@ -176,8 +199,8 @@ def findSameObject(file1, file2, registered):
                         found.paths.add(pathname(file2, k2))
                     else:
                         ot = ObjectTypeInfo(v1)
-                        ot.paths.add(pathname(file1, k1))
-                        ot.paths.add(pathname(file2, k2))
+                        ot.addPath(file1, k1)
+                        ot.addPath(file2, k2)
                         registered.append(ot)
                     #print('\t\t' + pathname(file2, k2))
 
@@ -190,14 +213,17 @@ def findSameObjectForDir(dirpath):
             findSameObject(os.path.join(dirpath, f1), os.path.join(dirpath, f2), registered)
     return registered
 
-reg = findSameObjectForDir('./typetalk/response/')
-d = dict()
-for i in reg:
-    n = i.getTypeName()
-    if len(n) > 0:
-        n = n[0].upper() + n[1:]
-    d[n] = i.toJson()
+def main():
+    reg = findSameObjectForDir('./typetalk/response/')
+    d = dict()
+    for i in reg:
+        n = i.guessTypeName()
+        d[n] = i.toJson()
 
-print(json.dumps(OrderedDict(sorted(d.items()))))
+    print(json.dumps(OrderedDict(sorted(d.items()))))
 
-#findSameObject('./typetalk/response/add-message-to-talk.json', './typetalk/response/create-talk.json')
+    #findSameObject('./typetalk/response/add-message-to-talk.json', './typetalk/response/create-talk.json')
+
+
+if __name__ == '__main__':
+    main()
