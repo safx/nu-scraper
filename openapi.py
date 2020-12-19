@@ -1,4 +1,4 @@
-from typing import Optional, List, Dict
+from typing import Any, Optional, List, Dict, Set
 
 ## Partial implementation of OpenAPI
 # - OpenAPI Object
@@ -48,6 +48,23 @@ class OperationVerb:
         self.__value = value
     def __str__(self) -> str:
         return self.__value
+    def toJson(self):
+        return self.__value
+
+    @classmethod
+    def fromStr(cls, string):
+        m = [
+           OperationVerb.get, 
+           OperationVerb.put, 
+           OperationVerb.post, 
+           OperationVerb.delete, 
+           OperationVerb.options, 
+           OperationVerb.head, 
+           OperationVerb.patch, 
+           OperationVerb.trace, 
+        ]
+        z = list(filter(lambda e: e.__value == string, m))
+        return z[0]
 
     @staticproperty
     def get() : return OperationVerb('get')
@@ -72,6 +89,8 @@ class DataType:
         self.__value = value
     def __str__(self) -> str:
         return self.__value
+    def toJson(self):
+        return self.__value
 
     @staticproperty
     def object() : return DataType('object')
@@ -91,6 +110,8 @@ class DataFormat:
     def __init__(self, value) -> None:
         self.__value = value
     def __str__(self) -> str:
+        return self.__value
+    def toJson(self):
         return self.__value
 
     @staticproperty
@@ -117,18 +138,46 @@ class DataFormat:
     def url()      : return DataFormat('url')
 
 
-class PrimitiveDataType:
+def getAllParents(obj: object):
+    r = set({})
+    def __getAllParents(t: type):
+        if t == object:
+            return 
+        r.add(t)
+        for e in t.__bases__:
+            __getAllParents(e)
+    __getAllParents(type(obj))    
+    return r
+
+def newDictFrom(obj: object):
+    '''collects all pairs of key and values of private members whose value isn't None or function from the given object'''
+    def getKeyValuePairs(obj: object):
+        privateMemberPrefixes = ['_' + e.__name__ + '__' for e in getAllParents(obj)]
+        pairs = []
+        for e in obj.__dir__():
+            value = obj.__getattribute__(e)
+            if value is None or callable(value): continue
+            s = [x for x in privateMemberPrefixes if e.find(x) == 0]
+            if len(s) == 0: continue
+            prefix = s[0]
+            key = e[len(prefix):]
+            pairs.append((key, value))
+        return pairs
+
+    pairs = getKeyValuePairs(obj)
+    conv = lambda v: v if type(v) == str or type(v) == bool or type(v) == int or type(v) == list else (v.toJson() if type(v) != dict else {k:conv(x) for k, x in v.items() if x is not None})
+    return {k:conv(v) for (k,v) in pairs}
+
+
+class JsonConvertible:
+    def toJson(self):
+        return newDictFrom(self)
+
+
+class PrimitiveDataType(JsonConvertible):
     def __init__(self, type: DataType = DataType.object, format: Optional[DataFormat] = None):
         self.__type = type
         self.__format = format
-
-    def toJson(self):
-        obj = {
-            'type': str(self.__type),
-        }
-        if self.__format is not None:
-            obj['format'] = str(self.__format)
-        return obj
 
     @staticproperty
     def integer() : return PrimitiveDataType(DataType.integer)
@@ -162,7 +211,7 @@ class PrimitiveDataType:
     def url()     : return PrimitiveDataType(DataType.string , DataFormat.url)
 
 class SchemaObject(PrimitiveDataType):
-    def __init__(self, title: Optional[str] = None, properties: Dict[str, PrimitiveDataType] = None, required: List[str] = [], nullable: bool = False, items = [], default = None, description: str = ''):
+    def __init__(self, title: Optional[str] = None, properties: Dict[str, PrimitiveDataType] = None, required: Optional[List[str]] = None, nullable: Optional[bool] = None, items: Optional['SchemaObject'] = None, default = None, description: Optional[str] = None):
         super().__init__()
         self.__title = title
         self.__properties = properties
@@ -172,75 +221,54 @@ class SchemaObject(PrimitiveDataType):
         self.__default = default
         self.__description = description
 
-    def toJson(self):
-        obj = super().toJson()
-        if self.__title is not None:
-            obj['title'] = self.__title
-        if self.__properties is not None:
-            obj['properties'] = {k: v.toJson() for k, v in self.__properties.items() if v is not None} # FIXME None
-        if len(self.__required) > 0:
-            obj['required'] = self.__required
-        return obj
-
     @staticmethod
     def newObject(title, properties):
         return SchemaObject(title, properties)
 
-class ComponentsObject:
+class ComponentsObject(JsonConvertible):
     def __init__(self, schemas: Dict[str, SchemaObject] = {}) -> None:
         self.__schemas = schemas
         #self.__responses = responses
 
-    def toJson(self):
-        obj = {
-            'schemas': {k: v.toJson() for k, v in self.__schemas.items()}
-        }
-        return obj
-
-class InfoObject:
+class InfoObject(JsonConvertible):
     def __init__(self, title: str, version: str, description: Optional[str] = None, termsOfService: Optional[str] = None) -> None:
         self.__title = title
         self.__version = version
         self.__description = description
         self.__termsOfService = termsOfService
 
-    def toJson(self):
-        obj = {
-            'title': self.__title,
-            'version': self.__version
-        }
-        if self.__description is not None:
-            obj['description'] = self.__description
-        if self.__termsOfService is not None:
-            obj['termsOfService'] = self.__termsOfService
-        return obj
 
-class PathsObject:
+class ContactObject(JsonConvertible):
+    def __init__(self, name: Optional[str] = None, url: Optional[str] = None, email: Optional[str] = None) -> None:
+        self.__name = name
+        self.__url = url
+        self.__email = email
+
+class LicenceObject(JsonConvertible):
+    def __init__(self, name: str, url: Optional[str] = None) -> None:
+        self.__name = name
+        self.__url = url
+
+class PathsObject(JsonConvertible):
     def __init__(self, paths: Dict[str, 'PathItemObject'] = dict()) -> None:
         self.__paths = paths
 
-class PathItemObject:
+class PathItemObject(JsonConvertible):
     def __init__(self, summary: Optional[str] = None, description: Optional[str] = None, oprations: Dict[OperationVerb, 'OperationObject'] = dict()) -> None:
         self.__summary = summary
         self.__description = description
         self.__oprations = oprations
 
-class OperationObject:
+class OperationObject(JsonConvertible):
     def __init__(self, summary: Optional[str] = None, description: Optional[str] = None) -> None:
         self.__summary = summary
         self.__description = description
 
 
-class OpenAPI:
-    def __init__(self, openApiVersion = "3.0.3", info: InfoObject = InfoObject('', ''), components: ComponentsObject = ComponentsObject() ) -> None:
+class OpenAPI(JsonConvertible):
+    def __init__(self, openApiVersion = "3.0.3", info: InfoObject = InfoObject('', ''), paths: PathsObject = PathsObject(), components: ComponentsObject = ComponentsObject() ) -> None:
         self.__openapi = openApiVersion
         self.__info = info
+        self.__paths = paths
         self.__components = components
 
-    def toJson(self):
-        obj = {
-            'openapi': self.__openapi,
-            'info': self.__info.toJson(),
-            'components': self.__components.toJson()
-        }
-        return obj
