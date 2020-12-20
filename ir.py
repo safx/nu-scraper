@@ -1,6 +1,5 @@
 from os import replace
 from typing import List, Dict, Any, Callable
-import io
 import os
 import re
 import json
@@ -56,6 +55,9 @@ class ValueType(TypeBase):
         return type(other) == ValueType and self.__typename == other.__typename
     def __repr__(self) -> str:
         return '"' + self.__typename + '"'
+    @property
+    def typename(self):
+        return self.__typename
 
 class ArrayType(UniTypeHolder):
     def __repr__(self) -> str:
@@ -213,6 +215,13 @@ class Endpoint:
     def __init__(self, request: Dict, response: TypeBase) -> None:
         self.__request = request
         self.__response = response
+
+    @property
+    def request(self):
+        return self.__request
+    @property
+    def response(self):
+        return self.__response
 
     def replaceWithCommonObject(self, commonObject: CommonObjectType):
         cond = lambda v: bothMatch(commonObject.object, v)

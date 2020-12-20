@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from typing import Any, Optional, List, Dict, Set
 
 ## Partial implementation of OpenAPI
@@ -48,12 +49,16 @@ class OperationVerb:
         self.__value = value
     def __str__(self) -> str:
         return self.__value
+    def __hash__(self):
+        return hash(self.__value)
+    def __eq__(self, other):
+        return self.__value == other.__value
     def toJson(self):
         return self.__value
 
-    @classmethod
-    def fromStr(cls, string):
-        m = [
+    @staticproperty
+    def allItems():
+        return [
            OperationVerb.get, 
            OperationVerb.put, 
            OperationVerb.post, 
@@ -63,6 +68,10 @@ class OperationVerb:
            OperationVerb.patch, 
            OperationVerb.trace, 
         ]
+
+    @classmethod
+    def fromStr(cls, string):
+        m = OperationVerb.allItems
         z = list(filter(lambda e: e.__value == string, m))
         return z[0]
 
@@ -165,8 +174,9 @@ def newDictFrom(obj: object):
         return pairs
 
     pairs = getKeyValuePairs(obj)
-    conv = lambda v: v if type(v) == str or type(v) == bool or type(v) == int or type(v) == list else (v.toJson() if type(v) != dict else {k:conv(x) for k, x in v.items() if x is not None})
-    return {k:conv(v) for (k,v) in pairs}
+    conv = lambda v: v if type(v) == str or type(v) == bool or type(v) == int or type(v) == list else ({str(k):conv(x) for k, x in v.items() if x is not None} if type(v) == dict or type(v) == OrderedDict else v.toJson())
+    q = {k:conv(v) for (k,v) in pairs}
+    return q
 
 
 class JsonConvertible:
@@ -252,12 +262,22 @@ class LicenceObject(JsonConvertible):
 class PathsObject(JsonConvertible):
     def __init__(self, paths: Dict[str, 'PathItemObject'] = dict()) -> None:
         self.__paths = paths
+    def toJson(self):
+        dic = super().toJson()
+        return dic['paths']
 
 class PathItemObject(JsonConvertible):
     def __init__(self, summary: Optional[str] = None, description: Optional[str] = None, oprations: Dict[OperationVerb, 'OperationObject'] = dict()) -> None:
         self.__summary = summary
         self.__description = description
         self.__oprations = oprations
+    def toJson(self):
+        dic = super().toJson()
+        z = dic.pop('oprations')
+        for i in OperationVerb.allItems:
+            if not i in self.__oprations: continue
+            dic[str(i)] = self.__oprations[i].toJson()
+        return dic
 
 class OperationObject(JsonConvertible):
     def __init__(self, summary: Optional[str] = None, description: Optional[str] = None) -> None:
