@@ -12,6 +12,14 @@ from collections import OrderedDict
 import openapi
 import ir
 
+def toPrimitiveDataTypeFromStr(s: str) -> openapi.PrimitiveDataType:
+    m = {
+        'Number': openapi.PrimitiveDataType.integer,
+        'String': openapi.PrimitiveDataType.string,
+        # TODO: add
+    }
+    return m.get(s, openapi.PrimitiveDataType.string)
+
 def toPrimitiveDataType(v: ir.TypeBase) -> openapi.PrimitiveDataType:
     if type(v) == ir.ValueType:
         m = {
@@ -28,10 +36,48 @@ def toPrimitiveDataType(v: ir.TypeBase) -> openapi.PrimitiveDataType:
     print(v)
     assert(False)
 
-def toSchemaObject(cobj: ir.CommonObjectType) -> openapi.SchemaObject:
-    props = {k:toPrimitiveDataType(v) for (k,v) in cobj.object.items()}
+def toSchemaObjectFromCommonObject(cobj: ir.CommonObjectType) -> openapi.SchemaObject:
+    props = {k:toPrimitiveDataType(v).toSchemaObject() for (k,v) in cobj.object.items()}
     sobj = openapi.SchemaObject(properties=props)
     return sobj
+
+def toRequestBodyParams(params: List[Dict[str, str]]) -> Dict[str, openapi.SchemaObject]:
+    props = {}
+    reqs = []
+    for p in params:
+        name = p['name']
+        type = not p['type']
+        required = not p['optional']
+        description = p['description']
+        props[name] = openapi.SchemaObject.initWithPrimitive(toPrimitiveDataTypeFromStr(type), description=description)
+        if required:
+            reqs.append(name)
+    return openapi.SchemaObject(properties=props, required=reqs)
+
+def toParameterObject(params: Dict[str, str], location: openapi.ParameterLocation) -> openapi.ParameterObject:
+    name = params['name']
+    required = not params['optional']
+    description = params['description']
+    return openapi.ParameterObject(name, location, required, description)
+
+def toParameterObjects(urlParams: List[Dict[str, str]], queryParams: List[Dict[str, str]]) -> Optional[List[openapi.ParameterObject]]:
+    if len(urlParams) + len(queryParams) == 0:
+        return None
+    p = openapi.ParameterLocation.path
+    q = openapi.ParameterLocation.query
+    # TODO: formParams
+    return [toParameterObject(e, p) for e in urlParams] + [toParameterObject(e, q) for e in queryParams]
+
+def toRequestBodyObjects(formParams: List[Dict[str, str]]) -> Optional[openapi.RequestBodyObject]:
+    if len(formParams) == 0:
+        return None
+    p = 'application/x-www-form-urlencoded'
+    dic = {}
+    dic[p] = openapi.MediaTypeObject(toRequestBodyParams(formParams))
+    return openapi.RequestBodyObject(dic)
+
+def toResponseObjects(formParams: List[Dict[str, str]]) -> Optional[openapi.ResponsesObject]:
+    return openapi.ResponsesObject()
 
 def toPath(url: str) -> str:
     def toTemplate(c: str) -> str:
@@ -46,8 +92,11 @@ def toOperationObjectTuple(endpoint: ir.Endpoint) -> Tuple[str, openapi.Operatio
     req = endpoint.request
     method = openapi.OperationVerb.fromStr(req['method'].lower())
     summary = req['name'] + ': ' + req['summary']
-    description=req['description']
-    op = openapi.OperationObject(summary, description)
+    description = req['description']
+    parameters = toParameterObjects(req.get('urlParams', []), req.get('queryParams', []))
+    reqestBody = toRequestBodyObjects(req.get('formParams', []))
+    response = openapi.ResponsesObject(None)
+    op = openapi.OperationObject(response, summary, description, parameters, reqestBody)
     path = toPath(req['url'])
     return (path, method, op)
 
@@ -63,7 +112,7 @@ def toPathsDict(endpoints: List[Tuple[str, openapi.OperationVerb, openapi.Operat
 
 class OpenApiConverter:
     def convert(self, title: str, version: str, api: ir.API) -> openapi.OpenAPI:
-        schemaObjects = {o.typename:toSchemaObject(o) for o in api.commonObjects()}
+        schemaObjects = {o.typename:toSchemaObjectFromCommonObject(o) for o in api.commonObjects()}
         endpoints = [toOperationObjectTuple(e) for e in api.endpoints()]
 
         info = openapi.InfoObject(title, version)
@@ -79,6 +128,7 @@ def main():
     api.findAndRegisterSimilarObjects()
     converter = OpenApiConverter()
     oa = converter.convert(appname[0].upper() + appname[1:], '1.0.0-20191003', api)
+    #print(oa.toJson())
     print(json.dumps(oa.toJson()))
 
 if __name__ == '__main__':

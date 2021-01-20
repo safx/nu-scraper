@@ -92,6 +92,41 @@ class OperationVerb:
     @staticproperty
     def trace(): return OperationVerb('trace')
 
+class ParameterLocation:
+    def __init__(self, value) -> None:
+        self.__value = value
+    def __str__(self) -> str:
+        return self.__value
+    def __hash__(self):
+        return hash(self.__value)
+    def __eq__(self, other):
+        return self.__value == other.__value
+    def toJson(self):
+        return self.__value
+
+    @staticproperty
+    def allItems():
+        return [
+           ParameterLocation.query, 
+           ParameterLocation.header, 
+           ParameterLocation.path, 
+           ParameterLocation.cookie, 
+        ]
+
+    @classmethod
+    def fromStr(cls, string):
+        m = OperationVerb.allItems
+        z = list(filter(lambda e: e.__value == string, m))
+        return z[0]
+
+    @staticproperty
+    def query() : return ParameterLocation('query')
+    @staticproperty
+    def header()  : return ParameterLocation('header')
+    @staticproperty
+    def path(): return ParameterLocation('path')
+    @staticproperty
+    def cookie() : return ParameterLocation('cookie')
 
 class DataType:
     def __init__(self, value) -> None:
@@ -174,7 +209,7 @@ def newDictFrom(obj: object):
         return pairs
 
     pairs = getKeyValuePairs(obj)
-    conv = lambda v: v if type(v) == str or type(v) == bool or type(v) == int or type(v) == list else ({str(k):conv(x) for k, x in v.items() if x is not None} if type(v) == dict or type(v) == OrderedDict else v.toJson())
+    conv = lambda v: v if type(v) == str or type(v) == bool or type(v) == int else ({str(k):conv(x) for k, x in v.items() if x is not None} if type(v) == dict or type(v) == OrderedDict else ([conv(x) for x in v] if type(v) == list else v.toJson()))
     q = {k:conv(v) for (k,v) in pairs}
     return q
 
@@ -183,12 +218,14 @@ class JsonConvertible:
     def toJson(self):
         return newDictFrom(self)
 
-
-class PrimitiveDataType(JsonConvertible):
+class PrimitiveDataType:
     def __init__(self, type: DataType = DataType.object, format: Optional[DataFormat] = None):
-        self.__type = type
-        self.__format = format
+        self.type = type
+        self.format = format
 
+    def toSchemaObject(self) -> 'SchemaObject':
+        return SchemaObject.initWithPrimitive(self)
+        
     @staticproperty
     def integer() : return PrimitiveDataType(DataType.integer)
     @staticproperty
@@ -220,9 +257,10 @@ class PrimitiveDataType(JsonConvertible):
     @staticproperty
     def url()     : return PrimitiveDataType(DataType.string , DataFormat.url)
 
-class SchemaObject(PrimitiveDataType):
-    def __init__(self, title: Optional[str] = None, properties: Dict[str, PrimitiveDataType] = None, required: Optional[List[str]] = None, nullable: Optional[bool] = None, items: Optional['SchemaObject'] = None, default = None, description: Optional[str] = None):
-        super().__init__()
+class SchemaObject(JsonConvertible):
+    def __init__(self, title: Optional[str] = None, properties: Dict[str, 'SchemaObject'] = None, required: Optional[List[str]] = None, nullable: Optional[bool] = None, items: Optional['SchemaObject'] = None, default = None, description: Optional[str] = None, type: DataType = DataType.object, format: Optional[DataFormat] = None):
+        self.__type = type
+        self.__format = format
         self.__title = title
         self.__properties = properties
         self.__required = required
@@ -230,6 +268,11 @@ class SchemaObject(PrimitiveDataType):
         self.__items = items
         self.__default = default
         self.__description = description
+
+    @classmethod
+    def initWithPrimitive(cls, primiteveType: PrimitiveDataType, title: Optional[str] = None, nullable: Optional[bool] = None, default = None, description: Optional[str] = None):
+        obj = SchemaObject(title=title, nullable=nullable, default=default, description=description, type=primiteveType.type, format=primiteveType.format)
+        return obj
 
     @staticmethod
     def newObject(title, properties):
@@ -280,10 +323,47 @@ class PathItemObject(JsonConvertible):
         return dic
 
 class OperationObject(JsonConvertible):
-    def __init__(self, summary: Optional[str] = None, description: Optional[str] = None) -> None:
+    def __init__(self, responses: 'ResponsesObject', summary: Optional[str] = None, description: Optional[str] = None, parameters: Optional[List['ParameterObject']] = None, requestBody: Optional['RequestBodyObject'] = None) -> None:
         self.__summary = summary
         self.__description = description
+        self.__parameters = parameters
+        self.__requestBody = requestBody
 
+class ParameterObject(JsonConvertible):
+    def __init__(self, name: str, locatedIn: ParameterLocation, required: Optional[bool] = None, description: Optional[str] = None) -> None:
+        assert((locatedIn == ParameterLocation.path and required is not None) or locatedIn != ParameterLocation.path)
+        self.__name = name
+        self.__in = locatedIn
+        self.__required = required
+        self.__description = description
+
+class RequestBodyObject(JsonConvertible):
+    def __init__(self, content: Dict[str, 'MediaTypeObject'], description: Optional[str] = None, required: Optional[bool] = None):
+        self.__content = content
+    def toJson(self):
+        dic = super().toJson()
+        z = dic.pop('content')
+        for k, v in self.__content.items(): # FIXME sort order
+            dic[k] = v.toJson()
+        return dic
+
+class MediaTypeObject(JsonConvertible):
+    def __init__(self, schema: Optional[SchemaObject], encoding: Optional[str] = None): ##, example = None, examples = None):
+        self.__schema = schema
+
+class ResponsesObject(JsonConvertible):
+    def __init__(self, responses: Dict[str, 'ResponseObject']):
+        self.__responses = responses
+    def toJson(self):
+        dic = super().toJson()
+        z = dic.pop('responses')
+        for k, v in self.__responses.items(): # FIXME sort order
+            dic[k] = v
+        return dic
+
+class ResponseObject(JsonConvertible):
+    def __init__(self, description: Optional[str] = None):
+        self.__description = description
 
 class OpenAPI(JsonConvertible):
     def __init__(self, openApiVersion = "3.0.3", info: InfoObject = InfoObject('', ''), paths: PathsObject = PathsObject(), components: ComponentsObject = ComponentsObject() ) -> None:
