@@ -1,5 +1,5 @@
 from collections import OrderedDict
-from typing import Any, Optional, List, Dict, Set
+from typing import Any, Optional, List, Dict, Set, Union
 
 ## Partial implementation of OpenAPI
 # - OpenAPI Object
@@ -258,7 +258,7 @@ class PrimitiveDataType:
     def url()     : return PrimitiveDataType(DataType.string , DataFormat.url)
 
 class SchemaObject(JsonConvertible):
-    def __init__(self, title: Optional[str] = None, properties: Dict[str, 'SchemaObject'] = None, required: Optional[List[str]] = None, nullable: Optional[bool] = None, items: Optional['SchemaObject'] = None, default = None, description: Optional[str] = None, type: DataType = DataType.object, format: Optional[DataFormat] = None):
+    def __init__(self, title: Optional[str] = None, properties: Dict[str, Union['SchemaObject', 'ReferenceObject']] = None, required: Optional[List[str]] = None, nullable: Optional[bool] = None, items: Optional[Union['SchemaObject', 'ReferenceObject']] = None, default = None, description: Optional[str] = None, type: DataType = DataType.object, format: Optional[DataFormat] = None):
         self.__type = type
         self.__format = format
         self.__title = title
@@ -268,6 +268,10 @@ class SchemaObject(JsonConvertible):
         self.__items = items
         self.__default = default
         self.__description = description
+
+    # TODO: delete this method for immutability
+    def setNullable(self, n: bool):
+        self.__nullable = n
 
     @classmethod
     def initWithPrimitive(cls, primiteveType: PrimitiveDataType, title: Optional[str] = None, nullable: Optional[bool] = None, default = None, description: Optional[str] = None):
@@ -279,7 +283,7 @@ class SchemaObject(JsonConvertible):
         return SchemaObject(title, properties)
 
 class ComponentsObject(JsonConvertible):
-    def __init__(self, schemas: Dict[str, SchemaObject] = {}) -> None:
+    def __init__(self, schemas: Dict[str, Union[SchemaObject, 'ReferenceObject']] = {}) -> None:
         self.__schemas = schemas
         #self.__responses = responses
 
@@ -348,7 +352,7 @@ class RequestBodyObject(JsonConvertible):
         return dic
 
 class MediaTypeObject(JsonConvertible):
-    def __init__(self, schema: Optional[SchemaObject], encoding: Optional[str] = None): ##, example = None, examples = None):
+    def __init__(self, schema: Optional[Union[SchemaObject, 'ReferenceObject']], encoding: Optional[str] = None): ##, example = None, examples = None):
         self.__schema = schema
 
 class ResponsesObject(JsonConvertible):
@@ -364,6 +368,12 @@ class ResponsesObject(JsonConvertible):
 class ResponseObject(JsonConvertible):
     def __init__(self, description: Optional[str] = None):
         self.__description = description
+
+class ReferenceObject(JsonConvertible):
+    def __init__(self, ref: str):
+        self.__ref = ref
+    def toJson(self):
+        return { '$ref' : self.__ref }
 
 class OpenAPI(JsonConvertible):
     def __init__(self, openApiVersion = "3.0.3", info: InfoObject = InfoObject('', ''), paths: PathsObject = PathsObject(), components: ComponentsObject = ComponentsObject() ) -> None:

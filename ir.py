@@ -233,7 +233,7 @@ class Endpoint:
             assert(type(obj) == ObjectType)
             replaceCount = 0
             for key, value in obj.items():
-                print('   ', value)
+                #print('   ', value)
                 if type(value) == ObjectType:
                     if cond(value):
                         replaceCount += 1
@@ -254,7 +254,7 @@ class Endpoint:
                         replaceCount += visitObject(value.type)
             return replaceCount
 
-        print('>>>>', self.__request['name'])
+        #print('>>>>', self.__request['name'])
         replaceCount = 0
         if type(self.__response) == ObjectType and cond(self.__response):
             replaceCount = 1
@@ -318,6 +318,8 @@ class API:
             if sot is None:
                 break
             self.__commonObjects.append(sot)
+            for e in self.__endpoints:
+                e.replaceWithCommonObject(sot)
 
     @staticmethod
     def initWithDir(dir: str):

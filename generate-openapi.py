@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from typing import Optional, List, Dict, Tuple
+from typing import Optional, List, Dict, Tuple, Union
 from os import pread
 import sys
 import json
@@ -20,8 +20,15 @@ def toPrimitiveDataTypeFromStr(s: str) -> openapi.PrimitiveDataType:
     }
     return m.get(s, openapi.PrimitiveDataType.string)
 
-def toPrimitiveDataType(v: ir.TypeBase) -> openapi.PrimitiveDataType:
-    if type(v) == ir.ValueType:
+def toPrimitiveDataType(v: ir.TypeBase) -> Union[openapi.SchemaObject, openapi.ReferenceObject]:
+    if type(v) == ir.ArrayType:
+        return openapi.SchemaObject(type=openapi.DataType.array, items=toPrimitiveDataType(v.type))
+    elif type(v) == ir.Nullable:
+        s = toPrimitiveDataType(v.type)
+        if type(s) is not openapi.ReferenceObject: ### FIXME
+            s.setNullable(True)
+        return s
+    elif type(v) == ir.ValueType:
         m = {
             'bool': openapi.PrimitiveDataType.boolean,
             'integer': openapi.PrimitiveDataType.integer,
@@ -30,14 +37,14 @@ def toPrimitiveDataType(v: ir.TypeBase) -> openapi.PrimitiveDataType:
             'datetime': openapi.PrimitiveDataType.datetime,
             # TODO: add
         }
-        return m.get(v.typename)
+        return m.get(v.typename).toSchemaObject()
     elif type(v) == ir.NullType:
-        return openapi.PrimitiveDataType.string # FIXME
-    print(v)
-    assert(False)
+        return openapi.PrimitiveDataType.string.toSchemaObject() # FIXME: we assume an unguessable object as string
+
+    return openapi.ReferenceObject('#/components/schemas/' + v.typename) # FIXME: ref path
 
 def toSchemaObjectFromCommonObject(cobj: ir.CommonObjectType) -> openapi.SchemaObject:
-    props = {k:toPrimitiveDataType(v).toSchemaObject() for (k,v) in cobj.object.items()}
+    props = {k:toPrimitiveDataType(v) for (k,v) in cobj.object.items()}
     sobj = openapi.SchemaObject(properties=props)
     return sobj
 
@@ -46,7 +53,7 @@ def toRequestBodyParams(params: List[Dict[str, str]]) -> Dict[str, openapi.Schem
     reqs = []
     for p in params:
         name = p['name']
-        type = not p['type']
+        type = p['type']
         required = not p['optional']
         description = p['description']
         props[name] = openapi.SchemaObject.initWithPrimitive(toPrimitiveDataTypeFromStr(type), description=description)
@@ -76,14 +83,18 @@ def toRequestBodyObjects(formParams: List[Dict[str, str]]) -> Optional[openapi.R
     dic[p] = openapi.MediaTypeObject(toRequestBodyParams(formParams))
     return openapi.RequestBodyObject(dic)
 
-def toResponseObjects(formParams: List[Dict[str, str]]) -> Optional[openapi.ResponsesObject]:
-    return openapi.ResponsesObject()
+def toResponseObjects(response: ir.TypeBase) -> Optional[openapi.ResponsesObject]:
+    if type(response) == ir.NullType:
+        return None
+
+    #print(response)
+    return openapi.ResponsesObject(None)
 
 def toPath(url: str) -> str:
     def toTemplate(c: str) -> str:
         return '{' + c[1:] + '}' if len(c) > 0 and c[0] == ':' else c
 
-    l = len('https://typetalk.com/api') #### FIXME
+    l = len('https://typetalk.com/api') #### FIXME should be considered for other services
     path = url[l:]
     comp = [toTemplate(c) for c in path.split('/')]
     return '/'.join(comp)
@@ -95,7 +106,7 @@ def toOperationObjectTuple(endpoint: ir.Endpoint) -> Tuple[str, openapi.Operatio
     description = req['description']
     parameters = toParameterObjects(req.get('urlParams', []), req.get('queryParams', []))
     reqestBody = toRequestBodyObjects(req.get('formParams', []))
-    response = openapi.ResponsesObject(None)
+    response = toResponseObjects(endpoint.response)
     op = openapi.OperationObject(response, summary, description, parameters, reqestBody)
     path = toPath(req['url'])
     return (path, method, op)
@@ -126,6 +137,12 @@ def main():
     appname = 'typetalk'
     api = ir.API.initWithDir(appname)
     api.findAndRegisterSimilarObjects()
+
+    #for i in api.endpoints():
+    #    print(i)
+    #for i in api.commonObjects():
+    #    print(i)
+
     converter = OpenApiConverter()
     oa = converter.convert(appname[0].upper() + appname[1:], '1.0.0-20191003', api)
     #print(oa.toJson())
