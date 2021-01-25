@@ -335,11 +335,12 @@ class OperationObject(JsonConvertible):
         self.__responses = responses
 
 class ParameterObject(JsonConvertible):
-    def __init__(self, name: str, locatedIn: ParameterLocation, required: Optional[bool] = None, description: Optional[str] = None) -> None:
+    def __init__(self, name: str, locatedIn: ParameterLocation, required: Optional[bool] = None, schema: Optional[Union[SchemaObject, 'ReferenceObject']] = None, description: Optional[str] = None) -> None:
         assert((locatedIn == ParameterLocation.path and required is not None) or locatedIn != ParameterLocation.path)
         self.__name = name
         self.__in = locatedIn
         self.__required = required
+        self.__schema = schema
         self.__description = description
 
 class RequestBodyObject(JsonConvertible):

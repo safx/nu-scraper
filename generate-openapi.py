@@ -20,11 +20,14 @@ def toPrimitiveDataTypeFromStr(s: str) -> openapi.PrimitiveDataType:
     }
     return m.get(s, openapi.PrimitiveDataType.string)
 
-def toPrimitiveDataType(v: ir.TypeBase) -> Union[openapi.SchemaObject, openapi.ReferenceObject]:
+def toSchemaObject(v: ir.TypeBase) -> Union[openapi.SchemaObject, openapi.ReferenceObject]:
     if type(v) == ir.ArrayType:
-        return openapi.SchemaObject(type=openapi.DataType.array, items=toPrimitiveDataType(v.type))
+        return openapi.SchemaObject(type=openapi.DataType.array, items=toSchemaObject(v.type))
+    elif type(v) == ir.ObjectType:
+        props = {k:toSchemaObject(v) for (k,v) in v.items()}
+        return openapi.SchemaObject(properties=props)
     elif type(v) == ir.Nullable:
-        s = toPrimitiveDataType(v.type)
+        s = toSchemaObject(v.type)
         if type(s) is not openapi.ReferenceObject: ### FIXME
             s.setNullable(True)
         return s
@@ -40,11 +43,13 @@ def toPrimitiveDataType(v: ir.TypeBase) -> Union[openapi.SchemaObject, openapi.R
         return m.get(v.typename).toSchemaObject()
     elif type(v) == ir.NullType:
         return openapi.PrimitiveDataType.string.toSchemaObject() # FIXME: we assume an unguessable object as string
+    elif v is None:
+        return None   # FIXME
 
     return openapi.ReferenceObject('#/components/schemas/' + v.typename) # FIXME: ref path
 
 def toSchemaObjectFromCommonObject(cobj: ir.CommonObjectType) -> openapi.SchemaObject:
-    props = {k:toPrimitiveDataType(v) for (k,v) in cobj.object.items()}
+    props = {k:toSchemaObject(v) for (k,v) in cobj.object.items()}
     sobj = openapi.SchemaObject(properties=props)
     return sobj
 
@@ -64,8 +69,9 @@ def toRequestBodyParams(params: List[Dict[str, str]]) -> Dict[str, openapi.Schem
 def toParameterObject(params: Dict[str, str], location: openapi.ParameterLocation) -> openapi.ParameterObject:
     name = params['name']
     required = not params['optional']
+    schema = toPrimitiveDataTypeFromStr(params['type']).toSchemaObject()
     description = params['description']
-    return openapi.ParameterObject(name, location, required, description)
+    return openapi.ParameterObject(name, location, required, schema, description)
 
 def toParameterObjects(urlParams: List[Dict[str, str]], queryParams: List[Dict[str, str]]) -> Optional[List[openapi.ParameterObject]]:
     if len(urlParams) + len(queryParams) == 0:
@@ -88,7 +94,7 @@ def toResponsesObject(response: ir.TypeBase) -> Optional[openapi.ResponsesObject
         return None
 
     content = {}
-    content['application/json'] = openapi.MediaTypeObject(toPrimitiveDataTypeFromStr('str').toSchemaObject())  # FIXME
+    content['application/json'] = openapi.MediaTypeObject(toSchemaObject(response))
 
     responses = {}
     responses['200'] = openapi.ResponseObject(content=content)
@@ -107,7 +113,7 @@ def toOperationObjectTuple(endpoint: ir.Endpoint) -> Tuple[str, openapi.Operatio
     req = endpoint.request
     method = openapi.OperationVerb.fromStr(req['method'].lower())
     summary = req['name'] + ': ' + req['summary']
-    description = req['description']
+    description = req['description'] + ' \nreference: ' + req['apiDocumentUrl']
     parameters = toParameterObjects(req.get('urlParams', []), req.get('queryParams', []))
     reqestBody = toRequestBodyObjects(req.get('formParams', []))
     responses = toResponsesObject(endpoint.response)
@@ -154,4 +160,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
