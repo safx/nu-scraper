@@ -83,12 +83,16 @@ def toRequestBodyObjects(formParams: List[Dict[str, str]]) -> Optional[openapi.R
     dic[p] = openapi.MediaTypeObject(toRequestBodyParams(formParams))
     return openapi.RequestBodyObject(dic)
 
-def toResponseObjects(response: ir.TypeBase) -> Optional[openapi.ResponsesObject]:
+def toResponsesObject(response: ir.TypeBase) -> Optional[openapi.ResponsesObject]:
     if type(response) == ir.NullType:
         return None
 
-    #print(response)
-    return openapi.ResponsesObject(None)
+    content = {}
+    content['application/json'] = openapi.MediaTypeObject(toPrimitiveDataTypeFromStr('str').toSchemaObject())  # FIXME
+
+    responses = {}
+    responses['200'] = openapi.ResponseObject(content=content)
+    return openapi.ResponsesObject(responses)
 
 def toPath(url: str) -> str:
     def toTemplate(c: str) -> str:
@@ -106,8 +110,8 @@ def toOperationObjectTuple(endpoint: ir.Endpoint) -> Tuple[str, openapi.Operatio
     description = req['description']
     parameters = toParameterObjects(req.get('urlParams', []), req.get('queryParams', []))
     reqestBody = toRequestBodyObjects(req.get('formParams', []))
-    response = toResponseObjects(endpoint.response)
-    op = openapi.OperationObject(response, summary, description, parameters, reqestBody)
+    responses = toResponsesObject(endpoint.response)
+    op = openapi.OperationObject(responses, summary, description, parameters, reqestBody)
     path = toPath(req['url'])
     return (path, method, op)
 

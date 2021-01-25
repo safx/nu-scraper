@@ -332,6 +332,7 @@ class OperationObject(JsonConvertible):
         self.__description = description
         self.__parameters = parameters
         self.__requestBody = requestBody
+        self.__responses = responses
 
 class ParameterObject(JsonConvertible):
     def __init__(self, name: str, locatedIn: ParameterLocation, required: Optional[bool] = None, description: Optional[str] = None) -> None:
@@ -356,18 +357,19 @@ class MediaTypeObject(JsonConvertible):
         self.__schema = schema
 
 class ResponsesObject(JsonConvertible):
-    def __init__(self, responses: Dict[str, 'ResponseObject']):
+    def __init__(self, responses: Dict[str, Union['ResponseObject', 'ReferenceObject']] = {}): # FIXME: statusCode -> ResponseObject
         self.__responses = responses
     def toJson(self):
         dic = super().toJson()
         z = dic.pop('responses')
         for k, v in self.__responses.items(): # FIXME sort order
-            dic[k] = v
+            dic[k] = v.toJson()
         return dic
 
 class ResponseObject(JsonConvertible):
-    def __init__(self, description: Optional[str] = None):
+    def __init__(self, description: Optional[str] = None, content: Dict[str, MediaTypeObject] = {}):
         self.__description = description
+        self.__content = content
 
 class ReferenceObject(JsonConvertible):
     def __init__(self, ref: str):
