@@ -132,7 +132,8 @@ def getWebAPI(appName, apiDocumentUrl):
         return None
 
     summary     = data('h1').text()
-    description = data('h1').next().text()
+    descNode    = data('h1').next()
+    description = '' if descNode.attr('id') == 'method' else descNode.text()
     method      = q('#method')
     url         = q('#url')
     scope       = q('#scope')
