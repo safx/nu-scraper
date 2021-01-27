@@ -1,7 +1,6 @@
 {
   "name": "GetMyTopics",
   "summary": "Get MyTopics list",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v1/spaces/:spaceKey/myTopics",
   "scope": "my",

@@ -1,7 +1,6 @@
 {
   "name": "GetMyUserStatus",
   "summary": "Get my user status",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v1/spaces/:spaceKey/userStatuses/me",
   "scope": "my",

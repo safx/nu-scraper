@@ -1,7 +1,6 @@
 {
   "name": "OpenNotification",
   "summary": "Read notification",
-  "description": "Method",
   "method": "PUT",
   "url": "https://typetalk.com/api/v3/notifications",
   "scope": "my",

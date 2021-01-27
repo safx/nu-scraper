@@ -1,7 +1,6 @@
 {
   "name": "CreateTopic",
   "summary": "Create topic",
-  "description": "Method",
   "method": "POST",
   "url": "https://typetalk.com/api/v1/topics",
   "scope": "topic.write",

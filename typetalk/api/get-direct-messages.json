@@ -1,7 +1,6 @@
 {
   "name": "GetDirectMessages",
   "summary": "Get direct messages",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v2/spaces/:spaceKey/messages/@:accountName",
   "scope": "topic.read",

@@ -1,7 +1,6 @@
 {
   "name": "GetFriends",
   "summary": "Get my friends",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v4/search/friends",
   "scope": "my",

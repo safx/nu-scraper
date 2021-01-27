@@ -1,7 +1,6 @@
 {
   "name": "GetProfile",
   "summary": "Get my profile",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v1/profile",
   "scope": "my",

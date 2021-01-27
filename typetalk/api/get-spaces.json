@@ -1,7 +1,6 @@
 {
   "name": "GetSpaces",
   "summary": "Get my organizations",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v1/spaces",
   "scope": "my",

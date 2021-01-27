@@ -1,7 +1,6 @@
 {
   "name": "GetTopicDetails",
   "summary": "Get topic details",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v1/topics/:topicId/details",
   "scope": "topic.read",

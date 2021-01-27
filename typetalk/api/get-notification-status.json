@@ -1,7 +1,6 @@
 {
   "name": "GetNotificationStatus",
   "summary": "Get notification count",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v7/notifications/status",
   "scope": "my",

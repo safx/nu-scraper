@@ -1,7 +1,6 @@
 {
   "name": "GetTalks",
   "summary": "Get tag list",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v1/topics/:topicId/talks",
   "scope": "topic.read",

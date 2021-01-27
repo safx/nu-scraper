@@ -1,7 +1,6 @@
 {
   "name": "SaveReadLikes",
   "summary": "Read received likes",
-  "description": "Method",
   "method": "POST",
   "url": "https://typetalk.com/api/v2/likes/receive/bookmark/save",
   "scope": "my",

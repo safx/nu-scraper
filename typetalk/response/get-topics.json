@@ -1,7 +1,6 @@
 {
   "topics": [
     {
-      "favorite": true,
       "topic": {
         "createdAt": "2019-09-02T06:05:56Z",
         "id": 26095,
@@ -9,6 +8,7 @@
         "isDirectMessage": false,
         "lastPostedAt": "2019-09-02T06:07:35Z",
         "name": "Coffeeshop",
+        "ownerSpaceAccountId": 103,
         "suggestion": "Coffeeshop",
         "updatedAt": "2019-09-02T06:05:56Z"
       },
@@ -20,7 +20,6 @@
       }
     },
     {
-      "favorite": true,
       "topic": {
         "createdAt": "2018-09-10T02:21:20Z",
         "id": 6195,
@@ -28,6 +27,7 @@
         "isDirectMessage": false,
         "lastPostedAt": "2019-07-01T09:09:06Z",
         "name": "Designers",
+        "ownerSpaceAccountId": 103,
         "suggestion": "Designers",
         "updatedAt": "2018-09-10T02:21:20Z"
       },

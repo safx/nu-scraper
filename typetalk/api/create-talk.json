@@ -1,7 +1,6 @@
 {
   "name": "CreateTalk",
   "summary": "Create tag",
-  "description": "Method",
   "method": "POST",
   "url": "https://typetalk.com/api/v1/topics/:topicId/talks",
   "scope": "topic.post",
@@ -20,7 +19,7 @@
       "optional": false,
       "array": false,
       "type": "String",
-      "description": "Tag name ( max 64 characters )"
+      "description": "Tag name ( max 255 characters )"
     },
     {
       "name": "postIds",

@@ -1,7 +1,6 @@
 {
   "name": "DeleteTopicGroup",
   "summary": "Delete topic group",
-  "description": "Method",
   "method": "DELETE",
   "url": "https://typetalk.com/api/v1/spaces/:spaceKey/myTopicGroups/:myTopicGroupId",
   "scope": "my",

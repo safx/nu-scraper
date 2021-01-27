@@ -1,7 +1,6 @@
 {
   "name": "GetReceivedLikes",
   "summary": "Get received likes",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v1/spaces/:spaceKey/likes/receive",
   "scope": "my",

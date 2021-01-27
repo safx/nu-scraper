@@ -1,7 +1,6 @@
 {
   "name": "SaveReadTopic",
   "summary": "Read messages in topic",
-  "description": "Method",
   "method": "PUT",
   "url": "https://typetalk.com/api/v1/bookmarks",
   "scope": "my",

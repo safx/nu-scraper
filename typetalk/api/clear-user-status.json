@@ -1,7 +1,6 @@
 {
   "name": "ClearUserStatus",
   "summary": "Clear user status",
-  "description": "Method",
   "method": "DELETE",
   "url": "https://typetalk.com/api/v1/spaces/:spaceKey/userStatuses",
   "scope": "my",

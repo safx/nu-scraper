@@ -1,7 +1,6 @@
 {
   "name": "AddTopicToGroup",
   "summary": "Add topic to group",
-  "description": "Method",
   "method": "POST",
   "url": "https://typetalk.com/api/v1/spaces/:spaceKey/myTopics/myTopicGroups/:myTopicGroupId/topics/:topicId/add",
   "scope": "my",

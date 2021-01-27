@@ -1,7 +1,6 @@
 {
   "name": "UpdateTopic",
   "summary": "Update topic",
-  "description": "Method",
   "method": "PUT",
   "url": "https://typetalk.com/api/v1/topics/:topicId",
   "scope": "topic.write",

@@ -1,7 +1,6 @@
 {
   "name": "PostDirectMessage",
   "summary": "Post direct message",
-  "description": "Method",
   "method": "POST",
   "url": "https://typetalk.com/api/v2/spaces/:spaceKey/messages/@:accountName",
   "scope": "topic.post",

@@ -1,7 +1,6 @@
 {
   "name": "UpdateTopicMembers",
   "summary": "Update topic members",
-  "description": "Method",
   "method": "POST",
   "url": "https://typetalk.com/api/v1/topics/:topicId/members/update",
   "scope": "topic.write",

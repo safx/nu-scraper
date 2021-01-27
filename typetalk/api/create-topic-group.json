@@ -1,9 +1,8 @@
 {
   "name": "CreateTopicGroup",
   "summary": "Create topic group",
-  "description": "Method",
   "method": "POST",
-  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/myTopicGroups",
+  "url": "https://typetalk.com/api/v2/spaces/:spaceKey/myTopicGroups",
   "scope": "my",
   "urlParams": [
     {
@@ -23,12 +22,12 @@
       "description": "Topic Group Name"
     },
     {
-      "name": "topicId",
+      "name": "topicIds",
       "optional": true,
-      "array": false,
+      "array": true,
       "type": "Number",
       "description": "Topic ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/create-topic-group"
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/create-topic-group"
 }

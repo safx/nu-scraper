@@ -1,9 +1,8 @@
 {
   "name": "GetTopics",
   "summary": "Get topics",
-  "description": "Method",
   "method": "GET",
-  "url": "https://typetalk.com/api/v2/topics",
+  "url": "https://typetalk.com/api/v3/topics",
   "scope": "my",
   "queryParams": [
     {
@@ -12,7 +11,21 @@
       "array": false,
       "type": "String",
       "description": "Space key"
+    },
+    {
+      "name": "isArchived",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Whether archives topic are. If it\u2019s not specified, all topics."
+    },
+    {
+      "name": "onlyEditable",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Whether topics which you have permissions to edit or delete. If it\u2019s not specified, all topics."
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/get-topics"
+  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/3/get-topics"
 }

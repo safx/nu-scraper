@@ -1,7 +1,6 @@
 {
   "name": "RemoveMessageFromTalk",
   "summary": "Remove message from tag",
-  "description": "Method",
   "method": "DELETE",
   "url": "https://typetalk.com/api/v1/topics/:topicId/talks/:talkId/posts",
   "scope": "topic.post",

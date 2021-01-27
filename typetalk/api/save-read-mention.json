@@ -1,7 +1,6 @@
 {
   "name": "SaveReadMention",
   "summary": "Read mention",
-  "description": "Method",
   "method": "PUT",
   "url": "https://typetalk.com/api/v1/mentions/:mentionId",
   "scope": "my",

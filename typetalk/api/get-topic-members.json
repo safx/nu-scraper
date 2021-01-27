@@ -1,7 +1,6 @@
 {
   "name": "GetTopicMembers",
   "summary": "Get topic members",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v1/topics/:topicId/members/status",
   "scope": "topic.read",

@@ -1,7 +1,6 @@
 {
   "name": "GetMessage",
   "summary": "Get message",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v1/topics/:topicId/posts/:postId",
   "scope": "topic.read",

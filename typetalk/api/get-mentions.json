@@ -1,7 +1,6 @@
 {
   "name": "GetMentions",
   "summary": "Get mention list",
-  "description": "Method",
   "method": "GET",
   "url": "https://typetalk.com/api/v2/mentions",
   "scope": "my",

@@ -1,7 +1,6 @@
 {
   "name": "DeleteTopic",
   "summary": "Delete topic",
-  "description": "Method",
   "method": "DELETE",
   "url": "https://typetalk.com/api/v1/topics/:topicId",
   "scope": "topic.delete",
