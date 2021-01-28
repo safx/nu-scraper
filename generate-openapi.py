@@ -44,7 +44,7 @@ def toSchemaObject(v: ir.TypeBase) -> Union[openapi.SchemaObject, openapi.Refere
     elif type(v) == ir.NullType:
         return openapi.PrimitiveDataType.string.toSchemaObject() # FIXME: we assume an unguessable object as string
     elif v is None:
-        return None   # FIXME
+        return openapi.PrimitiveDataType.string.toSchemaObject() # FIXME: we assume an unguessable object as string
 
     return openapi.ReferenceObject('#/components/schemas/' + v.typename) # FIXME: ref path
 
@@ -97,12 +97,16 @@ def toResponsesObject(response: ir.TypeBase) -> Optional[openapi.ResponsesObject
     content['application/json'] = openapi.MediaTypeObject(toSchemaObject(response))
 
     responses = {}
-    responses['200'] = openapi.ResponseObject(content=content)
+    responses['200'] = openapi.ResponseObject('TODO: response description', content=content)
     return openapi.ResponsesObject(responses)
 
 def toPath(url: str) -> str:
     def toTemplate(c: str) -> str:
-        return '{' + c[1:] + '}' if len(c) > 0 and c[0] == ':' else c
+        if len(c) > 0 and c[0] == ':':
+            return '{' + c[1:] + '}'
+        elif len(c) > 0 and c[:2] == '@:': # FIXME: handle for spacical case
+            return '@{' + c[2:] + '}'
+        return c
 
     l = len('https://typetalk.com/api') #### FIXME should be considered for other services
     path = url[l:]
@@ -113,11 +117,13 @@ def toOperationObjectTuple(endpoint: ir.Endpoint) -> Tuple[str, openapi.Operatio
     req = endpoint.request
     method = openapi.OperationVerb.fromStr(req['method'].lower())
     summary = req['name'] + ': ' + req['summary']
-    description = req['description'] + ' \nreference: ' + req['apiDocumentUrl']
+    description = req.get('description', '') + ' <br/>\nLink: [Original API document](' + req['apiDocumentUrl'] + ')'
     parameters = toParameterObjects(req.get('urlParams', []), req.get('queryParams', []))
     reqestBody = toRequestBodyObjects(req.get('formParams', []))
     responses = toResponsesObject(endpoint.response)
-    op = openapi.OperationObject(responses, summary, description, parameters, reqestBody)
+    scope = req['scope']
+    security = openapi.SecurityRequirementObject({'apikey' : [scope], 'oauth': [scope]}) if scope != '' else None
+    op = openapi.OperationObject(responses, summary, description, parameters, reqestBody, security=security)
     path = toPath(req['url'])
     return (path, method, op)
 
@@ -137,11 +143,29 @@ class OpenApiConverter:
         endpoints = [toOperationObjectTuple(e) for e in api.endpoints()]
 
         info = openapi.InfoObject(title, version)
-        comps = openapi.ComponentsObject(schemaObjects)
+        comps = openapi.ComponentsObject(schemaObjects, securitySchemes=createSecuritySchemeObjects())
         paths = openapi.PathsObject(toPathsDict(endpoints))
-        oa = openapi.OpenAPI(info=info, paths=paths, components=comps)
+        servers = [openapi.ServerObject('https://typetalk.com/api')]
+        oa = openapi.OpenAPI(info=info, paths=paths, components=comps, servers=servers)
         return oa
 
+def createSecuritySchemeObjects():
+    authUrl = 'https://typetalk.com/oauth2/authorize'
+    tokenUrl = 'https://typetalk.com/oauth2/access_token'
+    scopes = {
+        'topic.read': 'Get messages in topics',
+        'topic.post': 'Post messages to topics and like messages',
+        'topic.write': 'Create and update topics',
+        'topic.delete': 'Delete topics',
+        'my': 'Get topic list, profile, notifications and save bookmarks'
+    }
+    authorizationCode = openapi.OAuthFlowObject(authUrl, tokenUrl, scopes, tokenUrl)
+    clientCredentials = openapi.OAuthFlowObject(tokenUrl=tokenUrl, scopes=scopes, refreshUrl=tokenUrl)
+    flows = openapi.OAuthFlowsObject(authorizationCode=authorizationCode, clientCredentials=clientCredentials)
+    return {
+        'apikey' : openapi.SecuritySchemeObject(type='apiKey', name='X-Typetalk-Token', locatedIn='header'),
+        'oauth': openapi.SecuritySchemeObject(type='oauth2', flows=flows)
+    }
 
 def main():
     appname = 'typetalk'
@@ -154,7 +178,7 @@ def main():
     #    print(i)
 
     converter = OpenApiConverter()
-    oa = converter.convert(appname[0].upper() + appname[1:], '1.0.0-20191003', api)
+    oa = converter.convert(appname[0].upper() + appname[1:], '1.0.0-20210127', api)
     #print(oa.toJson())
     print(json.dumps(oa.toJson()))
 

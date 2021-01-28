@@ -283,9 +283,10 @@ class SchemaObject(JsonConvertible):
         return SchemaObject(title, properties)
 
 class ComponentsObject(JsonConvertible):
-    def __init__(self, schemas: Dict[str, Union[SchemaObject, 'ReferenceObject']] = {}) -> None:
+    def __init__(self, schemas: Dict[str, Union[SchemaObject, 'ReferenceObject']] = {}, securitySchemes: Optional[Dict[str, 'SecuritySchemeObject']] = None) -> None:
         self.__schemas = schemas
         #self.__responses = responses
+        self.__securitySchemes = securitySchemes
 
 class InfoObject(JsonConvertible):
     def __init__(self, title: str, version: str, description: Optional[str] = None, termsOfService: Optional[str] = None) -> None:
@@ -327,12 +328,13 @@ class PathItemObject(JsonConvertible):
         return dic
 
 class OperationObject(JsonConvertible):
-    def __init__(self, responses: 'ResponsesObject', summary: Optional[str] = None, description: Optional[str] = None, parameters: Optional[List['ParameterObject']] = None, requestBody: Optional['RequestBodyObject'] = None) -> None:
+    def __init__(self, responses: 'ResponsesObject', summary: Optional[str] = None, description: Optional[str] = None, parameters: Optional[List['ParameterObject']] = None, requestBody: Optional['RequestBodyObject'] = None, security: Optional['SecurityRequirementObject'] = None) -> None:
         self.__summary = summary
         self.__description = description
         self.__parameters = parameters
         self.__requestBody = requestBody
         self.__responses = responses
+        self.__security = security
 
 class ParameterObject(JsonConvertible):
     def __init__(self, name: str, locatedIn: ParameterLocation, required: Optional[bool] = None, schema: Optional[Union[SchemaObject, 'ReferenceObject']] = None, description: Optional[str] = None) -> None:
@@ -346,12 +348,6 @@ class ParameterObject(JsonConvertible):
 class RequestBodyObject(JsonConvertible):
     def __init__(self, content: Dict[str, 'MediaTypeObject'], description: Optional[str] = None, required: Optional[bool] = None):
         self.__content = content
-    def toJson(self):
-        dic = super().toJson()
-        z = dic.pop('content')
-        for k, v in self.__content.items(): # FIXME sort order
-            dic[k] = v.toJson()
-        return dic
 
 class MediaTypeObject(JsonConvertible):
     def __init__(self, schema: Optional[Union[SchemaObject, 'ReferenceObject']], encoding: Optional[str] = None): ##, example = None, examples = None):
@@ -368,7 +364,7 @@ class ResponsesObject(JsonConvertible):
         return dic
 
 class ResponseObject(JsonConvertible):
-    def __init__(self, description: Optional[str] = None, content: Dict[str, MediaTypeObject] = {}):
+    def __init__(self, description: str, content: Dict[str, MediaTypeObject] = {}):
         self.__description = description
         self.__content = content
 
@@ -378,10 +374,51 @@ class ReferenceObject(JsonConvertible):
     def toJson(self):
         return { '$ref' : self.__ref }
 
+class SecuritySchemeObject(JsonConvertible):
+    def __init__(self, type: str, name: Optional[str] = None, locatedIn: Optional[str] = None, scheme: Optional[str] = None, flows: Optional['OAuthFlowsObject'] = None, openIdConnectUrl: Optional[str] = None):
+        self.__type = type
+        self.__name = name
+        self.__in = locatedIn
+        self.__scheme = scheme
+        self.__flows = flows
+        self.__openIdConnectUrl = openIdConnectUrl
+
+class OAuthFlowsObject(JsonConvertible):
+    def __init__(self, implicit: Optional['OAuthFlowObject'] = None, password: Optional['OAuthFlowObject'] = None, clientCredentials: Optional['OAuthFlowObject'] = None, authorizationCode: Optional['OAuthFlowObject'] = None):
+        self.__implicit = implicit
+        self.__password = password
+        self.__clientCredentials = clientCredentials
+        self.__authorizationCode = authorizationCode
+
+class OAuthFlowObject(JsonConvertible):
+    def __init__(self, authorizationUrl: Optional[str] = None, tokenUrl: Optional[str] = None, scopes: Dict[str, str] = [], refreshUrl: Optional[str] = None):
+        self.__authorizationUrl = authorizationUrl
+        self.__tokenUrl = tokenUrl
+        self.__refreshUrl = refreshUrl
+        self.__scopes = scopes
+    def toJson(self):
+        dic = super().toJson()
+        return dic
+
+class SecurityRequirementObject(JsonConvertible):
+    def __init__(self, requirements: Dict[str, List[str]]):
+        self.__requirements = requirements
+    def toJson(self):
+        dic = {}
+        for k, v in self.__requirements.items(): # FIXME sort order
+            dic[k] = v
+        return [{}, dic] # Optional OAuth2 Security
+
+class ServerObject(JsonConvertible):
+    def __init__(self, url: str, description: Optional[str] = None):
+        self.__url = url
+        self.__description = description
+
 class OpenAPI(JsonConvertible):
-    def __init__(self, openApiVersion = "3.0.3", info: InfoObject = InfoObject('', ''), paths: PathsObject = PathsObject(), components: ComponentsObject = ComponentsObject() ) -> None:
+    def __init__(self, openApiVersion = "3.0.3", info: InfoObject = InfoObject('', ''), paths: PathsObject = PathsObject(), servers: List[ServerObject] = [], components: ComponentsObject = ComponentsObject(), security: Optional[SecurityRequirementObject] = None ) -> None:
         self.__openapi = openApiVersion
         self.__info = info
+        self.__servers = servers
         self.__paths = paths
         self.__components = components
 
