@@ -64,14 +64,15 @@ def toRequestBodyParams(params: List[Dict[str, str]]) -> Dict[str, openapi.Schem
         props[name] = openapi.SchemaObject.initWithPrimitive(toPrimitiveDataTypeFromStr(type), description=description)
         if required:
             reqs.append(name)
-    return openapi.SchemaObject(properties=props, required=reqs)
+    return openapi.SchemaObject(properties=props, required=reqs if len(reqs) > 0 else None)
 
 def toParameterObject(params: Dict[str, str], location: openapi.ParameterLocation) -> openapi.ParameterObject:
     name = params['name']
     required = not params['optional']
     schema = toPrimitiveDataTypeFromStr(params['type']).toSchemaObject()
     description = params['description']
-    return openapi.ParameterObject(name, location, required, schema, description)
+    array = params['array']
+    return openapi.ParameterObject(name, location, required, schema, description, array)
 
 def toParameterObjects(urlParams: List[Dict[str, str]], queryParams: List[Dict[str, str]]) -> Optional[List[openapi.ParameterObject]]:
     if len(urlParams) + len(queryParams) == 0:
@@ -91,7 +92,7 @@ def toRequestBodyObjects(formParams: List[Dict[str, str]]) -> Optional[openapi.R
 
 def toResponsesObject(response: ir.TypeBase, example) -> Optional[openapi.ResponsesObject]:
     if type(response) == ir.NullType:
-        return None
+        return openapi.ResponsesObject({'200': openapi.ResponseObject('Empty content')})
 
     content = {}
     content['application/json'] = openapi.MediaTypeObject(toSchemaObject(response), example)

@@ -28,14 +28,14 @@
     },
     {
       "name": "addAccountIds",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Account ID (organization member only)"
     },
     {
       "name": "addGroupIds",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Group ID"

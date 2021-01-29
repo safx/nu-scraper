@@ -12,7 +12,7 @@ class ParamInfo(object):
         tds = [pq(trElement)('td').eq(j).text() for j in range(3)]
         ns = [e[:-1] if len(e) > 0 and e[-1] == ',' else e for e in tds[0].split()]
         self.name = ns[0]
-        self.optional = len(ns) > 1 and ns[1] == '(Optional)'
+        self.optional = len(ns) > 1 and ns[-1] == '(Optional)'
         self.array = False
         self.typename = tds[1]
         self.description = tds[2]

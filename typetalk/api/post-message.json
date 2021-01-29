@@ -44,28 +44,28 @@
     },
     {
       "name": "fileKeys",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "String",
       "description": "attachment file key (refer to Upload attachment file), maximum count: 5"
     },
     {
       "name": "talkIds",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Tag IDs that you want to put the message in, maximum count: 5"
     },
     {
       "name": "attachments[0].fileUrl",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Each message can have max. 5 file URLs (max. 10MB per file)."
     },
     {
       "name": "attachments[0].fileName",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Unless the parameter specifies otherwise, filenames are automatically generated from the file URL. (maximum count: 5)"

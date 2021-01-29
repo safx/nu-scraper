@@ -339,13 +339,15 @@ class OperationObject(JsonConvertible):
         self.__tags = tags
 
 class ParameterObject(JsonConvertible):
-    def __init__(self, name: str, locatedIn: ParameterLocation, required: Optional[bool] = None, schema: Optional[Union[SchemaObject, 'ReferenceObject']] = None, description: Optional[str] = None) -> None:
+    def __init__(self, name: str, locatedIn: ParameterLocation, required: Optional[bool] = None, schema: Optional[Union[SchemaObject, 'ReferenceObject']] = None, description: Optional[str] = None, explode: Optional[bool] = None, style: Optional[str] = None) -> None:
         assert((locatedIn == ParameterLocation.path and required is not None) or locatedIn != ParameterLocation.path)
         self.__name = name
         self.__in = locatedIn
         self.__required = required
         self.__schema = schema
         self.__description = description
+        self.__style = style
+        self.__explode = explode
 
 class RequestBodyObject(JsonConvertible):
     def __init__(self, content: Dict[str, 'MediaTypeObject'], description: Optional[str] = None, required: Optional[bool] = None):
