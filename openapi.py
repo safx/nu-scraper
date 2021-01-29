@@ -328,13 +328,15 @@ class PathItemObject(JsonConvertible):
         return dic
 
 class OperationObject(JsonConvertible):
-    def __init__(self, responses: 'ResponsesObject', summary: Optional[str] = None, description: Optional[str] = None, parameters: Optional[List['ParameterObject']] = None, requestBody: Optional['RequestBodyObject'] = None, security: Optional['SecurityRequirementObject'] = None) -> None:
+    def __init__(self, responses: 'ResponsesObject', summary: Optional[str] = None, description: Optional[str] = None, parameters: Optional[List['ParameterObject']] = None, requestBody: Optional['RequestBodyObject'] = None, operationId: Optional[str] = None, security: Optional['SecurityRequirementObject'] = None, tags: Optional[List[str]] = None) -> None:
         self.__summary = summary
         self.__description = description
         self.__parameters = parameters
         self.__requestBody = requestBody
         self.__responses = responses
+        self.__operationId = operationId
         self.__security = security
+        self.__tags = tags
 
 class ParameterObject(JsonConvertible):
     def __init__(self, name: str, locatedIn: ParameterLocation, required: Optional[bool] = None, schema: Optional[Union[SchemaObject, 'ReferenceObject']] = None, description: Optional[str] = None) -> None:
@@ -350,8 +352,9 @@ class RequestBodyObject(JsonConvertible):
         self.__content = content
 
 class MediaTypeObject(JsonConvertible):
-    def __init__(self, schema: Optional[Union[SchemaObject, 'ReferenceObject']], encoding: Optional[str] = None): ##, example = None, examples = None):
+    def __init__(self, schema: Optional[Union[SchemaObject, 'ReferenceObject']], example = None): #, examples = None, encoding: Optional[str] = None):
         self.__schema = schema
+        self.__example = example
 
 class ResponsesObject(JsonConvertible):
     def __init__(self, responses: Dict[str, Union['ResponseObject', 'ReferenceObject']] = {}): # FIXME: statusCode -> ResponseObject
@@ -362,6 +365,13 @@ class ResponsesObject(JsonConvertible):
         for k, v in self.__responses.items(): # FIXME sort order
             dic[k] = v.toJson()
         return dic
+
+class ExampleObject(JsonConvertible):
+    def __init__(self, summary: Optional[str] = None, description: Optional[str] = None, value = None, externalValue: Optional[str] = None):
+        self.__summary = summary
+        self.__description = description
+        self.__value = value
+        self.__externalValue = externalValue
 
 class ResponseObject(JsonConvertible):
     def __init__(self, description: str, content: Dict[str, MediaTypeObject] = {}):

@@ -212,9 +212,10 @@ def bothMatch(a: ObjectType, b: ObjectType):
     return exactMatch(a, b) or similarMatch(a, b)
 
 class Endpoint:
-    def __init__(self, request: Dict, response: TypeBase) -> None:
+    def __init__(self, request: Dict, response: TypeBase, rawResponse: str) -> None:
         self.__request = request
         self.__response = response
+        self.__rawResponse = rawResponse
 
     @property
     def request(self):
@@ -222,6 +223,9 @@ class Endpoint:
     @property
     def response(self):
         return self.__response
+    @property
+    def rawResponse(self):
+        return self.__rawResponse
 
     def replaceWithCommonObject(self, commonObject: CommonObjectType):
         cond = lambda v: bothMatch(commonObject.object, v)
@@ -328,14 +332,16 @@ class API:
         for d in os.listdir(os.path.join(dir, 'api')):
             with open(os.path.join(dir, 'api', d)) as req:
                 req_json = json.load(req)
+                res_text = None
                 res_json = None
                 try:
                     with open(os.path.join(dir, 'response', d)) as res:
-                        res_json = json.load(res)
+                        res_text = ''.join(res.readlines())
+                        res_json = json.loads(res_text)
                 except (OSError, IOError) as e:
                     pass # when reponse file doesn't exist
 
-                endpoint = Endpoint(req_json, guessType(res_json))
+                endpoint = Endpoint(req_json, guessType(res_json), res_text)
                 endpoints.append(endpoint)
 
         return API(endpoints)

@@ -89,12 +89,12 @@ def toRequestBodyObjects(formParams: List[Dict[str, str]]) -> Optional[openapi.R
     dic[p] = openapi.MediaTypeObject(toRequestBodyParams(formParams))
     return openapi.RequestBodyObject(dic)
 
-def toResponsesObject(response: ir.TypeBase) -> Optional[openapi.ResponsesObject]:
+def toResponsesObject(response: ir.TypeBase, example) -> Optional[openapi.ResponsesObject]:
     if type(response) == ir.NullType:
         return None
 
     content = {}
-    content['application/json'] = openapi.MediaTypeObject(toSchemaObject(response))
+    content['application/json'] = openapi.MediaTypeObject(toSchemaObject(response), example)
 
     responses = {}
     responses['200'] = openapi.ResponseObject('TODO: response description', content=content)
@@ -115,15 +115,18 @@ def toPath(url: str) -> str:
 
 def toOperationObjectTuple(endpoint: ir.Endpoint) -> Tuple[str, openapi.OperationVerb, openapi.OperationObject]:
     req = endpoint.request
+    name = req['name']
     method = openapi.OperationVerb.fromStr(req['method'].lower())
-    summary = req['name'] + ': ' + req['summary']
+    summary = name + ': ' + req['summary']
     description = req.get('description', '') + ' <br/>\nLink: [Original API document](' + req['apiDocumentUrl'] + ')'
     parameters = toParameterObjects(req.get('urlParams', []), req.get('queryParams', []))
     reqestBody = toRequestBodyObjects(req.get('formParams', []))
-    responses = toResponsesObject(endpoint.response)
+    responses = toResponsesObject(endpoint.response, endpoint.rawResponse)
     scope = req['scope']
     security = openapi.SecurityRequirementObject({'apikey' : [scope], 'oauth': [scope]}) if scope != '' else None
-    op = openapi.OperationObject(responses, summary, description, parameters, reqestBody, security=security)
+    operationId = name
+    #tags = [scope]
+    op = openapi.OperationObject(responses, summary, description, parameters, reqestBody, operationId, security)
     path = toPath(req['url'])
     return (path, method, op)
 
