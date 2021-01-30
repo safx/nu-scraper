@@ -234,6 +234,9 @@ class Endpoint:
             if obj.isLeaf:
                 return 0
 
+            if type(obj) != ObjectType:
+                return 0
+
             assert(type(obj) == ObjectType)
             replaceCount = 0
             for key, value in obj.items():
@@ -276,6 +279,8 @@ class Endpoint:
 
         if self.__response is None:
             return None
+        if type(self.__response) == ArrayType:
+            return None
         d = collectNonNestedObjects(self.__response, '', dict())
         return {resolveTypename(k):v for (k,v) in d.items() if len(v.keys()) > 0}
 
@@ -317,7 +322,14 @@ class API:
             return None
 
         for i in range(100000):
-            nonNestedObjects = functools.reduce(lambda a, e: a + list(e.nonNextedResponseObjects().items()), self.__endpoints, [])
+            #nonNestedObjects = functools.reduce(lambda a, e: a + list(e.nonNextedResponseObjects().items()), self.__endpoints, [])
+            nonNestedObjects = []
+            for e in self.__endpoints:
+                objs = e.nonNextedResponseObjects()
+                if objs is None:
+                    continue
+                nonNestedObjects += objs.items()
+
             sot = findSimilarObject(nonNestedObjects, exactMatch) or findSimilarObject(nonNestedObjects, similarMatch)
             if sot is None:
                 break

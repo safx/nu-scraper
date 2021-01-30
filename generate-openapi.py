@@ -101,7 +101,7 @@ def toResponsesObject(response: ir.TypeBase, example) -> Optional[openapi.Respon
     responses['200'] = openapi.ResponseObject('TODO: response description', content=content)
     return openapi.ResponsesObject(responses)
 
-def toPath(url: str) -> str:
+def toPath(url: str, serverUrl: str) -> str:
     def toTemplate(c: str) -> str:
         if len(c) > 0 and c[0] == ':':
             return '{' + c[1:] + '}'
@@ -109,12 +109,11 @@ def toPath(url: str) -> str:
             return '@{' + c[2:] + '}'
         return c
 
-    l = len('https://typetalk.com/api') #### FIXME should be considered for other services
-    path = url[l:]
+    path = url[len(serverUrl):] if url.find(serverUrl) == 0 else url
     comp = [toTemplate(c) for c in path.split('/')]
     return '/'.join(comp)
 
-def toOperationObjectTuple(endpoint: ir.Endpoint) -> Tuple[str, openapi.OperationVerb, openapi.OperationObject]:
+def toOperationObjectTuple(endpoint: ir.Endpoint, serverUrl: str) -> Tuple[str, openapi.OperationVerb, openapi.OperationObject]:
     req = endpoint.request
     name = req['name']
     method = openapi.OperationVerb.fromStr(req['method'].lower())
@@ -124,11 +123,13 @@ def toOperationObjectTuple(endpoint: ir.Endpoint) -> Tuple[str, openapi.Operatio
     reqestBody = toRequestBodyObjects(req.get('formParams', []))
     responses = toResponsesObject(endpoint.response, endpoint.rawResponse)
     scope = req['scope']
+    if scope is None:
+        scope = 'backlog' # FIXME
     security = openapi.SecurityRequirementObject({'apikey' : [scope], 'oauth': [scope]}) if scope != '' else None
     operationId = name
     #tags = [scope]
     op = openapi.OperationObject(responses, summary, description, parameters, reqestBody, operationId, security)
-    path = toPath(req['url'])
+    path = toPath(req['url'], serverUrl)
     return (path, method, op)
 
 def toPathsDict(endpoints: List[Tuple[str, openapi.OperationVerb, openapi.OperationObject]]) -> Dict[str, openapi.PathItemObject]:
@@ -142,37 +143,50 @@ def toPathsDict(endpoints: List[Tuple[str, openapi.OperationVerb, openapi.Operat
     return dic
 
 class OpenApiConverter:
-    def convert(self, title: str, version: str, api: ir.API) -> openapi.OpenAPI:
+    def convert(self, title: str, version: str, serverUrl: str, api: ir.API, securitySchemes: openapi.SecuritySchemeObject) -> openapi.OpenAPI:
         schemaObjects = {o.typename:toSchemaObjectFromCommonObject(o) for o in api.commonObjects()}
-        endpoints = [toOperationObjectTuple(e) for e in api.endpoints()]
+        endpoints = [toOperationObjectTuple(e, serverUrl) for e in api.endpoints()]
 
         info = openapi.InfoObject(title, version)
-        comps = openapi.ComponentsObject(schemaObjects, securitySchemes=createSecuritySchemeObjects())
+        comps = openapi.ComponentsObject(schemaObjects, securitySchemes=securitySchemes)
         paths = openapi.PathsObject(toPathsDict(endpoints))
-        servers = [openapi.ServerObject('https://typetalk.com/api')]
+        servers = [openapi.ServerObject(serverUrl)]
         oa = openapi.OpenAPI(info=info, paths=paths, components=comps, servers=servers)
         return oa
 
-def createSecuritySchemeObjects():
-    authUrl = 'https://typetalk.com/oauth2/authorize'
-    tokenUrl = 'https://typetalk.com/oauth2/access_token'
-    scopes = {
-        'topic.read': 'Get messages in topics',
-        'topic.post': 'Post messages to topics and like messages',
-        'topic.write': 'Create and update topics',
-        'topic.delete': 'Delete topics',
-        'my': 'Get topic list, profile, notifications and save bookmarks'
-    }
-    authorizationCode = openapi.OAuthFlowObject(authUrl, tokenUrl, scopes, tokenUrl)
-    clientCredentials = openapi.OAuthFlowObject(tokenUrl=tokenUrl, scopes=scopes, refreshUrl=tokenUrl)
-    flows = openapi.OAuthFlowsObject(authorizationCode=authorizationCode, clientCredentials=clientCredentials)
-    return {
-        'apikey' : openapi.SecuritySchemeObject(type='apiKey', name='X-Typetalk-Token', locatedIn='header'),
-        'oauth': openapi.SecuritySchemeObject(type='oauth2', flows=flows)
-    }
+def createSecuritySchemeObjects(appname, backlogUrl):
+    if appname == 'typetalk':
+        authUrl = 'https://typetalk.com/oauth2/authorize'
+        tokenUrl = 'https://typetalk.com/oauth2/access_token'
+        scopes = {
+            'topic.read': 'Get messages in topics',
+            'topic.post': 'Post messages to topics and like messages',
+            'topic.write': 'Create and update topics',
+            'topic.delete': 'Delete topics',
+            'my': 'Get topic list, profile, notifications and save bookmarks'
+        }
+        authorizationCode = openapi.OAuthFlowObject(authUrl, tokenUrl, scopes, tokenUrl)
+        clientCredentials = openapi.OAuthFlowObject(tokenUrl=tokenUrl, scopes=scopes, refreshUrl=tokenUrl)
+        flows = openapi.OAuthFlowsObject(authorizationCode=authorizationCode, clientCredentials=clientCredentials)
+        return {
+            'apikey' : openapi.SecuritySchemeObject(type='apiKey', name='X-Typetalk-Token', locatedIn='header'),
+            'oauth': openapi.SecuritySchemeObject(type='oauth2', flows=flows)
+        }
+    elif appname == 'backlog':
+        authUrl = backlogUrl + '/OAuth2AccessRequest.action'
+        tokenUrl = backlogUrl + '/api/v2/oauth2/token'
+        scopes = {'backlog': 'backlog'}
+        authorizationCode = openapi.OAuthFlowObject(authUrl, tokenUrl, scopes, tokenUrl)
+        clientCredentials = openapi.OAuthFlowObject(tokenUrl=tokenUrl, scopes=scopes, refreshUrl=tokenUrl)
+        flows = openapi.OAuthFlowsObject(authorizationCode=authorizationCode, clientCredentials=clientCredentials)
+        return {
+            'apikey' : openapi.SecuritySchemeObject(type='apiKey', name='apiKey', locatedIn='query'),
+            'oauth': openapi.SecuritySchemeObject(type='oauth2', flows=flows)
+        }
+    else:
+        assert('Unknwon app name' and False)
 
-def main():
-    appname = 'typetalk'
+def main(appname, serverUrl = 'https://typetalk.com/api'):
     api = ir.API.initWithDir(appname)
     api.findAndRegisterSimilarObjects()
 
@@ -182,9 +196,9 @@ def main():
     #    print(i)
 
     converter = OpenApiConverter()
-    oa = converter.convert(appname[0].upper() + appname[1:], '1.0.0-20210127', api)
+    oa = converter.convert(appname[0].upper() + appname[1:], '1.0.0-20210127', serverUrl, api, createSecuritySchemeObjects(appname, serverUrl))
     #print(oa.toJson())
     print(json.dumps(oa.toJson()))
 
 if __name__ == '__main__':
-    main()
+    main(*sys.argv[1:])
