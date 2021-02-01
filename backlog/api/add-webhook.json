@@ -17,35 +17,35 @@
   "formParams": [
     {
       "name": "name",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Name"
     },
     {
       "name": "description",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Description"
     },
     {
       "name": "hookUrl",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "hook URL"
     },
     {
       "name": "allEvent",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "True to make all events notified"
     },
     {
       "name": "activityTypeIds",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Event ID to be notified"

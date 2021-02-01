@@ -24,42 +24,42 @@
   "queryParams": [
     {
       "name": "statusId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Status ID"
     },
     {
       "name": "assigneeId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Assignee ID"
     },
     {
       "name": "issueId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Issue ID"
     },
     {
       "name": "createdUserId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Created User ID"
     },
     {
       "name": "offset",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": ""
     },
     {
       "name": "count",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "number of records to retrieve(1-100) default=20"

@@ -8,14 +8,14 @@
   "queryParams": [
     {
       "name": "archived",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "For unspecified parameters, this form returns all projects. For \u2018false\u2019 parameters, it returns unarchived projects. For \u2018true\u2019 parameters, it returns archived projects."
     },
     {
       "name": "all",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "Only applies to administrators. If \u2018true,\u2019 it returns all projects. If \u2018false,\u2019 it returns only projects they have joined (set to \u2018false\u2019 by default)."

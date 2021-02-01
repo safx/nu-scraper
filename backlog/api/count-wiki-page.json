@@ -8,7 +8,7 @@
   "queryParams": [
     {
       "name": "projectIdOrKey",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Project ID or Project Key"

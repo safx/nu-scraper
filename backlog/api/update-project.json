@@ -17,49 +17,49 @@
   "formParams": [
     {
       "name": "name",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Project Name"
     },
     {
       "name": "key",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Project Key"
     },
     {
       "name": "chartEnabled",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "Enable chart"
     },
     {
       "name": "subtaskingEnabled",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "Enable subtasking"
     },
     {
       "name": "projectLeaderCanEditProjectLeader",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "Allow project administrators to manage each other"
     },
     {
       "name": "textFormattingRule",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Formatting rules \u201cbacklog\u201d or \u201cmarkdown\u201d"
     },
     {
       "name": "archived",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "archive"

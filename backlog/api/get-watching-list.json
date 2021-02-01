@@ -17,42 +17,42 @@
   "queryParams": [
     {
       "name": "order",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Order of the sort \u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
     },
     {
       "name": "sort",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "What to sort results by. The value \u201ccreated\u201d, \u201cupdated\u201d or \u201cissueUpdated\u201d are allowed. default=\u201cissueUpdated\u201d"
     },
     {
       "name": "count",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Number of records to retrieve(1-100) default=20"
     },
     {
       "name": "offset",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Where to start returning records from the entire results. default=0"
     },
     {
       "name": "resourceAlreadyRead",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "Whether the issues already read are retrieved or not. The all watching issues are returned if this parameter is omitted. The read watching issues are returned if true. The unread watching issues are returned if false. default=null"
     },
     {
       "name": "issueId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Issue ID"

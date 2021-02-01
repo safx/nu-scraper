@@ -17,7 +17,7 @@
   "formParams": [
     {
       "name": "userId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "User ID"

@@ -8,14 +8,14 @@
   "queryParams": [
     {
       "name": "resourceAlreadyRead",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "This parameter is optional. Set to false for unread notification count and true for already read notification count."
     },
     {
       "name": "alreadyRead",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "This parameter is optional. Set this parameter to false to get unread notification count since the last time checked by user and true for already read notification count."

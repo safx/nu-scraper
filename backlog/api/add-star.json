@@ -8,35 +8,35 @@
   "formParams": [
     {
       "name": "issueId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Issue ID"
     },
     {
       "name": "commentId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Comment ID"
     },
     {
       "name": "wikiId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Wiki Page ID"
     },
     {
       "name": "pullRequestId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Pull request ID"
     },
     {
       "name": "pullRequestCommentId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Pull request comment ID"

@@ -17,14 +17,14 @@
   "queryParams": [
     {
       "name": "resourceAlreadyRead",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "This parameter is optional. Set to false for unread watching count and true for already read watching count."
     },
     {
       "name": "alreadyRead",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "This parameter is optional. Set this parameter to false to get unread watching count since the last time checked by user and true for already read watching count. When both alreadyRead and resourceAlreadyRead parameters set, resourceAlreadyRead will be ignored."

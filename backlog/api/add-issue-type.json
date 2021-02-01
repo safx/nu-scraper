@@ -31,14 +31,14 @@
     },
     {
       "name": "templateSummary",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Subject"
     },
     {
       "name": "templateDescription",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Description"

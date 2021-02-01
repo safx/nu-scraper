@@ -24,21 +24,21 @@
     },
     {
       "name": "description",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Version description"
     },
     {
       "name": "startDate",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Start Date (yyyy-MM-dd)"
     },
     {
       "name": "releaseDueDate",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "End Date (yyyy-MM-dd)"

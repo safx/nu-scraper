@@ -17,21 +17,21 @@
   "formParams": [
     {
       "name": "name",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Page Name"
     },
     {
       "name": "content",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Content"
     },
     {
       "name": "mailNotify",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "True make to notify by Email"

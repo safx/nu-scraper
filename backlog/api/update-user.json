@@ -17,28 +17,28 @@
   "formParams": [
     {
       "name": "password",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "password"
     },
     {
       "name": "name",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "nickname"
     },
     {
       "name": "mailAddress",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Email address"
     },
     {
       "name": "roleType",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Administrator(1) Normal User(2) Reporter(3) Viewer(4) Guest Reporter(5) Guest Viewer(6)"

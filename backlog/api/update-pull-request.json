@@ -31,42 +31,42 @@
   "formParams": [
     {
       "name": "summary",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Summary of pull request"
     },
     {
       "name": "description",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Description of pull request"
     },
     {
       "name": "issueId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Related issue\u2019s ID"
     },
     {
       "name": "assigneeId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Assignee\u2019s ID of pull request"
     },
     {
       "name": "notifiedUserId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "User ID to send notification when pull request is added"
     },
     {
       "name": "comment",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Comment"

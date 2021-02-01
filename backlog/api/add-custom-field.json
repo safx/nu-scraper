@@ -31,21 +31,21 @@
     },
     {
       "name": "applicableIssueTypes",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Type ID to enable Custom fields\nempty=enable for all issue types"
     },
     {
       "name": "description",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Description"
     },
     {
       "name": "required",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "True to make the Custom field required"

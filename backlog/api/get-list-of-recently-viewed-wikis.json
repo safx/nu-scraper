@@ -8,21 +8,21 @@
   "queryParams": [
     {
       "name": "order",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "\u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
     },
     {
       "name": "offset",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": ""
     },
     {
       "name": "count",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "number of records to retrieve(1-100) default=20"

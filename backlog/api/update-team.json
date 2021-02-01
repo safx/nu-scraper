@@ -17,14 +17,14 @@
   "formParams": [
     {
       "name": "name",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Team Name"
     },
     {
       "name": "members",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "User ID added to the team"

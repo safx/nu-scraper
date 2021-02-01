@@ -15,42 +15,42 @@
     },
     {
       "name": "parentIssueId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Parent Issue ID"
     },
     {
       "name": "description",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Description"
     },
     {
       "name": "startDate",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Start Date (yyyy-MM-dd)"
     },
     {
       "name": "dueDate",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Due Date (yyyy-MM-dd)"
     },
     {
       "name": "estimatedHours",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Estimated Hours"
     },
     {
       "name": "actualHours",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Actual Hours"
@@ -64,21 +64,21 @@
     },
     {
       "name": "categoryId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Category ID"
     },
     {
       "name": "versionId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Version ID"
     },
     {
       "name": "milestoneId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Milestone ID"
@@ -92,21 +92,21 @@
     },
     {
       "name": "assigneeId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Assignee ID"
     },
     {
       "name": "notifiedUserId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Notified User ID"
     },
     {
       "name": "attachmentId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "Attachment file ID(Post Attachment File returns)"

@@ -31,14 +31,14 @@
   "formParams": [
     {
       "name": "content",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Comment"
     },
     {
       "name": "notifiedUserId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "User ID to send notification when comment is added"

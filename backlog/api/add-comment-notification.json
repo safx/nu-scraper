@@ -24,7 +24,7 @@
   "formParams": [
     {
       "name": "notifiedUserId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "UserID"

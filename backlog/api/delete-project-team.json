@@ -17,7 +17,7 @@
   "formParams": [
     {
       "name": "teamId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "Team ID"

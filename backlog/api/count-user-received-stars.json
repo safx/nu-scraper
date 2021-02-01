@@ -8,14 +8,14 @@
   "queryParams": [
     {
       "name": "since",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "after the given date (yyyy-MM-dd)"
     },
     {
       "name": "until",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "before the given date (yyyy-MM-dd)"

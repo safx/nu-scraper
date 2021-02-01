@@ -17,7 +17,7 @@
   "formParams": [
     {
       "name": "attachmentId",
-      "optional": false,
+      "optional": true,
       "array": true,
       "type": "Number",
       "description": "ID returned by send attachment API"

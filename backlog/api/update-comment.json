@@ -24,7 +24,7 @@
   "formParams": [
     {
       "name": "content",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "content"

@@ -15,7 +15,7 @@
     },
     {
       "name": "note",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "Note"

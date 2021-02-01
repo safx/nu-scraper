@@ -24,7 +24,7 @@
   "formParams": [
     {
       "name": "name",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "List item name"

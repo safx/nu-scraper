@@ -8,11 +8,11 @@ import re
 
 
 class ParamInfo(object):
-    def __init__(self, trElement):
+    def __init__(self, trElement, optionalChecker):
         tds = [pq(trElement)('td').eq(j).text() for j in range(3)]
         ns = [e[:-1] if len(e) > 0 and e[-1] == ',' else e for e in tds[0].split()]
         self.name = ns[0]
-        self.optional = len(ns) > 1 and ns[-1] == '(Optional)'
+        self.optional = optionalChecker(ns)
         self.array = False
         self.typename = tds[1]
         self.description = tds[2]
@@ -114,6 +114,9 @@ class WebAPI(object):
 
 def getWebAPI(appName, apiDocumentUrl):
     data = pq(url=apiDocumentUrl)
+    optionalChecker = lambda ns: len(ns) > 1 and ns[-1] == '(Optional)'
+    requredChecker  = lambda ns: len(ns) == 0 or ns[-1] != '(Required)'
+    defaultChecker = requredChecker if appName == 'backlog' else optionalChecker
 
     def toBaseName(url):
         return url.split('/')[-1]
@@ -122,11 +125,11 @@ def getWebAPI(appName, apiDocumentUrl):
         text = data(p).next().text()
         return default if text == '' else text
 
-    def p(p):
+    def p(p, checker=defaultChecker):
         e = data(p).next()
         while not e.is_('table') and not e.is_('h2') and len(e.text()) > 0:
             e = e.next()
-        return [ParamInfo(e) for e in e('table > tbody > tr')]
+        return [ParamInfo(e, checker) for e in e('table > tbody > tr')]
 
     def c(p, default=None):
         node = data(p).next()
@@ -141,7 +144,7 @@ def getWebAPI(appName, apiDocumentUrl):
     method      = q('#method')
     url         = q('#url')
     scope       = q('#scope')
-    urlParams   = p('#url-parameters')
+    urlParams   = p('#url-parameters', lambda ns: False)
     formParams  = p('#form-parameters')
     queryParams = p('#query-parameters')
     response    = c('#response-body', None) or c('#response-example', None) or c('#json-response-example')

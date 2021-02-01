@@ -29,7 +29,7 @@
     },
     {
       "name": "mailNotify",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "True make to notify by Email"

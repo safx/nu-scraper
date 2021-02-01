@@ -22,7 +22,7 @@
     },
     {
       "name": "projectLeaderCanEditProjectLeader",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "Allow project administrators to manage each other"

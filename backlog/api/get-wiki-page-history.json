@@ -17,28 +17,28 @@
   "queryParams": [
     {
       "name": "minId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "minimum ID"
     },
     {
       "name": "maxId",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "maximum ID"
     },
     {
       "name": "count",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Number",
       "description": "number of records to retrieve(1-100) default=20"
     },
     {
       "name": "order",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "String",
       "description": "\u201casc\u201d or \u201cdesc\u201d default=desc"

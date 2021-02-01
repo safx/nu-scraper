@@ -17,7 +17,7 @@
   "queryParams": [
     {
       "name": "excludeGroupMembers",
-      "optional": false,
+      "optional": true,
       "array": false,
       "type": "Boolean",
       "description": "Set to true to exclude members that part of project groups and false to get all members. Default is false."
