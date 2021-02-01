@@ -36,5 +36,5 @@
       "description": "show OGP data of URL included in message. default value: true"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/update-message"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/update-message"
 }

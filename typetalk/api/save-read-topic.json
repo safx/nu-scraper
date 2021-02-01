@@ -20,5 +20,5 @@
       "description": "Post ID ( if no parameter, read all posts )"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/save-read-topic"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/save-read-topic"
 }

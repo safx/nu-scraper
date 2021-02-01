@@ -70,5 +70,5 @@
       "description": "Exclude bot posts from search results. default value: false"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/search-messages"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/2/search-messages"
 }

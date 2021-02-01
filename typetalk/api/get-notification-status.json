@@ -4,5 +4,5 @@
   "method": "GET",
   "url": "https://typetalk.com/api/v7/notifications/status",
   "scope": "my",
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/7/get-notification-status"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/7/get-notification-status"
 }

@@ -145,7 +145,7 @@ def getWebAPI(appName, apiDocumentUrl):
     return WebAPI(appName, toBaseName(apiDocumentUrl), summary, description, method, url, scope, urlParams, formParams, queryParams, response, apiDocumentUrl)
 
 
-SITE_ROOT = 'https://developer.nulab-inc.com'
+SITE_ROOT = 'https://developer.nulab.com'
 def getAppAPIs(appName):
     top = pq(url=SITE_ROOT + '/docs/' + appName + '/')
     count = 199

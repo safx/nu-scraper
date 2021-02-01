@@ -29,5 +29,5 @@
       "description": "Post IDs that you want to remove from the tag"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/remove-message-from-talk"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/remove-message-from-talk"
 }

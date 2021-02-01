@@ -4,5 +4,5 @@
   "method": "GET",
   "url": "https://typetalk.com/api/v1/profile",
   "scope": "my",
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/get-profile"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/get-profile"
 }

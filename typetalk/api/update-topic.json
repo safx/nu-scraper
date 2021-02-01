@@ -29,5 +29,5 @@
       "description": "Topic description ( max 2000 characters )"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/update-topic"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/update-topic"
 }

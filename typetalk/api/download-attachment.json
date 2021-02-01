@@ -44,5 +44,5 @@
       "description": "Thumbnail image type (Only supports one image file) value: small, medium, large"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/1/download-attachment"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/download-attachment"
 }

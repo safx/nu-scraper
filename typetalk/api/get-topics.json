@@ -27,5 +27,5 @@
       "description": "Whether topics which you have permissions to edit or delete. If it\u2019s not specified, all topics."
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/3/get-topics"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/3/get-topics"
 }

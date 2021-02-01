@@ -78,5 +78,5 @@
       "description": "Unless the parameter specifies otherwise, filenames are automatically generated from the file URL. (maximum count: 5)"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/typetalk/api/2/post-direct-message"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/2/post-direct-message"
 }
