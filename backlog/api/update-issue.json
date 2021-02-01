@@ -14,5 +14,133 @@
       "description": "Issue ID or Issue Key"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-issue"
+  "formParams": [
+    {
+      "name": "summary",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Summary"
+    },
+    {
+      "name": "parentIssueId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Parent Issue ID"
+    },
+    {
+      "name": "description",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Description"
+    },
+    {
+      "name": "statusId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Status ID"
+    },
+    {
+      "name": "resolutionId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Resolution ID"
+    },
+    {
+      "name": "startDate",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Start Date (yyyy-MM-dd)"
+    },
+    {
+      "name": "dueDate",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Due Date (yyyy-MM-dd)"
+    },
+    {
+      "name": "estimatedHours",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Estimated Hours"
+    },
+    {
+      "name": "actualHours",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Actual Hours"
+    },
+    {
+      "name": "issueTypeId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Issue Type ID"
+    },
+    {
+      "name": "categoryId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Category ID"
+    },
+    {
+      "name": "versionId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Version ID"
+    },
+    {
+      "name": "milestoneId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Milestone ID"
+    },
+    {
+      "name": "priorityId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Priority ID"
+    },
+    {
+      "name": "assigneeId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Assignee ID"
+    },
+    {
+      "name": "notifiedUserId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Notified User ID"
+    },
+    {
+      "name": "attachmentId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Attachment file ID(Post Attachment File returns)"
+    },
+    {
+      "name": "comment",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Comment"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-issue"
 }

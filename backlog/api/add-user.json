@@ -1,9 +1,46 @@
 {
   "name": "AddUser",
   "summary": "Add User",
-  "description": "Adds new user to the space. \u201cProject Administrator\u201d cannot add \u201cAdmin\u201d user. You can\u2019t use this API at backlog.com space.",
+  "description": "Adds new user to the space. \u201cProject Administrator\u201d cannot add \u201cAdmin\u201d user. You can\u2019t use this API at new plan space.",
   "method": "POST",
   "url": "/api/v2/users",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-user"
+  "formParams": [
+    {
+      "name": "userId",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "user ID"
+    },
+    {
+      "name": "password",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "password"
+    },
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "nickname"
+    },
+    {
+      "name": "mailAddress",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Email address"
+    },
+    {
+      "name": "roleType",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Administrator(1) Normal User(2) Reporter(3) Viewer(4) Guest Reporter(5) Guest Viewer(6)"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-user"
 }

@@ -14,5 +14,14 @@
       "description": "Wiki page\u2019s ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/link-shared-files-to-wiki"
+  "formParams": [
+    {
+      "name": "fileId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Shared File Id"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/link-shared-files-to-wiki"
 }

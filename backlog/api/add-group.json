@@ -5,5 +5,14 @@
   "method": "POST",
   "url": "/api/v2/groups",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-group"
+  "formParams": [
+    {
+      "name": "members",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "User ID added to the group"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-group"
 }

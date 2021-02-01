@@ -5,5 +5,42 @@
   "method": "POST",
   "url": "/api/v2/stars",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-star"
+  "formParams": [
+    {
+      "name": "issueId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Issue ID"
+    },
+    {
+      "name": "commentId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Comment ID"
+    },
+    {
+      "name": "wikiId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Wiki Page ID"
+    },
+    {
+      "name": "pullRequestId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Pull request ID"
+    },
+    {
+      "name": "pullRequestCommentId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Pull request comment ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-star"
 }

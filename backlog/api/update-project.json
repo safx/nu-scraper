@@ -14,5 +14,56 @@
       "description": "Project ID or Project Key"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-project"
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project Name"
+    },
+    {
+      "name": "key",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project Key"
+    },
+    {
+      "name": "chartEnabled",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable chart"
+    },
+    {
+      "name": "subtaskingEnabled",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable subtasking"
+    },
+    {
+      "name": "projectLeaderCanEditProjectLeader",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "Allow project administrators to manage each other"
+    },
+    {
+      "name": "textFormattingRule",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Formatting rules \u201cbacklog\u201d or \u201cmarkdown\u201d"
+    },
+    {
+      "name": "archived",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "archive"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-project"
 }

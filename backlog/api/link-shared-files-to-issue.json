@@ -14,5 +14,14 @@
       "description": "Issue ID or Issue key"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/link-shared-files-to-issue"
+  "formParams": [
+    {
+      "name": "fileId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Shared File ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/link-shared-files-to-issue"
 }

@@ -5,5 +5,5 @@
   "method": "GET",
   "url": "/api/v2/priorities",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-priority-list"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-priority-list"
 }

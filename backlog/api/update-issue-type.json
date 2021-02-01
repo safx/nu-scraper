@@ -21,5 +21,35 @@
       "description": "Issue Type ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-issue-type"
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue Type Name"
+    },
+    {
+      "name": "color",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Background color : available\n\u201d#e30000\u201d\n\u201d#990000\u201d\n\u201d#934981\u201d\n\u201d#814fbc\u201d\n\u201d#2779ca\u201d\n\u201d#007e9a\u201d\n\u201d#7ea800\u201d\n\u201d#ff9200\u201d\n\u201d#ff3265\u201d\n\u201d#666665\u201d"
+    },
+    {
+      "name": "templateSummary",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Subject"
+    },
+    {
+      "name": "templateDescription",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Description"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-issue-type"
 }

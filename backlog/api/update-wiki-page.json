@@ -14,5 +14,28 @@
       "description": "Wiki page ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-wiki-page"
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Page Name"
+    },
+    {
+      "name": "content",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Content"
+    },
+    {
+      "name": "mailNotify",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "True make to notify by Email"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-wiki-page"
 }

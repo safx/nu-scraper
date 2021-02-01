@@ -35,5 +35,14 @@
       "description": "Comment\u2019s ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-pull-request-comment-information"
+  "formParams": [
+    {
+      "name": "content",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Comment\u2019s body"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-pull-request-comment-information"
 }

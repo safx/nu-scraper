@@ -1,7 +1,7 @@
 {
   "name": "AddStatus",
   "summary": "Add Status",
-  "description": "Adds new Status to the project.",
+  "description": "Adds new Status to the project. You can create up to 8 custom statuses within a Project aside from the 4 default.",
   "method": "POST",
   "url": "/api/v2/projects/:projectIdOrKey/statuses",
   "scope": null,
@@ -14,5 +14,21 @@
       "description": "Project ID or Project Key"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-status"
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Status name"
+    },
+    {
+      "name": "color",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Background color: You can use the below colors\n\u201d#ea2c00\u201d\n\u201d#e87758\u201d\n\u201d#e07b9a\u201d\n\u201d#868cb7\u201d\n\u201d#3b9dbd\u201d\n\u201d#4caf93\u201d\n\u201d#b0be3c\u201d\n\u201d#eda62a\u201d\n\u201d#f42858\u201d\n\u201d#393939\u201d"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-status"
 }

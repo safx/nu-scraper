@@ -17,7 +17,6 @@
   "nulabAccount": true,
   "parentChildIssue": true,
   "postIssueByMail": true,
-  "projectGroup": true,
   "projectLimit": 0,
   "pullRequestAttachmentLimitPerFile": 10485760,
   "pullRequestAttachmentNumLimit": 50,

@@ -44,5 +44,5 @@
       "description": "\u201casc\u201d or \u201cdesc\u201d default=desc"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-wiki-page-history"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-wiki-page-history"
 }

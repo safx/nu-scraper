@@ -1,0 +1,9 @@
+{
+  "name": "GetRateLimit",
+  "summary": "Get Rate Limit",
+  "description": "Return information about the rate limit currently applied to you.",
+  "method": "GET",
+  "url": "/api/v2/rateLimit",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-rate-limit"
+}

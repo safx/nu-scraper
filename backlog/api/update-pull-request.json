@@ -28,5 +28,49 @@
       "description": "Pull request number"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-pull-request"
+  "formParams": [
+    {
+      "name": "summary",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Summary of pull request"
+    },
+    {
+      "name": "description",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Description of pull request"
+    },
+    {
+      "name": "issueId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Related issue\u2019s ID"
+    },
+    {
+      "name": "assigneeId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Assignee\u2019s ID of pull request"
+    },
+    {
+      "name": "notifiedUserId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "User ID to send notification when pull request is added"
+    },
+    {
+      "name": "comment",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Comment"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-pull-request"
 }

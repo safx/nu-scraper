@@ -1,7 +1,7 @@
 {
   "name": "DeleteUser",
   "summary": "Delete User",
-  "description": "Deletes user from the space. You can\u2019t use this API at backlog.com space.",
+  "description": "Deletes user from the space. You can\u2019t use this API at new plan space.",
   "method": "DELETE",
   "url": "/api/v2/users/:userId",
   "scope": null,
@@ -14,5 +14,5 @@
       "description": "user ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/delete-user"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-user"
 }

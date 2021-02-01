@@ -1,7 +1,7 @@
 {
   "name": "UpdateTeam",
   "summary": "Update Team",
-  "description": "Updates information about team. You can\u2019t use this API at backlog.com space.",
+  "description": "Updates information about team. You can\u2019t use this API at new plan space.",
   "method": "PATCH",
   "url": "/api/v2/teams/:teamId",
   "scope": null,
@@ -14,5 +14,21 @@
       "description": "Team ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-team"
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Team Name"
+    },
+    {
+      "name": "members",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "User ID added to the team"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-team"
 }

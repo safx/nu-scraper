@@ -1,7 +1,7 @@
 {
   "name": "DeleteTeam",
   "summary": "Delete Team",
-  "description": "Deletes team. You can\u2019t use this API at backlog.com space.",
+  "description": "Deletes team. You can\u2019t use this API at new plan space.",
   "method": "DELETE",
   "url": "/api/v2/teams/:teamId",
   "scope": null,
@@ -14,5 +14,5 @@
       "description": "Team ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/delete-team"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-team"
 }

@@ -1,7 +1,7 @@
 {
   "name": "UpdateUser",
   "summary": "Update User",
-  "description": "Updates information about user. You can\u2019t use this API at backlog.com space.",
+  "description": "Updates information about user. You can\u2019t use this API at new plan space.",
   "method": "PATCH",
   "url": "/api/v2/users/:userId",
   "scope": null,
@@ -14,5 +14,35 @@
       "description": "user ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-user"
+  "formParams": [
+    {
+      "name": "password",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "password"
+    },
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "nickname"
+    },
+    {
+      "name": "mailAddress",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Email address"
+    },
+    {
+      "name": "roleType",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Administrator(1) Normal User(2) Reporter(3) Viewer(4) Guest Reporter(5) Guest Viewer(6)"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-user"
 }

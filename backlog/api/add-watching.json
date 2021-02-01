@@ -5,5 +5,21 @@
   "method": "POST",
   "url": "/api/v2/watchings",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-watching"
+  "formParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue ID or Issue Key"
+    },
+    {
+      "name": "note",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Note"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-watching"
 }

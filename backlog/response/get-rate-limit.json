@@ -1,0 +1,24 @@
+{
+  "rateLimit": {
+    "icon": {
+      "limit": 60,
+      "remaining": 60,
+      "reset": 1603881873
+    },
+    "read": {
+      "limit": 600,
+      "remaining": 600,
+      "reset": 1603881873
+    },
+    "search": {
+      "limit": 150,
+      "remaining": 150,
+      "reset": 1603881873
+    },
+    "update": {
+      "limit": 150,
+      "remaining": 150,
+      "reset": 1603881873
+    }
+  }
+}

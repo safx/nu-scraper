@@ -14,5 +14,42 @@
       "description": "Project ID or Project Key"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-webhook"
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Name"
+    },
+    {
+      "name": "description",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Description"
+    },
+    {
+      "name": "hookUrl",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "hook URL"
+    },
+    {
+      "name": "allEvent",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "True to make all events notified"
+    },
+    {
+      "name": "activityTypeIds",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Event ID to be notified"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-webhook"
 }

@@ -14,5 +14,42 @@
       "description": "Project ID or Project Key"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-custom-field"
+  "formParams": [
+    {
+      "name": "typeId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Type ID of Custom field\n1: Text\n2: Sentence\n3: Number\n4: Date\n5: Single list\n6: Multiple list\n7: Checkbox\n8: Radio"
+    },
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Name"
+    },
+    {
+      "name": "applicableIssueTypes",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "Type ID to enable Custom fields\nempty=enable for all issue types"
+    },
+    {
+      "name": "description",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Description"
+    },
+    {
+      "name": "required",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "True to make the Custom field required"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-custom-field"
 }

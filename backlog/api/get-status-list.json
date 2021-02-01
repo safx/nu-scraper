@@ -5,5 +5,5 @@
   "method": "GET",
   "url": "/api/v2/statuses",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-status-list"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-status-list"
 }

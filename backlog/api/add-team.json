@@ -1,9 +1,18 @@
 {
   "name": "AddTeam",
   "summary": "Add Team",
-  "description": "Adds new team. You can\u2019t use this API at backlog.com space.",
+  "description": "Adds new team. You can\u2019t use this API at new plan space.",
   "method": "POST",
   "url": "/api/v2/teams",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-team"
+  "formParams": [
+    {
+      "name": "members",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "User ID added to the group"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-team"
 }

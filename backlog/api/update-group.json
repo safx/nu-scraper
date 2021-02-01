@@ -14,5 +14,21 @@
       "description": "Group ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-group"
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Group Name"
+    },
+    {
+      "name": "members",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "User ID added to the group"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-group"
 }

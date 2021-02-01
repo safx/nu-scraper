@@ -14,5 +14,35 @@
       "description": "Project ID or Project Key"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-issue-type"
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Issue Type name"
+    },
+    {
+      "name": "color",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Background color"
+    },
+    {
+      "name": "templateSummary",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Subject"
+    },
+    {
+      "name": "templateDescription",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Description"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-issue-type"
 }

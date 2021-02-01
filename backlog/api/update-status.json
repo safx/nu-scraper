@@ -21,5 +21,21 @@
       "description": "Status ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/update-status"
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Status Name"
+    },
+    {
+      "name": "color",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Background color : available\n\u201d#ea2c00\u201d\n\u201d#e87758\u201d\n\u201d#e07b9a\u201d\n\u201d#868cb7\u201d\n\u201d#3b9dbd\u201d\n\u201d#4caf93\u201d\n\u201d#b0be3c\u201d\n\u201d#eda62a\u201d\n\u201d#f42858\u201d\n\u201d#393939\u201d"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-status"
 }

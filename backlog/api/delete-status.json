@@ -21,5 +21,14 @@
       "description": "Status ID"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/delete-status"
+  "formParams": [
+    {
+      "name": "substituteStatusId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Status ID to replace linked issues statuses.\nIssues which status are set to the deleted status will be set to the specied substitute status."
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-status"
 }

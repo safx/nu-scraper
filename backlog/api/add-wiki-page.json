@@ -5,5 +5,35 @@
   "method": "POST",
   "url": "/api/v2/wikis",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-wiki-page"
+  "formParams": [
+    {
+      "name": "projectId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Project ID"
+    },
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Page Name"
+    },
+    {
+      "name": "content",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Content"
+    },
+    {
+      "name": "mailNotify",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "True make to notify by Email"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-wiki-page"
 }

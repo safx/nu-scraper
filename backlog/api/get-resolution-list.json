@@ -5,5 +5,5 @@
   "method": "GET",
   "url": "/api/v2/resolutions",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-resolution-list"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-resolution-list"
 }

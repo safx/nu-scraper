@@ -14,5 +14,5 @@
       "description": "Project ID or Project Key"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/get-issue-type-list"
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-issue-type-list"
 }

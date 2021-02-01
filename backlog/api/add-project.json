@@ -5,5 +5,42 @@
   "method": "POST",
   "url": "/api/v2/projects",
   "scope": null,
-  "apiDocumentUrl": "https://developer.nulab-inc.com/docs/backlog/api/2/add-project"
+  "formParams": [
+    {
+      "name": "key",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Project Key (Uppercase letters (A-Z), numbers (0-9) and underscore (_) can be used.)"
+    },
+    {
+      "name": "chartEnabled",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable chart"
+    },
+    {
+      "name": "projectLeaderCanEditProjectLeader",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "Allow project administrators to manage each other"
+    },
+    {
+      "name": "subtaskingEnabled",
+      "optional": false,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable subtasking"
+    },
+    {
+      "name": "textFormattingRule",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Formatting rules \u201cbacklog\u201d or \u201cmarkdown\u201d"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-project"
 }

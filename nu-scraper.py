@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 from collections import OrderedDict
 from pyquery import PyQuery as pq
@@ -100,6 +100,8 @@ class WebAPI(object):
     def writeResponseJson(self):
         if self.response == None:
             return '(none response)'
+        if self.response == 'Status Line / Response Header':
+            return '(none response)'
 
         outputName = self.appName + '/response/' + self.hyphenName + '.json'
         with open(outputName, 'w') as f:
@@ -122,6 +124,8 @@ def getWebAPI(appName, apiDocumentUrl):
 
     def p(p):
         e = data(p).next()
+        while not e.is_('table') and not e.is_('h2') and len(e.text()) > 0:
+            e = e.next()
         return [ParamInfo(e) for e in e('table > tbody > tr')]
 
     def c(p, default=None):
