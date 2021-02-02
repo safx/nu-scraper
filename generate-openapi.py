@@ -62,6 +62,9 @@ def toRequestBodyParams(params: List[Dict[str, str]]) -> Dict[str, openapi.Schem
         required = not p['optional']
         description = p['description']
         props[name] = openapi.SchemaObject.initWithPrimitive(toPrimitiveDataTypeFromStr(type), description=description)
+        array = p['array']
+        if array:
+            name += '[]'
         if required:
             reqs.append(name)
     return openapi.SchemaObject(properties=props, required=reqs if len(reqs) > 0 else None)
@@ -72,6 +75,8 @@ def toParameterObject(params: Dict[str, str], location: openapi.ParameterLocatio
     schema = toPrimitiveDataTypeFromStr(params['type']).toSchemaObject()
     description = params['description']
     array = params['array']
+    if array:
+        name += '[]'
     return openapi.ParameterObject(name, location, required, schema, description, array)
 
 def toParameterObjects(urlParams: List[Dict[str, str]], queryParams: List[Dict[str, str]]) -> Optional[List[openapi.ParameterObject]]:

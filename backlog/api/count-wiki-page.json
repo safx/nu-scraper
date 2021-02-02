@@ -10,7 +10,7 @@
       "name": "projectIdOrKey",
       "optional": true,
       "array": false,
-      "type": "Number",
+      "type": "String",
       "description": "Project ID or Project Key"
     }
   ],

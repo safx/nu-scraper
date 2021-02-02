@@ -27,6 +27,9 @@ class ParamInfo(object):
             self.name = name[:-2]
         elif name.find('[0]') >= 0:
             self.validVariableName = False
+        # Hack: wrong tyename
+        if self.name == 'projectIdOrKey' and self.typename == 'Number':
+            self.typename = 'String'
 
     @property
     def obj(self):
