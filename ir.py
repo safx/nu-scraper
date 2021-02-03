@@ -338,11 +338,12 @@ class API:
                 e.replaceWithCommonObject(sot)
 
     @staticmethod
-    def initWithDir(dir: str):
+    def initWithDir(dir: str, lang: str):
         endpoints = []
         #for d in ['get-message.json', 'get-messages.json']: #os.listdir(os.path.join(dir, 'api')):
-        for d in os.listdir(os.path.join(dir, 'api')):
-            with open(os.path.join(dir, 'api', d)) as req:
+        path = os.path.join(dir, 'api', lang)
+        for d in os.listdir(path):
+            with open(os.path.join(path, d)) as req:
                 req_json = json.load(req)
                 res_text = None
                 res_json = None

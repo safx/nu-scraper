@@ -191,8 +191,8 @@ def createSecuritySchemeObjects(appname, backlogUrl):
     else:
         assert('Unknwon app name' and False)
 
-def main(appname, serverUrl = 'https://typetalk.com/api'):
-    api = ir.API.initWithDir(appname)
+def main(appname, serverUrl = 'https://typetalk.com/api', lang = 'en'):
+    api = ir.API.initWithDir(appname, lang)
     api.findAndRegisterSimilarObjects()
 
     #for i in api.endpoints():

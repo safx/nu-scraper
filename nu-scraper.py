@@ -4,7 +4,7 @@ from collections import OrderedDict
 from pyquery import PyQuery as pq
 import sys
 import json
-import re
+import os
 
 
 class ParamInfo(object):
@@ -67,7 +67,7 @@ class WebAPI(object):
             return ''.join([e[0].upper() + e[1:] for e in name.split('-')])
         return toCamelCase(self.hyphenName)
 
-    def writeAPIJson(self):
+    def writeAPIJson(self, lang = 'en'):
         obj = OrderedDict()
         obj["name"] = self.cameCaeeName
         obj["summary"] = self.summary
@@ -80,7 +80,7 @@ class WebAPI(object):
         if len(self.queryParams): obj["queryParams"] = [e.obj for e in self.queryParams]
         obj["apiDocumentUrl"] = self.apiDocumentUrl
 
-        outputName = self.appName + '/api/' + self.hyphenName + '.json'
+        outputName = os.path.join(self.appName, 'api', lang, self.hyphenName + '.json')
         with open(outputName, 'w') as f:
             json.dump(obj, f, indent=2)
 
@@ -106,7 +106,7 @@ class WebAPI(object):
         if self.response == 'Status Line / Response Header':
             return '(none response)'
 
-        outputName = self.appName + '/response/' + self.hyphenName + '.json'
+        outputName = os.path.join(self.appName, 'response', self.hyphenName + '.json')
         with open(outputName, 'w') as f:
             (objOrStr, err) = self.validResponseJson()
             if type(objOrStr) != str:
@@ -156,7 +156,7 @@ def getWebAPI(appName, apiDocumentUrl):
 
 
 SITE_ROOT = 'https://developer.nulab.com'
-def getAppAPIs(appName):
+def getAppAPIs(appName, lang):
     top = pq(url=SITE_ROOT + '/docs/' + appName + '/')
     count = 199
     for i in top('a.sidebar__links'):
@@ -169,7 +169,7 @@ def getAppAPIs(appName):
         api = getWebAPI(appName, SITE_ROOT + path)
         print("%-40s" % (api.cameCaeeName,), end='', flush=True)
 
-        api.writeAPIJson()
+        api.writeAPIJson(lang)
         res = api.writeResponseJson()
         print('✔︎ ' + res)
 
@@ -179,7 +179,7 @@ def getAppAPIs(appName):
 
 
 
-def getAppAPIsByAppName(appNames):
+def getAppAPIsByAppName(appNames, lang = 'en'):
     if len(appNames) == 1 and appNames[0] == 'all':
         appNames = [
             'typetalk',
@@ -187,7 +187,7 @@ def getAppAPIsByAppName(appNames):
             'cacoo'
         ]
     for i in appNames:
-        getAppAPIs(i)
+        getAppAPIs(i, lang)
 
 
 getAppAPIsByAppName(sys.argv[1:])
