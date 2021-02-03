@@ -1,0 +1,18 @@
+{
+  "name": "DeleteWikiPage",
+  "summary": "Wiki\u30da\u30fc\u30b8\u306e\u524a\u9664",
+  "description": "WIki\u30da\u30fc\u30b8\u3092\u524a\u9664\u3057\u307e\u3059\u3002",
+  "method": "DELETE",
+  "url": "/api/v2/wikis/:wikiId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "wikiId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Wiki\u30da\u30fc\u30b8\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/delete-wiki-page"
+}

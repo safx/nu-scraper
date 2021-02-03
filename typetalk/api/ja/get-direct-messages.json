@@ -1,0 +1,47 @@
+{
+  "name": "GetDirectMessages",
+  "summary": "\u6295\u7a3f\u30c0\u30a4\u30ec\u30af\u30c8\u30e1\u30c3\u30bb\u30fc\u30b8\u30ea\u30b9\u30c8\u306e\u53d6\u5f97",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v2/spaces/:spaceKey/messages/@:accountName",
+  "scope": "topic.read",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u7d44\u7e54\u306e\u30ad\u30fc"
+    },
+    {
+      "name": "accountName",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30a2\u30ab\u30a6\u30f3\u30c8\u540d"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "count",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c7\u30d5\u30a9\u30eb\u30c8\u5024: 20\u3001\u6700\u5927\u5024: 200"
+    },
+    {
+      "name": "from",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u6295\u7a3fID"
+    },
+    {
+      "name": "direction",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u201cbackward\u201d \u307e\u305f\u306f \u201cforward\u201d"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/2/get-direct-messages"
+}

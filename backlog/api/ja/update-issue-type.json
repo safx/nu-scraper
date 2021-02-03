@@ -1,0 +1,25 @@
+{
+  "name": "UpdateIssueType",
+  "summary": "\u7a2e\u5225\u60c5\u5831\u306e\u66f4\u65b0",
+  "description": "\u7a2e\u5225\u306e\u60c5\u5831\u3092\u66f4\u65b0\u3057\u307e\u3059\u3002",
+  "method": "PATCH",
+  "url": "/api/v2/projects/:projectIdOrKey/issueTypes/:id",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    },
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u7a2e\u5225\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/update-issue-type"
+}

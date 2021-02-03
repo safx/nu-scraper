@@ -1,0 +1,9 @@
+{
+  "name": "AddTeam",
+  "summary": "\u30c1\u30fc\u30e0\u306e\u8ffd\u52a0",
+  "description": "\u30c1\u30fc\u30e0\u3092\u8ffd\u52a0\u3057\u307e\u3059\u3002 \u65b0\u30d7\u30e9\u30f3\u306e\u30b9\u30da\u30fc\u30b9\u3067\u306f\u3053\u306eAPI\u3092\u5229\u7528\u3067\u304d\u307e\u305b\u3093\u3002",
+  "method": "POST",
+  "url": "/api/v2/teams",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-team"
+}

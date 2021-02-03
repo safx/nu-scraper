@@ -1,0 +1,47 @@
+{
+  "name": "SaveUserStatus",
+  "summary": "\u30e6\u30fc\u30b6\u30fc\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u4fdd\u5b58",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/userStatuses",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30b9\u30da\u30fc\u30b9\u30ad\u30fc"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "emoji",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30b9\u30c6\u30fc\u30bf\u30b9\u7d75\u6587\u5b57\uff08\u7d75\u6587\u5b57\u8a18\u6cd5\u306e\u6587\u5b57\u5217\uff09"
+    },
+    {
+      "name": "message",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30b9\u30c6\u30fc\u30bf\u30b9\u30e1\u30c3\u30bb\u30fc\u30b8"
+    },
+    {
+      "name": "clearAt",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30b9\u30c6\u30fc\u30bf\u30b9\u306e\u6709\u52b9\u671f\u9650"
+    },
+    {
+      "name": "isNotificationDisabled",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "\u901a\u77e5\u3092\u505c\u6b62\uff08\u30c7\u30d5\u30a9\u30eb\u30c8: false\uff09"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/save-user-status"
+}

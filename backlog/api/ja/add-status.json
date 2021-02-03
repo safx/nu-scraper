@@ -1,0 +1,18 @@
+{
+  "name": "AddStatus",
+  "summary": "\u72b6\u614b\u306e\u8ffd\u52a0",
+  "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u72b6\u614b\u3092\u8ffd\u52a0\u3057\u307e\u3059\u3002 1\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u3064\u304d8\u500b\u307e\u3067\u72b6\u614b\u3092\u8ffd\u52a0\u3067\u304d\u307e\u3059\u3002 \u6a19\u6e96\u306e4\u3064\u306e\u72b6\u614b\u3068\u5408\u308f\u305b\u308b\u3068\u3001\u5408\u8a0812\u500b\u306e\u72b6\u614b\u3092\u8a2d\u5b9a\u3067\u304d\u307e\u3059\u3002",
+  "method": "POST",
+  "url": "/api/v2/projects/:projectIdOrKey/statuses",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-status"
+}

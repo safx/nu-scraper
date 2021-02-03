@@ -1,0 +1,9 @@
+{
+  "name": "GetUserList",
+  "summary": "\u30e6\u30fc\u30b6\u30fc\u4e00\u89a7\u306e\u53d6\u5f97",
+  "description": "\u30b9\u30da\u30fc\u30b9\u306e\u30e6\u30fc\u30b6\u30fc\u306e\u4e00\u89a7\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/users",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-user-list"
+}

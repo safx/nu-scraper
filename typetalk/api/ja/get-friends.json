@@ -1,0 +1,38 @@
+{
+  "name": "GetFriends",
+  "summary": "\u53cb\u4eba\u3092\u53d6\u5f97",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v4/search/friends",
+  "scope": "my",
+  "queryParams": [
+    {
+      "name": "q",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30af\u30a8\u30ea\u30fc"
+    },
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u7d44\u7e54\u30ad\u30fc"
+    },
+    {
+      "name": "offset",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c7\u30d5\u30a9\u30eb\u30c8\u5024: 0"
+    },
+    {
+      "name": "count",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c7\u30d5\u30a9\u30eb\u30c8\u5024: 30\u3001\u6700\u5927\u5024: 100"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/4/get-friends"
+}

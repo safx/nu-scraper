@@ -1,0 +1,24 @@
+{
+  "name": "LikeMessage",
+  "summary": "\u3044\u3044\u306d\u3092\u8ffd\u52a0",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/posts/:postId/like",
+  "scope": "topic.post",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c8\u30d4\u30c3\u30afID"
+    },
+    {
+      "name": "postId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u6295\u7a3fID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/like-message"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "AddProjectUser",
+  "summary": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30e6\u30fc\u30b6\u30fc\u306e\u8ffd\u52a0",
+  "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u30e6\u30fc\u30b6\u30fc\u3092\u8ffd\u52a0\u3057\u307e\u3059\u3002",
+  "method": "POST",
+  "url": "/api/v2/projects/:projectIdOrKey/users",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-project-user"
+}

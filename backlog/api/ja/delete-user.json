@@ -1,0 +1,18 @@
+{
+  "name": "DeleteUser",
+  "summary": "\u30e6\u30fc\u30b6\u30fc\u306e\u524a\u9664",
+  "description": "\u30e6\u30fc\u30b6\u30fc\u3092\u30b9\u30da\u30fc\u30b9\u304b\u3089\u524a\u9664\u3057\u307e\u3059\u3002 \u65b0\u30d7\u30e9\u30f3\u306e\u30b9\u30da\u30fc\u30b9\u3067\u306f\u3053\u306eAPI\u3092\u5229\u7528\u3067\u304d\u307e\u305b\u3093\u3002",
+  "method": "DELETE",
+  "url": "/api/v2/users/:userId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "userId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u524a\u9664\u3059\u308b\u30e6\u30fc\u30b6\u30fc\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/delete-user"
+}

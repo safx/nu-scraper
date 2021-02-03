@@ -1,0 +1,18 @@
+{
+  "name": "GetWikiPage",
+  "summary": "Wiki\u30da\u30fc\u30b8\u60c5\u5831\u306e\u53d6\u5f97",
+  "description": "Wiki\u30da\u30fc\u30b8\u306e\u60c5\u5831\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/wikis/:wikiId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "wikiId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Wiki\u30da\u30fc\u30b8\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-wiki-page"
+}

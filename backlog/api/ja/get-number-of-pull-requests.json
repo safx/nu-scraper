@@ -1,0 +1,69 @@
+{
+  "name": "GetNumberOfPullRequests",
+  "summary": "\u30d7\u30eb\u30ea\u30af\u30a8\u30b9\u30c8\u6570\u306e\u53d6\u5f97",
+  "description": "\u30d7\u30eb\u30ea\u30af\u30a8\u30b9\u30c8\u306e\u6570\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/git/repositories/:repoIdOrName/pullRequests/count",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    },
+    {
+      "name": "repoIdOrName",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30ea\u30dd\u30b8\u30c8\u30ea\u306eID \u307e\u305f\u306f \u30ea\u30dd\u30b8\u30c8\u30ea\u540d"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "statusId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u72b6\u614b\u306eID"
+    },
+    {
+      "name": "assigneeId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u62c5\u5f53\u8005\u306eID"
+    },
+    {
+      "name": "issueId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u95a2\u9023\u8ab2\u984c\u306eID"
+    },
+    {
+      "name": "createdUserId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u767b\u9332\u8005\u306eID"
+    },
+    {
+      "name": "offset",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": ""
+    },
+    {
+      "name": "count",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u53d6\u5f97\u4e0a\u9650(1-100) \u6307\u5b9a\u304c\u7121\u3044\u5834\u5408\u306f20"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-number-of-pull-requests"
+}

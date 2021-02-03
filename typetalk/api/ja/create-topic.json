@@ -1,0 +1,45 @@
+{
+  "name": "CreateTopic",
+  "summary": "\u30c8\u30d4\u30c3\u30af\u3092\u4f5c\u6210",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/topics",
+  "scope": "topic.write",
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30c8\u30d4\u30c3\u30af\u540d\uff08\u6700\u592764\u6587\u5b57\uff09"
+    },
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u7d44\u7e54\u30ad\u30fc"
+    },
+    {
+      "name": "description",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30c8\u30d4\u30c3\u30af\u306e\u8aac\u660e\u6587\uff08\u6700\u59272000\u6587\u5b57\uff09"
+    },
+    {
+      "name": "addAccountIds",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u30a2\u30ab\u30a6\u30f3\u30c8ID\uff08\u7d44\u7e54\u306e\u30e1\u30f3\u30d0\u30fc\u306e\u307f\uff09"
+    },
+    {
+      "name": "addGroupIds",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u30b0\u30eb\u30fc\u30d7ID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/create-topic"
+}

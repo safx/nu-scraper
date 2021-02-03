@@ -1,0 +1,25 @@
+{
+  "name": "GetTeam",
+  "summary": "Get an organization team",
+  "description": "Role",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/teams/:teamKey",
+  "scope": "organization.read",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Organization key"
+    },
+    {
+      "name": "teamKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "Team key"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/get-team"
+}

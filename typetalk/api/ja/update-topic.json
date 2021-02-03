@@ -1,0 +1,33 @@
+{
+  "name": "UpdateTopic",
+  "summary": "\u30c8\u30d4\u30c3\u30af\u3092\u66f4\u65b0",
+  "method": "PUT",
+  "url": "https://typetalk.com/api/v1/topics/:topicId",
+  "scope": "topic.write",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c8\u30d4\u30c3\u30afID"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30c8\u30d4\u30c3\u30af\u540d\uff08\u6700\u592764\u6587\u5b57\uff09"
+    },
+    {
+      "name": "description",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30c8\u30d4\u30c3\u30af\u306e\u8aac\u660e\u6587\uff08\u6700\u59272000\u6587\u5b57\uff09"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/update-topic"
+}

@@ -1,6 +1,6 @@
 {
   "name": "UpdateTopicGroup",
-  "summary": "Update topic group",
+  "summary": "\u30c8\u30d4\u30c3\u30af\u30b0\u30eb\u30fc\u30d7\u306e\u66f4\u65b0",
   "method": "PUT",
   "url": "https://typetalk.com/api/v1/spaces/:spaceKey/myTopicGroups/:myTopicGroupId",
   "scope": "my",
@@ -10,14 +10,14 @@
       "optional": false,
       "array": false,
       "type": "String",
-      "description": "Space key"
+      "description": "\u30b9\u30da\u30fc\u30b9\u30ad\u30fc"
     },
     {
       "name": "myTopicGroupId",
       "optional": false,
       "array": false,
       "type": "Number",
-      "description": "My Topic Group ID"
+      "description": "\u30c8\u30d4\u30c3\u30af\u30b0\u30eb\u30fc\u30d7\u306eID"
     }
   ],
   "formParams": [
@@ -26,22 +26,22 @@
       "optional": false,
       "array": false,
       "type": "String",
-      "description": "Topic Group Name"
+      "description": "\u30c8\u30d4\u30c3\u30af\u30b0\u30eb\u30fc\u30d7\u306e\u540d\u524d"
     },
     {
       "name": "sortType",
       "optional": false,
       "array": false,
       "type": "String",
-      "description": "Sort type(\u201crecent\u201d or \u201calphanumerical\u201d)"
+      "description": "\u30bd\u30fc\u30c8\u9806(\u201crecent\u201d \u307e\u305f\u306f \u201calphanumerical\u201d)"
     },
     {
       "name": "isMuted",
       "optional": false,
       "array": false,
       "type": "Boolean",
-      "description": "Mute setting"
+      "description": "\u30b0\u30eb\u30fc\u30d7\u306e\u30df\u30e5\u30fc\u30c8"
     }
   ],
-  "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/update-topic-group"
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/update-topic-group"
 }

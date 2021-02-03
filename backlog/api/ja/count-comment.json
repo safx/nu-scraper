@@ -1,0 +1,18 @@
+{
+  "name": "CountComment",
+  "summary": "\u8ab2\u984c\u30b3\u30e1\u30f3\u30c8\u6570\u306e\u53d6\u5f97",
+  "description": "\u8ab2\u984c\u306b\u767b\u9332\u3055\u308c\u3066\u3044\u308b\u30b3\u30e1\u30f3\u30c8\u306e\u6570\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/issues/:issueIdOrKey/comments/count",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u306eID \u307e\u305f\u306f \u8ab2\u984c\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/count-comment"
+}

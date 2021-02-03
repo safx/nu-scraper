@@ -1,0 +1,8 @@
+{
+  "name": "GetNotificationStatus",
+  "summary": "\u901a\u77e5\u672a\u8aad\u6570\u306e\u53d6\u5f97",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v7/notifications/status",
+  "scope": "my",
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/7/get-notification-status"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "PinTopic",
+  "summary": "\u30c8\u30d4\u30c3\u30af\u3092\u30d4\u30f3\u7559\u3081",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/myTopics/pin",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30b9\u30da\u30fc\u30b9\u30ad\u30fc"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c8\u30d4\u30c3\u30af\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/pin-topic"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "AddCommentNotification",
+  "summary": "\u8ab2\u984c\u30b3\u30e1\u30f3\u30c8\u306b\u304a\u77e5\u3089\u305b\u3092\u8ffd\u52a0",
+  "description": "\u30b3\u30e1\u30f3\u30c8\u306b\u304a\u77e5\u3089\u305b\u3092\u8ffd\u52a0\u3057\u307e\u3059",
+  "method": "POST",
+  "url": "/api/v2/issues/:issueIdOrKey/comments/:commentId/notifications",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u306eID \u307e\u305f\u306f \u8ab2\u984c\u30ad\u30fc"
+    },
+    {
+      "name": "commentId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30b3\u30e1\u30f3\u30c8\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-comment-notification"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "GetProjectIcon",
+  "summary": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30a2\u30a4\u30b3\u30f3\u306e\u53d6\u5f97",
+  "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306e\u30a2\u30a4\u30b3\u30f3\u753b\u50cf\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/image",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-project-icon"
+}

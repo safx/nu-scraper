@@ -1,0 +1,26 @@
+{
+  "name": "GetReceivedLikes",
+  "summary": "\u3082\u3089\u3063\u305f\u3044\u3044\u306d\u3092\u53d6\u5f97",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/likes/receive",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u7d44\u7e54\u30ad\u30fc"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "from",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u3044\u3044\u306dID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/get-received-likes"
+}

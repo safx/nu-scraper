@@ -1,0 +1,8 @@
+{
+  "name": "GetProfile",
+  "summary": "\u30d7\u30ed\u30d5\u30a3\u30fc\u30eb\u306e\u53d6\u5f97",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/profile",
+  "scope": "my",
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/get-profile"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GetPriorityList",
+  "summary": "\u512a\u5148\u5ea6\u4e00\u89a7\u306e\u53d6\u5f97",
+  "description": "\u8ab2\u984c\u306b\u8a2d\u5b9a\u3067\u304d\u308b\u512a\u5148\u5ea6\u306e\u4e00\u89a7\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/priorities",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-priority-list"
+}

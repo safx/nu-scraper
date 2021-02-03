@@ -1,0 +1,18 @@
+{
+  "name": "AddProjectGroup",
+  "summary": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30b0\u30eb\u30fc\u30d7\u306e\u8ffd\u52a0",
+  "description": "warning \u3053\u306eAPI\u306f\u975e\u63a8\u5968\u3067\u3059\n\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30c1\u30fc\u30e0\u306e\u8ffd\u52a0 \u3092\u3054\u5229\u7528\u304f\u3060\u3055\u3044\u3002",
+  "method": "POST",
+  "url": "/api/v2/projects/:projectIdOrKey/groups",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-project-group"
+}

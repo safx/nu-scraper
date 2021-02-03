@@ -201,7 +201,7 @@ def main(appname, serverUrl = 'https://typetalk.com/api', lang = 'en'):
     #    print(i)
 
     converter = OpenApiConverter()
-    oa = converter.convert(appname[0].upper() + appname[1:], '1.0.0-20210127', serverUrl, api, createSecuritySchemeObjects(appname, serverUrl))
+    oa = converter.convert(appname[0].upper() + appname[1:], '1.0.0-20210204', serverUrl, api, createSecuritySchemeObjects(appname, serverUrl))
     #print(oa.toJson())
     print(json.dumps(oa.toJson()))
 

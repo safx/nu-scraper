@@ -1,0 +1,25 @@
+{
+  "name": "CountUserReceivedStars",
+  "summary": "\u30e6\u30fc\u30b6\u30fc\u306e\u53d7\u3051\u53d6\u3063\u305f\u30b9\u30bf\u30fc\u306e\u6570\u306e\u53d6\u5f97",
+  "description": "\u30e6\u30fc\u30b6\u30fc\u306e\u53d7\u3051\u53d6\u3063\u305f\u30b9\u30bf\u30fc\u306e\u6570\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/users/:userId/stars/count",
+  "scope": null,
+  "queryParams": [
+    {
+      "name": "since",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u6307\u5b9a\u3057\u305f\u65e5\u4ed8\u4ee5\u964d\u306e\u30b9\u30bf\u30fc\u3092\u30ab\u30a6\u30f3\u30c8 (yyyy-MM-dd)"
+    },
+    {
+      "name": "until",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u6307\u5b9a\u3057\u305f\u65e5\u4ed8\u4ee5\u524d\u306e\u30b9\u30bf\u30fc\u3092\u30ab\u30a6\u30f3\u30c8 (yyyy-MM-dd)"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/count-user-received-stars"
+}

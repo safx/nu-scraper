@@ -1,0 +1,24 @@
+{
+  "name": "SaveReadTopic",
+  "summary": "\u30c8\u30d4\u30c3\u30af\u3092\u65e2\u8aad\u306b\u3059\u308b",
+  "method": "PUT",
+  "url": "https://typetalk.com/api/v1/bookmarks",
+  "scope": "my",
+  "queryParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c8\u30d4\u30c3\u30afID"
+    },
+    {
+      "name": "postId",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u6295\u7a3fID \uff08\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u306a\u3051\u308c\u3070\u5168\u3066\u65e2\u8aad\uff09"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/save-read-topic"
+}

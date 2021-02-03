@@ -1,0 +1,9 @@
+{
+  "name": "AddStar",
+  "summary": "\u30b9\u30bf\u30fc\u306e\u8ffd\u52a0",
+  "description": "\u8ab2\u984c\u3001\u30b3\u30e1\u30f3\u30c8\u3001Wiki\u30da\u30fc\u30b8\u306b\u30b9\u30bf\u30fc\u3092\u4e00\u3064\u8ffd\u52a0\u3057\u307e\u3059\u3002",
+  "method": "POST",
+  "url": "/api/v2/stars",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-star"
+}

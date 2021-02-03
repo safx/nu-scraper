@@ -1,0 +1,18 @@
+{
+  "name": "ReadNotification",
+  "summary": "\u304a\u77e5\u3089\u305b\u306e\u65e2\u8aad\u5316",
+  "description": "\u304a\u77e5\u3089\u305b\u3092\u65e2\u8aad\u306b\u3057\u307e\u3059\u3002",
+  "method": "POST",
+  "url": "/api/v2/notifications/:id/markAsRead",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u304a\u77e5\u3089\u305b\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/read-notification"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "MarkWatchingAsRead",
+  "summary": "\u30a6\u30a9\u30c3\u30c1\u306e\u65e2\u8aad\u5316",
+  "description": "\u30a6\u30a9\u30c3\u30c1\u3092\u65e2\u8aad\u306b\u3057\u307e\u3059\u3002",
+  "method": "POST",
+  "url": "/api/v2/watchings/:watchingId/markAsRead",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "watchId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30a6\u30a9\u30c3\u30c1\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/mark-watching-as-read"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "UpdateOrderOfStatus",
+  "summary": "\u72b6\u614b\u306e\u4e26\u3073\u66ff\u3048",
+  "description": "\u72b6\u614b\u306e\u8868\u793a\u9806\u3092\u5909\u66f4\u3057\u307e\u3059\u3002",
+  "method": "PATCH",
+  "url": "/api/v2/projects/:projectIdOrKey/statuses/updateDisplayOrder",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/update-order-of-status"
+}

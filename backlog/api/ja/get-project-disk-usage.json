@@ -1,0 +1,18 @@
+{
+  "name": "GetProjectDiskUsage",
+  "summary": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306e\u5bb9\u91cf\u4f7f\u7528\u72b6\u6cc1\u306e\u53d6\u5f97",
+  "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306e\u5bb9\u91cf\u4f7f\u7528\u72b6\u6cc1\u306e\u60c5\u5831\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/diskUsage",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-project-disk-usage"
+}

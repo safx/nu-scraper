@@ -1,0 +1,18 @@
+{
+  "name": "GetListOfGitRepositories",
+  "summary": "Git\u30ea\u30dd\u30b8\u30c8\u30ea\u4e00\u89a7\u306e\u53d6\u5f97",
+  "description": "Git\u30ea\u30dd\u30b8\u30c8\u30ea\u306e\u4e00\u89a7\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/git/repositories",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-list-of-git-repositories"
+}

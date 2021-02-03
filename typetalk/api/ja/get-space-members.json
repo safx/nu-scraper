@@ -1,0 +1,17 @@
+{
+  "name": "GetSpaceMembers",
+  "summary": "\u7d44\u7e54\u306e\u30e1\u30f3\u30d0\u30fc\u3092\u53d6\u5f97",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/members",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u7d44\u7e54\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/get-space-members"
+}

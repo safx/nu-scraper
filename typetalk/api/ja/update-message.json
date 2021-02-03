@@ -1,0 +1,40 @@
+{
+  "name": "UpdateMessage",
+  "summary": "\u30e1\u30c3\u30bb\u30fc\u30b8\u306e\u66f4\u65b0",
+  "method": "PUT",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/posts/:postId",
+  "scope": "topic.post",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c8\u30d4\u30c3\u30afID"
+    },
+    {
+      "name": "postId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u6295\u7a3fID"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "message",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u6295\u7a3f\u3059\u308b\u30e1\u30c3\u30bb\u30fc\u30b8\u3002\u6700\u5927 4000 \u6587\u5b57"
+    },
+    {
+      "name": "showLinkMeta",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "\u30e1\u30c3\u30bb\u30fc\u30b8\u306b\u542b\u307e\u308c\u308bURL\u306eOGP\u60c5\u5831\u306e\u8868\u793a\u8a2d\u5b9a\u3002\u30c7\u30d5\u30a9\u30eb\u30c8\u5024: true"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/update-message"
+}

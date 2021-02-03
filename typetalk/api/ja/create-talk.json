@@ -1,0 +1,33 @@
+{
+  "name": "CreateTalk",
+  "summary": "\u307e\u3068\u3081\u3092\u4f5c\u6210",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/talks",
+  "scope": "topic.post",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c8\u30d4\u30c3\u30afID"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "talkName",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u307e\u3068\u3081\u540d\u3001\u6700\u5927\u6587\u5b57\u6570: 255"
+    },
+    {
+      "name": "postIds",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u307e\u3068\u3081\u306b\u5165\u308c\u305f\u3044\u6295\u7a3fID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/create-talk"
+}

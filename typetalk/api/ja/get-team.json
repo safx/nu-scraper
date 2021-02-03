@@ -1,0 +1,25 @@
+{
+  "name": "GetTeam",
+  "summary": "\u7d44\u7e54\u306e\u30c1\u30fc\u30e0\u3092\u53d6\u5f97",
+  "description": "\u6a29\u9650",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/teams/:teamKey",
+  "scope": "organization.read",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u7d44\u7e54\u30ad\u30fc"
+    },
+    {
+      "name": "teamKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30c1\u30fc\u30e0\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/get-team"
+}

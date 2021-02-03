@@ -1,0 +1,17 @@
+{
+  "name": "GetSpaces",
+  "summary": "\u7d44\u7e54\u3092\u53d6\u5f97",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces",
+  "scope": "my",
+  "queryParams": [
+    {
+      "name": "excludesGuest",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "true\u306e\u5834\u5408\u3001\u3042\u306a\u305f\u304c\u30b2\u30b9\u30c8\u306e\u7d44\u7e54\u306f\u542b\u307e\u308c\u307e\u305b\u3093\u3002"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/get-spaces"
+}

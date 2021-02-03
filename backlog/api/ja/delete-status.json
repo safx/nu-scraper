@@ -1,0 +1,25 @@
+{
+  "name": "DeleteStatus",
+  "summary": "\u72b6\u614b\u306e\u524a\u9664",
+  "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u304b\u3089\u72b6\u614b\u3092\u524a\u9664\u3057\u307e\u3059\u3002",
+  "method": "DELETE",
+  "url": "/api/v2/projects/:projectIdOrKey/statuses/:id",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    },
+    {
+      "name": "id",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u72b6\u614b\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/delete-status"
+}

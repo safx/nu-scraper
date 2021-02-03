@@ -1,0 +1,17 @@
+{
+  "name": "GetMyUserStatus",
+  "summary": "\u30e6\u30fc\u30b6\u30fc\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u53d6\u5f97",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/userStatuses/me",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30b9\u30da\u30fc\u30b9\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/get-my-user-status"
+}

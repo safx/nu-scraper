@@ -1,0 +1,26 @@
+{
+  "name": "GetOnlineStatus",
+  "summary": "\u30aa\u30f3\u30e9\u30a4\u30f3\u30b9\u30c6\u30fc\u30bf\u30b9\u306e\u53d6\u5f97",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v1/spaces/:spaceKey/accounts/status",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30b9\u30da\u30fc\u30b9\u30ad\u30fc"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "accountIds",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30a2\u30ab\u30a6\u30f3\u30c8ID\uff08\u30c8\u30d4\u30c3\u30af\u306e\u30e1\u30f3\u30d0\u30fc\u306e\u307f\uff09"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/get-online-status"
+}

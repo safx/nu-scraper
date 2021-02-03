@@ -1,0 +1,74 @@
+{
+  "name": "SearchMessages",
+  "summary": "\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u691c\u7d22",
+  "description": "\u3053\u306eAPI\u3092\u4f7f\u3063\u3066\u3001\u30c8\u30d4\u30c3\u30af\u306b\u6295\u7a3f\u3055\u308c\u305f\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u691c\u7d22\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "https://typetalk.com/api/v2/search/posts",
+  "scope": "topic.read",
+  "queryParams": [
+    {
+      "name": "q",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u691c\u7d22\u6587\u5b57\u5217"
+    },
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u7d44\u7e54\u30ad\u30fc"
+    },
+    {
+      "name": "topicIds",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u691c\u7d22\u5bfe\u8c61\u306e\u30c8\u30d4\u30c3\u30af\u3002\u6307\u5b9a\u304c\u306a\u3051\u308c\u3070\u5168\u3066\u306e\u30c8\u30d4\u30c3\u30af\u304c\u5bfe\u8c61\u3002"
+    },
+    {
+      "name": "hasAttachments",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u3092\u6301\u3063\u3066\u3044\u308b\u6295\u7a3f\u306e\u307f\u691c\u7d22\u3002\u30c7\u30d5\u30a9\u30eb\u30c8\u5024\uff1afalse"
+    },
+    {
+      "name": "accountIds",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u30a2\u30ab\u30a6\u30f3\u30c8ID"
+    },
+    {
+      "name": "start",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u691c\u7d22\u958b\u59cb\u4f4d\u7f6e"
+    },
+    {
+      "name": "from",
+      "optional": true,
+      "array": false,
+      "type": "DateTime",
+      "description": "\u691c\u7d22\u7bc4\u56f2\u306e\u8d77\u70b9\u3068\u306a\u308b\u65e5\u4ed8\u6642\u523b"
+    },
+    {
+      "name": "to",
+      "optional": true,
+      "array": false,
+      "type": "DateTime",
+      "description": "\u691c\u7d22\u7bc4\u56f2\u306e\u7d42\u70b9\u3068\u306a\u308b\u65e5\u4ed8\u6642\u523b"
+    },
+    {
+      "name": "botExclusion",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "\u30dc\u30c3\u30c8\u306e\u6295\u7a3f\u3092\u691c\u7d22\u7d50\u679c\u304b\u3089\u9664\u5916\u3002\u30c7\u30d5\u30a9\u30eb\u30c8\u5024\uff1afalse"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/2/search-messages"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "GetVersionMilestoneList",
+  "summary": "\u30d0\u30fc\u30b8\u30e7\u30f3(\u30de\u30a4\u30eb\u30b9\u30c8\u30fc\u30f3)\u4e00\u89a7\u306e\u53d6\u5f97",
+  "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u767b\u9332\u3055\u308c\u3066\u3044\u308b\u30d0\u30fc\u30b8\u30e7\u30f3(\u30de\u30a4\u30eb\u30b9\u30c8\u30fc\u30f3)\u306e\u4e00\u89a7\u3092\u8fd4\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/projects/:projectIdOrKey/versions",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "projectIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-version-milestone-list"
+}

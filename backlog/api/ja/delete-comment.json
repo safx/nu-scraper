@@ -1,0 +1,25 @@
+{
+  "name": "DeleteComment",
+  "summary": "\u8ab2\u984c\u30b3\u30e1\u30f3\u30c8\u306e\u524a\u9664",
+  "description": "\u8ab2\u984c\u30b3\u30e1\u30f3\u30c8\u3092\u524a\u9664\u3057\u307e\u3059\u3002",
+  "method": "DELETE",
+  "url": "/api/v2/issues/:issueIdOrKey/comments/:commentId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "issueIdOrKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u306eID \u307e\u305f\u306f \u8ab2\u984c\u30ad\u30fc"
+    },
+    {
+      "name": "commentId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30b3\u30e1\u30f3\u30c8\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/delete-comment"
+}

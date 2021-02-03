@@ -1,0 +1,33 @@
+{
+  "name": "RemoveMessageFromTalk",
+  "summary": "\u307e\u3068\u3081\u304b\u3089\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u524a\u9664",
+  "method": "DELETE",
+  "url": "https://typetalk.com/api/v1/topics/:topicId/talks/:talkId/posts",
+  "scope": "topic.post",
+  "urlParams": [
+    {
+      "name": "topicId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30c8\u30d4\u30c3\u30afID"
+    },
+    {
+      "name": "talkId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u307e\u3068\u3081 ID"
+    }
+  ],
+  "queryParams": [
+    {
+      "name": "postIds",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "\u307e\u3068\u3081\u304b\u3089\u524a\u9664\u3057\u305f\u3044\u6295\u7a3fID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/1/remove-message-from-talk"
+}

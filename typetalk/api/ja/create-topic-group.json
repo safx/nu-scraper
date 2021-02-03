@@ -1,0 +1,33 @@
+{
+  "name": "CreateTopicGroup",
+  "summary": "\u30c8\u30d4\u30c3\u30af\u30b0\u30eb\u30fc\u30d7\u306e\u4f5c\u6210",
+  "method": "POST",
+  "url": "https://typetalk.com/api/v2/spaces/:spaceKey/myTopicGroups",
+  "scope": "my",
+  "urlParams": [
+    {
+      "name": "spaceKey",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30b9\u30da\u30fc\u30b9\u30ad\u30fc"
+    }
+  ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30c8\u30d4\u30c3\u30af\u30b0\u30eb\u30fc\u30d7\u306e\u540d\u524d"
+    },
+    {
+      "name": "topicIds",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u30c8\u30d4\u30c3\u30af\u306eID"
+    }
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/typetalk/api/2/create-topic-group"
+}

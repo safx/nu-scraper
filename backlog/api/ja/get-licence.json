@@ -1,0 +1,9 @@
+{
+  "name": "GetLicence",
+  "summary": "\u30e9\u30a4\u30bb\u30f3\u30b9\u60c5\u5831\u306e\u53d6\u5f97",
+  "description": "\u30e9\u30a4\u30bb\u30f3\u30b9\u306e\u60c5\u5831\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "GET",
+  "url": "/api/v2/space/licence",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-licence"
+}

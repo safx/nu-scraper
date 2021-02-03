@@ -1,0 +1,9 @@
+{
+  "name": "PostAttachmentFile",
+  "summary": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u306e\u9001\u4fe1",
+  "description": "\u8ab2\u984c\u3001\u30b3\u30e1\u30f3\u30c8\u307e\u305f\u306fWiki\u306b\u6dfb\u4ed8\u3059\u308b\u30d5\u30a1\u30a4\u30eb\u3092\u9001\u4fe1\u3057\u3001\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u306b\u767a\u884c\u3055\u308c\u305fID\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+  "method": "POST",
+  "url": "/api/v2/space/attachment",
+  "scope": null,
+  "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/post-attachment-file"
+}
