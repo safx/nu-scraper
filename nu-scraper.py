@@ -59,7 +59,7 @@ class ParamInfo(object):
 
 
 class WebAPI(object):
-    def __init__(self, appName, hyphenName, summary, description, method, url, scope, urlParams, formParams, queryParams, response, apiDocumentUrl):
+    def __init__(self, appName, hyphenName, summary, description, method, url, scope, urlParams, formParams, queryParams, response, apiDocumentUrl, roles):
         self.appName = appName
         self.hyphenName = hyphenName
         self.summary = summary
@@ -72,6 +72,7 @@ class WebAPI(object):
         self.queryParams = queryParams
         self.response = response
         self.apiDocumentUrl = apiDocumentUrl
+        self.roles = roles
 
     @property
     def cameCaeeName(self):
@@ -90,6 +91,7 @@ class WebAPI(object):
         if len(self.urlParams): obj["urlParams"] = [e.obj for e in self.urlParams]
         if len(self.formParams): obj["formParams"] = [e.obj for e in self.formParams]
         if len(self.queryParams): obj["queryParams"] = [e.obj for e in self.queryParams]
+        if self.roles: obj["roles"] = self.roles
         obj["apiDocumentUrl"] = self.apiDocumentUrl
 
         outputName = os.path.join(self.appName, 'api', lang, self.hyphenName + '.json')
@@ -131,17 +133,25 @@ def getWebAPI(appName, apiDocumentUrl, lang = 'en'):
     def dic(key):
         if lang == 'en': return key
         dic = {
+            # en -> ja
             'method': 'メソッド',
             'scope': 'スコープ',
+            'role': '権限',
             'url-parameters': 'urlパラメーター',
             'url-parameters-alt': 'urlパラメータ',
             'url-parameters-alt2': 'url-パラメーター',
             'query-parameters': 'クエリパラメーター',
             'form-parameters': 'フォームパラメーター',
+            'form-parameters-alt': 'リクエストパラメーター',
             #'response-body': 'レスポンス例',
             #'response-example': 'レスポンスの例',
             '(Optional)': '(任意)',
             '(Required)': '(必須)',
+            # ja -> en
+            '管理者': 'Administrator',
+            '一般ユーザー': 'Normal User',
+            'レポーター': 'Reporter',
+            'ゲストレポーター': 'Guest Reporter',
         }   
         return dic.get(key, key)
 
@@ -153,8 +163,8 @@ def getWebAPI(appName, apiDocumentUrl, lang = 'en'):
     def toBaseName(url):
         return url.split('/')[-1]
 
-    def q(p, default=None):
-        text = data(p).next().text()
+    def q(p, default=None, squash_space=True):
+        text = data(p).next().text(squash_space=squash_space)
         return default if text == '' else text
 
     def p(p, checker=defaultChecker):
@@ -173,15 +183,17 @@ def getWebAPI(appName, apiDocumentUrl, lang = 'en'):
     summary     = data('h1').text()
     descNode    = data('h1').next()
     description = '' if descNode.attr('id') == dic('method') else descNode.text()
+    role        = q('#' + dic('role'), squash_space=False)
+    roles       = None if role is None else [dic(e.strip()) for e in role.strip().split('\n')]
     method      = q('#' + dic('method'))
     url         = q('#' + dic('url'))
     scope       = q('#' + dic('scope')) or q('#scope')
     urlParams   = p('#' + dic('url-parameters'), lambda ns: False) or p('#' + dic('url-parameters-alt'), lambda ns: False) or p('#' + dic('url-parameters-alt2'), lambda ns: False)
-    formParams  = p('#' + dic('form-parameters'))
+    formParams  = p('#' + dic('form-parameters')) or p('#' + dic('form-parameters-alt'))
     queryParams = p('#' + dic('query-parameters'))
     response    = c('#' + dic('response-body'), None) or c('#' + dic('response-example'), None) or c('#' + dic('json-response-example'))
 
-    return WebAPI(appName, toBaseName(apiDocumentUrl), summary, description, method, url, scope, urlParams, formParams, queryParams, response, apiDocumentUrl)
+    return WebAPI(appName, toBaseName(apiDocumentUrl), summary, description, method, url, scope, urlParams, formParams, queryParams, response, apiDocumentUrl, roles)
 
 
 SITE_ROOT = 'https://developer.nulab.com'

@@ -16,6 +16,7 @@ def toPrimitiveDataTypeFromStr(s: str) -> openapi.PrimitiveDataType:
     m = {
         'Number': openapi.PrimitiveDataType.integer,
         'String': openapi.PrimitiveDataType.string,
+        'Boolean': openapi.PrimitiveDataType.boolean,
         # TODO: add
     }
     return m.get(s, openapi.PrimitiveDataType.string)
@@ -191,7 +192,7 @@ def createSecuritySchemeObjects(appname, backlogUrl):
     else:
         assert('Unknwon app name' and False)
 
-def main(appname, serverUrl = 'https://typetalk.com/api', lang = 'en'):
+def main(appname, lang = 'en', serverUrl = 'https://typetalk.com/api'):
     api = ir.API.initWithDir(appname, lang)
     api.findAndRegisterSimilarObjects()
 

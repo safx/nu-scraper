@@ -14,5 +14,18 @@
       "description": "\u8ab2\u984c\u306eID \u307e\u305f\u306f \u8ab2\u984c\u30ad\u30fc"
     }
   ],
+  "formParams": [
+    {
+      "name": "fileId",
+      "optional": false,
+      "array": true,
+      "type": "Number",
+      "description": "\u5171\u6709\u30d5\u30a1\u30a4\u30eb\u306eID"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/link-shared-files-to-issue"
 }

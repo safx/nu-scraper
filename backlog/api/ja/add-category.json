@@ -14,5 +14,18 @@
       "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30ab\u30c6\u30b4\u30ea\u30fc\u306e\u540d\u524d"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-category"
 }

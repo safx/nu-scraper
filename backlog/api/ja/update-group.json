@@ -14,5 +14,24 @@
       "description": "\u30b0\u30eb\u30fc\u30d7\u306eID"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30b0\u30eb\u30fc\u30d7\u540d"
+    },
+    {
+      "name": "members",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u30b0\u30eb\u30fc\u30d7\u306b\u542b\u3081\u308b\u30e6\u30fc\u30b6\u30fcID"
+    }
+  ],
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/update-group"
 }

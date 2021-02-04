@@ -21,5 +21,18 @@
       "description": "\u7a2e\u5225\u306eID"
     }
   ],
+  "formParams": [
+    {
+      "name": "substituteIssueTypeId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u7d10\u3065\u304f\u8ab2\u984c\u3092\u4ed8\u3051\u66ff\u3048\u308b\u5148\u306e\u7a2e\u5225\u306eID"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/delete-issue-type"
 }

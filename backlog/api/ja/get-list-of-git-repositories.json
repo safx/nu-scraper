@@ -14,5 +14,9 @@
       "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-list-of-git-repositories"
 }

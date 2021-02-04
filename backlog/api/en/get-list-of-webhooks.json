@@ -14,5 +14,9 @@
       "description": "Project ID or Project Key"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Project Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-list-of-webhooks"
 }

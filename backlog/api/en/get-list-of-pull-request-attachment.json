@@ -28,5 +28,9 @@
       "description": "Pull request number"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-list-of-pull-request-attachment"
 }

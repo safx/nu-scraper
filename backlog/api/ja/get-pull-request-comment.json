@@ -58,5 +58,9 @@
       "description": "\u201casc\u201d\u307e\u305f\u306f\u201ddesc\u201d \u6307\u5b9a\u304c\u7121\u3044\u5834\u5408\u306f\u201ddesc\u201d"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-pull-request-comment"
 }

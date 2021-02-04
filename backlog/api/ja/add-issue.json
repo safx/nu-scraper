@@ -5,5 +5,125 @@
   "method": "POST",
   "url": "/api/v2/issues",
   "scope": null,
+  "formParams": [
+    {
+      "name": "projectId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u3092\u767b\u9332\u3059\u308b\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID"
+    },
+    {
+      "name": "summary",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u306e\u4ef6\u540d"
+    },
+    {
+      "name": "parentIssueId",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u89aa\u8ab2\u984c\u306eID"
+    },
+    {
+      "name": "description",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u306e\u8a73\u7d30"
+    },
+    {
+      "name": "startDate",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u306e\u958b\u59cb\u65e5 (yyyy-MM-dd)"
+    },
+    {
+      "name": "dueDate",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u306e\u671f\u9650\u65e5 (yyyy-MM-dd)"
+    },
+    {
+      "name": "estimatedHours",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u4e88\u5b9a\u6642\u9593"
+    },
+    {
+      "name": "actualHours",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u5b9f\u7e3e\u6642\u9593"
+    },
+    {
+      "name": "issueTypeId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u7a2e\u5225\u306eID"
+    },
+    {
+      "name": "categoryId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u30ab\u30c6\u30b4\u30ea\u30fc\u306eID"
+    },
+    {
+      "name": "versionId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u767a\u751f\u30d0\u30fc\u30b8\u30e7\u30f3\u306eID"
+    },
+    {
+      "name": "milestoneId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u30de\u30a4\u30eb\u30b9\u30c8\u30fc\u30f3\u306eID"
+    },
+    {
+      "name": "priorityId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u512a\u5148\u5ea6\u306eID"
+    },
+    {
+      "name": "assigneeId",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u62c5\u5f53\u8005\u306eID"
+    },
+    {
+      "name": "notifiedUserId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u767b\u9332\u306e\u901a\u77e5\u3092\u53d7\u3051\u53d6\u308b\u30e6\u30fc\u30b6\u30fc\u306eID"
+    },
+    {
+      "name": "attachmentId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u306e\u9001\u4fe1API\u304c\u8fd4\u3059ID"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User",
+    "Reporter",
+    "Guest Reporter"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-issue"
 }

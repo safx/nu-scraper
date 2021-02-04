@@ -21,5 +21,9 @@
       "description": "\u30d0\u30fc\u30b8\u30e7\u30f3\u306eID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/delete-version"
 }

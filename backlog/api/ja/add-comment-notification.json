@@ -21,5 +21,20 @@
       "description": "\u30b3\u30e1\u30f3\u30c8\u306eID"
     }
   ],
+  "formParams": [
+    {
+      "name": "notifiedUserId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u8ab2\u984c\u306e\u767b\u9332\u306e\u901a\u77e5\u3092\u53d7\u3051\u53d6\u308b\u30e6\u30fc\u30b6\u30fc\u306eID"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User",
+    "Reporter",
+    "Guest Reporter"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-comment-notification"
 }

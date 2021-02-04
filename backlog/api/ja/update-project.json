@@ -14,5 +14,60 @@
       "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u540d"
+    },
+    {
+      "name": "key",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
+    },
+    {
+      "name": "chartEnabled",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "\u30c1\u30e3\u30fc\u30c8\u3092\u4f7f\u7528\u3059\u308b\u304b\u3069\u3046\u304b"
+    },
+    {
+      "name": "subtaskingEnabled",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "\u89aa\u5b50\u8ab2\u984c\u3092\u4f7f\u7528\u3059\u308b\u304b\u3069\u3046\u304b"
+    },
+    {
+      "name": "projectLeaderCanEditProjectLeader",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u7ba1\u7406\u8005\u3082\u4ed6\u306e\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u7ba1\u7406\u8005\u3092\u6307\u5b9a\u53ef\u80fd\u306b\u3059\u308b"
+    },
+    {
+      "name": "textFormattingRule",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30c6\u30ad\u30b9\u30c8\u6574\u5f62\u306e\u30eb\u30fc\u30eb backlog \u307e\u305f\u306f markdown"
+    },
+    {
+      "name": "archived",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306e\u4e00\u89a7\u306b\u8868\u793a\u3059\u308b\u304b\u3069\u3046\u304b"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u7ba1\u7406\u8005"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/update-project"
 }

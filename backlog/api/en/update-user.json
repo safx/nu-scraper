@@ -44,5 +44,8 @@
       "description": "Administrator(1) Normal User(2) Reporter(3) Viewer(4) Guest Reporter(5) Guest Viewer(6)"
     }
   ],
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-user"
 }

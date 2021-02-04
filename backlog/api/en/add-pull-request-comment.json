@@ -44,5 +44,9 @@
       "description": "User ID to send notification when comment is added"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-pull-request-comment"
 }

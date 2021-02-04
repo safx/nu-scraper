@@ -14,5 +14,8 @@
       "description": "\u30b0\u30eb\u30fc\u30d7\u306eID"
     }
   ],
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-group"
 }

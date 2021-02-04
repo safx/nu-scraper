@@ -14,5 +14,34 @@
       "description": "\u8ab2\u984c\u306eID \u307e\u305f\u306f \u8ab2\u984c\u30ad\u30fc"
     }
   ],
+  "formParams": [
+    {
+      "name": "content",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30b3\u30e1\u30f3\u30c8\u306e\u672c\u6587"
+    },
+    {
+      "name": "notifiedUserId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u30b3\u30e1\u30f3\u30c8\u767b\u9332\u306e\u901a\u77e5\u3092\u53d7\u3051\u53d6\u308b\u30e6\u30fc\u30b6\u30fcID"
+    },
+    {
+      "name": "attachmentId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u306e\u9001\u4fe1API\u304c\u8fd4\u3059ID"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User",
+    "Reporter",
+    "Guest Reporter"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-comment"
 }

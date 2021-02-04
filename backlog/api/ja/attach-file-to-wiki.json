@@ -14,5 +14,18 @@
       "description": "Wiki\u30da\u30fc\u30b8\u306eID"
     }
   ],
+  "formParams": [
+    {
+      "name": "attachmentId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u306e\u9001\u4fe1API\u304c\u8fd4\u3059ID"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/attach-file-to-wiki"
 }

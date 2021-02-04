@@ -5,5 +5,8 @@
   "method": "GET",
   "url": "/api/v2/space/diskUsage",
   "scope": null,
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-space-disk-usage"
 }

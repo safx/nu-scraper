@@ -21,5 +21,9 @@
       "description": "Repository ID or Repository name"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-git-repository"
 }

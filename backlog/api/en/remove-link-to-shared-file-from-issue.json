@@ -21,5 +21,9 @@
       "description": "Shared File ID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/remove-link-to-shared-file-from-issue"
 }

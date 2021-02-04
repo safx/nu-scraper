@@ -30,5 +30,11 @@
       "description": "content"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User",
+    "Reporter",
+    "Guest Reporter"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-comment"
 }

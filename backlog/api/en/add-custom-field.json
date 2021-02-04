@@ -51,5 +51,9 @@
       "description": "True to make the Custom field required"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Project Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-custom-field"
 }

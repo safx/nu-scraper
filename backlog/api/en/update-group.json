@@ -30,5 +30,8 @@
       "description": "User ID added to the group"
     }
   ],
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-group"
 }

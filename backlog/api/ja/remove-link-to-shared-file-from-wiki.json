@@ -21,5 +21,9 @@
       "description": "\u5171\u6709\u30d5\u30a1\u30a4\u30eb\u306eID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/remove-link-to-shared-file-from-wiki"
 }

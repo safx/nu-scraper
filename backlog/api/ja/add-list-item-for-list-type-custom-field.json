@@ -21,5 +21,18 @@
       "description": "\u30ab\u30b9\u30bf\u30e0\u5c5e\u6027\u306eID"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30ea\u30b9\u30c8\u9805\u76ee\u306e\u540d\u524d"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-list-item-for-list-type-custom-field"
 }

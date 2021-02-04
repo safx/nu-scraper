@@ -58,5 +58,9 @@
       "description": "archived"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-version-milestone"
 }

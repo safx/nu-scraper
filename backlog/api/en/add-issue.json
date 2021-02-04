@@ -112,5 +112,11 @@
       "description": "Attachment file ID(Post Attachment File returns)"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User",
+    "Reporter",
+    "Guest Reporter"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-issue"
 }

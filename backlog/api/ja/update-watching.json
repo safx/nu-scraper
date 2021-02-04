@@ -14,5 +14,14 @@
       "description": "\u30a6\u30a9\u30c3\u30c1\u306eID"
     }
   ],
+  "formParams": [
+    {
+      "name": "note",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30e1\u30e2"
+    }
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/update-watching"
 }

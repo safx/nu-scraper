@@ -79,5 +79,9 @@
       "description": "ID returned by \u201cPost Attachment File\u201d API"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-pull-request"
 }

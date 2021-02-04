@@ -51,5 +51,9 @@
       "description": "Event ID to be notified"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Project Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-webhook"
 }

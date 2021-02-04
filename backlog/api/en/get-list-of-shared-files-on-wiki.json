@@ -14,5 +14,9 @@
       "description": "Wiki page\u2019s ID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-list-of-shared-files-on-wiki"
 }

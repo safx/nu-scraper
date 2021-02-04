@@ -23,5 +23,8 @@
       "description": "Status ID List to order them. You have to send all status of project. It has following restrictions as below.\n\u201cOpen\u201d has to be first\n\u201cClose\u201d has to be last\n\u201cIn Progress\u201d has to be before \u201cResolved\u201d"
     }
   ],
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-order-of-status"
 }

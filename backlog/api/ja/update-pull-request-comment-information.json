@@ -35,5 +35,18 @@
       "description": "\u30b3\u30e1\u30f3\u30c8\u306eID"
     }
   ],
+  "formParams": [
+    {
+      "name": "content",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30b3\u30e1\u30f3\u30c8\u306e\u672c\u6587"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/update-pull-request-comment-information"
 }

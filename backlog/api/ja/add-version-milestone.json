@@ -14,5 +14,39 @@
       "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d0\u30fc\u30b8\u30e7\u30f3\u306e\u540d\u524d"
+    },
+    {
+      "name": "description",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30d0\u30fc\u30b8\u30e7\u30f3\u306e\u8aac\u660e"
+    },
+    {
+      "name": "startDate",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30d0\u30fc\u30b8\u30e7\u30f3\u306e\u958b\u59cb\u65e5 (yyyy-MM-dd)"
+    },
+    {
+      "name": "releaseDueDate",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30d0\u30fc\u30b8\u30e7\u30f3\u306e\u30ea\u30ea\u30fc\u30b9\u4e88\u5b9a\u65e5 (yyyy-MM-dd)"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-version-milestone"
 }

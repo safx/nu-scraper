@@ -35,5 +35,9 @@
       "description": "\u6dfb\u4ed8\u30d5\u30a1\u30a4\u30eb\u306eID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/delete-pull-request-attachments"
 }

@@ -65,5 +65,9 @@
       "description": "archive"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Project Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-project"
 }

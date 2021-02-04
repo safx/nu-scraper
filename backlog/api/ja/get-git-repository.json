@@ -21,5 +21,9 @@
       "description": "\u30ea\u30dd\u30b8\u30c8\u30ea\u306eID \u307e\u305f\u306f \u30ea\u30dd\u30b8\u30c8\u30ea\u540d"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/get-git-repository"
 }

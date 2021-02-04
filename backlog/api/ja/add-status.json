@@ -14,5 +14,24 @@
       "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u72b6\u614b\u306e\u540d\u524d"
+    },
+    {
+      "name": "color",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u72b6\u614b\u306e\u80cc\u666f\u8272\uff1a\u4ee5\u4e0b\u304b\u3089\u6307\u5b9a\n\u201d#ea2c00\u201d\n\u201d#e87758\u201d\n\u201d#e07b9a\u201d\n\u201d#868cb7\u201d\n\u201d#3b9dbd\u201d\n\u201d#4caf93\u201d\n\u201d#b0be3c\u201d\n\u201d#eda62a\u201d\n\u201d#f42858\u201d\n\u201d#393939\u201d"
+    }
+  ],
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-status"
 }

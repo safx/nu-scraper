@@ -21,5 +21,39 @@
       "description": "\u7a2e\u5225\u306eID"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u7a2e\u5225\u306e\u540d\u524d"
+    },
+    {
+      "name": "color",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u7a2e\u5225\u306e\u80cc\u666f\u8272"
+    },
+    {
+      "name": "templateSummary",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8\u306e\u4ef6\u540d"
+    },
+    {
+      "name": "templateDescription",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8\u306e\u8a73\u7d30"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/update-issue-type"
 }

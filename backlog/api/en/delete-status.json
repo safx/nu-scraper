@@ -30,5 +30,8 @@
       "description": "Status ID to replace linked issues statuses.\nIssues which status are set to the deleted status will be set to the specied substitute status."
     }
   ],
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-status"
 }

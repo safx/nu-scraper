@@ -21,5 +21,9 @@
       "description": "\u30ab\u30c6\u30b4\u30ea\u30fc\u306eID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/delete-category"
 }

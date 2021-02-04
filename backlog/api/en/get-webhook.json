@@ -21,5 +21,9 @@
       "description": "Webhook ID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Project Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-webhook"
 }

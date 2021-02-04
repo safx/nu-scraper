@@ -28,5 +28,18 @@
       "description": "\u30ea\u30b9\u30c8\u9805\u76ee\u306eID"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30ea\u30b9\u30c8\u9805\u76ee\u306e\u540d\u524d"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u7ba1\u7406\u8005"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/update-list-item-for-list-type-custom-field"
 }

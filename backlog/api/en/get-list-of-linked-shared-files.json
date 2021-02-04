@@ -14,5 +14,9 @@
       "description": "Issue ID or Issue key"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-list-of-linked-shared-files"
 }

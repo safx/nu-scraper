@@ -23,5 +23,9 @@
       "description": "Team ID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Project Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-project-team"
 }

@@ -28,5 +28,9 @@
       "description": "List item ID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Project Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-list-item-for-list-type-custom-field"
 }

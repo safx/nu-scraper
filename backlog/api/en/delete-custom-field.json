@@ -21,5 +21,9 @@
       "description": "Custom field ID"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Project Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-custom-field"
 }

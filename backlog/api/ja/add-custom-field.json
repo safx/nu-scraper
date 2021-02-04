@@ -14,5 +14,46 @@
       "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
     }
   ],
+  "formParams": [
+    {
+      "name": "typeId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30ab\u30b9\u30bf\u30e0\u5c5e\u6027\u306e\u5f62\u5f0f\n1: \u6587\u5b57\u5217\n2: \u6587\u7ae0\n3: \u6570\u5024\n4: \u65e5\u4ed8\n5: \u5358\u4e00\u30ea\u30b9\u30c8\n6: \u8907\u6570\u30ea\u30b9\u30c8\n7: \u30c1\u30a7\u30c3\u30af\u30dc\u30c3\u30af\u30b9\n8: \u30e9\u30b8\u30aa"
+    },
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30ab\u30b9\u30bf\u30e0\u5c5e\u6027\u306e\u540d\u524d"
+    },
+    {
+      "name": "applicableIssueTypes",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "\u30ab\u30b9\u30bf\u30e0\u5c5e\u6027\u3092\u6709\u52b9\u306b\u3059\u308b\u7a2e\u5225ID\n\u7a7a\u306e\u5834\u5408\u3001\u3059\u3079\u3066\u306e\u8ab2\u984c\u7a2e\u5225\u3067\u6709\u52b9"
+    },
+    {
+      "name": "description",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u30ab\u30b9\u30bf\u30e0\u5c5e\u6027\u306e\u8aac\u660e"
+    },
+    {
+      "name": "required",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "\u5fc5\u9808\u306a\u5c5e\u6027\u3068\u3059\u308b\u5834\u5408\u306ftrue"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u7ba1\u7406\u8005"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-custom-field"
 }

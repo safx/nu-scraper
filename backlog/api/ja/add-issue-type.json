@@ -14,5 +14,39 @@
       "description": "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306eID \u307e\u305f\u306f \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30ad\u30fc"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u7a2e\u5225\u306e\u540d\u524d"
+    },
+    {
+      "name": "color",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u7a2e\u5225\u306e\u80cc\u666f\u8272\uff1a\u4ee5\u4e0b\u304b\u3089\u6307\u5b9a\n\u201d#e30000\u201d\n\u201d#990000\u201d\n\u201d#934981\u201d\n\u201d#814fbc\u201d\n\u201d#2779ca\u201d\n\u201d#007e9a\u201d\n\u201d#7ea800\u201d\n\u201d#ff9200\u201d\n\u201d#ff3265\u201d\n\u201d#666665\u201d"
+    },
+    {
+      "name": "templateSummary",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8\u306e\u4ef6\u540d"
+    },
+    {
+      "name": "templateDescription",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "\u8ab2\u984c\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8\u306e\u8a73\u7d30"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-issue-type"
 }

@@ -5,5 +5,46 @@
   "method": "POST",
   "url": "/api/v2/users",
   "scope": null,
+  "formParams": [
+    {
+      "name": "userId",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30e6\u30fc\u30b6ID"
+    },
+    {
+      "name": "password",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30d1\u30b9\u30ef\u30fc\u30c9"
+    },
+    {
+      "name": "name",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30cf\u30f3\u30c9\u30eb\u30cd\u30fc\u30e0"
+    },
+    {
+      "name": "mailAddress",
+      "optional": false,
+      "array": false,
+      "type": "String",
+      "description": "\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9"
+    },
+    {
+      "name": "roleType",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u7ba1\u7406\u8005(1) \u4e00\u822c\u30e6\u30fc\u30b6\u30fc(2) \u30ec\u30dd\u30fc\u30bf\u30fc(3) \u30d3\u30e5\u30fc\u30ef\u30fc(4) \u30b2\u30b9\u30c8\u30ec\u30dd\u30fc\u30bf\u30fc(5) \u30b2\u30b9\u30c8\u30d3\u30e5\u30fc\u30ef\u30fc(6)"
+    }
+  ],
+  "roles": [
+    "Administrator",
+    "\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u7ba1\u7406\u8005"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/ja/docs/backlog/api/2/add-user"
 }

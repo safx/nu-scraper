@@ -30,5 +30,9 @@
       "description": "type ID to change linked issue"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-issue-type"
 }

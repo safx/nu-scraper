@@ -42,5 +42,8 @@
       "description": "Formatting rules \u201cbacklog\u201d or \u201cmarkdown\u201d"
     }
   ],
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-project"
 }

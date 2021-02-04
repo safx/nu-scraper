@@ -5,5 +5,8 @@
   "method": "PUT",
   "url": "/api/v2/space/notification",
   "scope": null,
+  "roles": [
+    "Administrator"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/update-space-notification"
 }

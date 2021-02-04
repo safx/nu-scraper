@@ -23,5 +23,9 @@
       "description": "True make to notify by Email"
     }
   ],
+  "roles": [
+    "Administrator",
+    "Normal User"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-wiki-page"
 }
