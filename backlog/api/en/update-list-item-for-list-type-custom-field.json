@@ -28,6 +28,15 @@
       "description": "List item ID"
     }
   ],
+  "formParams": [
+    {
+      "name": "name",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "Name of list item"
+    }
+  ],
   "roles": [
     "Administrator",
     "Project Administrator"

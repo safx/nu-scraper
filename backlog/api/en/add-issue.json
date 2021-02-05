@@ -7,6 +7,13 @@
   "scope": null,
   "formParams": [
     {
+      "name": "projectId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "Project ID"
+    },
+    {
       "name": "summary",
       "optional": false,
       "array": false,

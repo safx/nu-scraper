@@ -14,7 +14,7 @@
       "description": "Project ID or Project Key"
     },
     {
-      "name": "id",
+      "name": "sharedFileId",
       "optional": false,
       "array": false,
       "type": "Number",

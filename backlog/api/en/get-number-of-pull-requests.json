@@ -21,6 +21,50 @@
       "description": "Repository ID or Repository name"
     }
   ],
+  "queryParams": [
+    {
+      "name": "statusId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "Status ID"
+    },
+    {
+      "name": "assigneeId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "Assignee ID"
+    },
+    {
+      "name": "issueId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "Related issue ID"
+    },
+    {
+      "name": "createdUserId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "Created User ID"
+    },
+    {
+      "name": "offset",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": ""
+    },
+    {
+      "name": "count",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "number of records to retrieve(1-100) default=20"
+    }
+  ],
   "roles": [
     "Administrator",
     "Normal User"

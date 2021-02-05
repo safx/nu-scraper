@@ -7,7 +7,7 @@
   "scope": null,
   "urlParams": [
     {
-      "name": "watchId",
+      "name": "watchingId",
       "optional": false,
       "array": false,
       "type": "Number",

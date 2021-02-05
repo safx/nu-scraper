@@ -5,6 +5,15 @@
   "method": "GET",
   "url": "/api/v2/users/:userId/stars/count",
   "scope": null,
+  "urlParams": [
+    {
+      "name": "userId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "\u30e6\u30fc\u30b6\u30fc\u306eID"
+    }
+  ],
   "queryParams": [
     {
       "name": "since",

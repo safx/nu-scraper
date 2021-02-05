@@ -14,7 +14,7 @@
       "description": "Wiki\u30da\u30fc\u30b8\u306eID"
     }
   ],
-  "formParams": [
+  "queryParams": [
     {
       "name": "minId",
       "optional": true,
