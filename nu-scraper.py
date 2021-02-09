@@ -149,6 +149,7 @@ def getWebAPI(appName, apiDocumentUrl, lang = 'en'):
             '(Required)': '(必須)',
             # ja -> en
             '管理者': 'Administrator',
+            'プロジェクト管理者': 'Project Administrator',
             '一般ユーザー': 'Normal User',
             'レポーター': 'Reporter',
             'ゲストレポーター': 'Guest Reporter',
