@@ -1,0 +1,82 @@
+{
+  "space": {
+    "enabled": true,
+    "imageUrl": "https://apps.nulab.com/spaces/pCq9wxceDX/photo/large",
+    "key": "pCq9wxceDX",
+    "name": "Awesome Tech Inc."
+  },
+  "teams": [
+    {
+      "members": [
+        {
+          "createdAt": "2016-01-27T09:55:35Z",
+          "fullName": "Jessica Lee",
+          "id": 2500,
+          "imageUpdatedAt": "2019-12-09T09:03:44Z",
+          "imageUrl": "https://typetalk.com/accounts/2500/profile_image.png?t=1575882224150",
+          "isBot": false,
+          "lang": "en-US",
+          "mailAddress": "jessica@nulab.com",
+          "name": "Jessica",
+          "nulabId": "h3gItzV8KZdgychvTuJ9KIs3w6AGaG7dbXhHjeL8kPOG04pvmT",
+          "suggestion": "Jessica Lee",
+          "timezoneId": "America/New_York",
+          "updatedAt": "2021-02-02T07:01:47Z"
+        },
+        {
+          "createdAt": "2016-01-27T09:55:23Z",
+          "fullName": "Moss",
+          "id": 2499,
+          "imageUpdatedAt": "2016-01-27T10:42:59Z",
+          "imageUrl": "https://typetalk.com/accounts/2499/profile_image.png?t=1453891379196",
+          "isBot": false,
+          "lang": "en-US",
+          "mailAddress": "moss@nulab.com",
+          "name": "Moss",
+          "nulabId": "GOy7cz34mHxFoi686a37BiU0vfwcgKgkBLpL6ZHhOk3pi6sjDc",
+          "suggestion": "Moss",
+          "timezoneId": "America/New_York",
+          "updatedAt": "2021-01-08T03:54:15Z"
+        },
+        {
+          "createdAt": "2016-01-27T09:55:09Z",
+          "fullName": "Stefanie",
+          "id": 2498,
+          "imageUpdatedAt": "2016-01-27T10:44:39Z",
+          "imageUrl": "https://typetalk.com/accounts/2498/profile_image.png?t=1453891479138",
+          "isBot": false,
+          "lang": "en-US",
+          "mailAddress": "stefanie@nulab.com",
+          "name": "Stefanie",
+          "nulabId": "kdn4zwBv2mui730vFicktDDWXB5huSo7cncpJnPCANfhj32QNO",
+          "suggestion": "Stefanie",
+          "timezoneId": "America/New_York",
+          "updatedAt": "2020-09-02T08:46:01Z"
+        },
+        {
+          "createdAt": "2016-01-27T09:54:48Z",
+          "fullName": "Will",
+          "id": 2497,
+          "imageUpdatedAt": "2017-11-13T18:03:20Z",
+          "imageUrl": "https://typetalk.com/accounts/2497/profile_image.png?t=1510596200433",
+          "isBot": false,
+          "lang": "en-US",
+          "mailAddress": "will@nulab.com",
+          "name": "Will",
+          "nulabId": "CVy8qneGRJ32poiYWXnOszykGPUQNAh05ngWDOhZzvC4KWmGKx",
+          "suggestion": "Will",
+          "timezoneId": "America/New_York",
+          "updatedAt": "2021-02-02T05:48:36Z"
+        }
+      ],
+      "team": {
+        "createdAt": "2016-01-27T09:37:26Z",
+        "imageUrl": "https://apps.nulab.com/spaces/pCq9wxceDX/groups/db0jsi/photo/medium",
+        "key": "db0jsi",
+        "name": "Awesome Tech Inc. All",
+        "suggestion": "Awesome Tech Inc. All",
+        "updatedAt": "2020-07-06T06:37:30Z"
+      }
+    }
+  ]
+}

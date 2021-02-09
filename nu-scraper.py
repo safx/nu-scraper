@@ -175,6 +175,8 @@ def getWebAPI(appName, apiDocumentUrl, lang = 'en'):
 
     def c(p, default=None):
         node = data(p).next()
+        while not node.is_('pre') and node.length > 0:
+            node = node.next()
         if node.is_('pre'):
             text = node.text()
             return default if text == '' else text
