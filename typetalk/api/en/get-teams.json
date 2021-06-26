@@ -30,5 +30,8 @@
       "description": "default value: 20, maximum: 100"
     }
   ],
+  "roles": [
+    "Administrator or Member"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/get-teams"
 }

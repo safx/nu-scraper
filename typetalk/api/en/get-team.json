@@ -21,5 +21,8 @@
       "description": "Team key"
     }
   ],
+  "roles": [
+    "Administrator or Member"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/typetalk/api/1/get-team"
 }

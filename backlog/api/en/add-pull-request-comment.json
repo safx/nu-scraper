@@ -37,6 +37,13 @@
       "description": "Comment"
     },
     {
+      "name": "attachmentId",
+      "optional": true,
+      "array": true,
+      "type": "Number",
+      "description": "Attachment file ID(Post Attachment File returns)"
+    },
+    {
       "name": "notifiedUserId",
       "optional": true,
       "array": true,

@@ -5,7 +5,7 @@ from pyquery import PyQuery as pq
 import sys
 import json
 import os
-
+import time
 
 class ParamInfo(object):
     def __init__(self, trElement, optionalChecker):
@@ -18,7 +18,7 @@ class ParamInfo(object):
                 'バイナリ': 'Binary',
                 '文字列(固定)': 'String',
                 'String(Fixed)': 'String',
-            }   
+            }
             return dic.get(typename, typename)
 
         tds = [pq(trElement)('td').eq(j).text() for j in range(3)]
@@ -120,10 +120,17 @@ class WebAPI(object):
         if self.response == 'Status Line / Response Header':
             return '(none response)'
 
-        outputName = os.path.join(self.appName, 'response', self.hyphenName + '.json')
+        (objOrStr, err) = self.validResponseJson()
+        validJson = type(objOrStr) != str
+        suffix = '.json'
+        if not validJson:
+            if objOrStr[:9] == 'HTTP/1.1 ':
+                err = ' '.join(objOrStr.split()[:3])
+                suffix = '.txt'
+
+        outputName = os.path.join(self.appName, 'response', self.hyphenName + suffix)
         with open(outputName, 'w') as f:
-            (objOrStr, err) = self.validResponseJson()
-            if type(objOrStr) != str:
+            if validJson:
                 json.dump(objOrStr, f, sort_keys=True, indent=2)
             else:
                 f.write(objOrStr)
@@ -153,7 +160,7 @@ def getWebAPI(appName, apiDocumentUrl, lang = 'en'):
             '一般ユーザー': 'Normal User',
             'レポーター': 'Reporter',
             'ゲストレポーター': 'Guest Reporter',
-        }   
+        }
         return dic.get(key, key)
 
     data = pq(url=apiDocumentUrl)
@@ -216,6 +223,7 @@ def getAppAPIs(appName, lang):
 
         api.writeAPIJson(lang)
         res = api.writeResponseJson()
+        time.sleep(0.2)
         print('✔︎ ' + res)
 
         count -= 1

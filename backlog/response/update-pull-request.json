@@ -60,7 +60,7 @@
       "color": "#7ea800",
       "displayOrder": 0,
       "id": 2,
-      "name": "\u30bf\u30b9\u30af",
+      "name": "\u00e3\u0082\u00bf\u00e3\u0082\u00b9\u00e3\u0082\u00af",
       "projectId": 1
     },
     "keyId": 1,
@@ -129,7 +129,7 @@
     "startDate": null,
     "status": {
       "id": 1,
-      "name": "\u672a\u5bfe\u5fdc"
+      "name": "\u00e6\u009c\u00aa\u00e5\u00af\u00be\u00e5\u00bf\u009c"
     },
     "summary": "first issue",
     "updated": "2013-02-07T08:09:49Z",
