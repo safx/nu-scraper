@@ -102,7 +102,7 @@
       "optional": true,
       "array": false,
       "type": "String",
-      "description": "What to sort results by\n\u201cissueType\u201d\n\u201ccategory\u201d\n\u201cversion\u201d\n\u201cmilestone\u201d\n\u201csummary\u201d\n\u201cstatus\u201d\n\u201cpriority\u201d\n\u201cattachment\u201d\n\u201csharedFile\u201d\n\u201ccreated\u201d\n\u201ccreatedUser\u201d\n\u201cupdated\u201d\n\u201cupdatedUser\u201d\n\u201cassignee\u201d\n\u201cstartDate\u201d\n\u201cdueDate\u201d\n\u201cestimatedHours\u201d\n\u201cactualHours\u201d\n\u201cchildIssue\u201d\n\u201ccustomField_${id}\u201d"
+      "description": "What to sort results by\n\u201dissueType\"\n\"category\"\n\"version\"\n\"milestone\"\n\"summary\"\n\"status\"\n\"priority\"\n\"attachment\"\n\"sharedFile\"\n\"created\"\n\"createdUser\"\n\"updated\"\n\"updatedUser\"\n\"assignee\"\n\"startDate\"\n\"dueDate\"\n\"estimatedHours\"\n\"actualHours\"\n\"childIssue\"\n\"customField_${id}\u201c"
     },
     {
       "name": "order",
@@ -202,6 +202,9 @@
       "type": "String",
       "description": "Keyword"
     }
+  ],
+  "roles": [
+    "All"
   ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-issue-list"
 }

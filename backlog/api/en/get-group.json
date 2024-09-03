@@ -1,7 +1,7 @@
 {
   "name": "GetGroup",
   "summary": "Get Group",
-  "description": "warning Deprecated API\nThis API has been deprecated and is no longer recommended for use. Please replace it with Get Team.",
+  "description": "This API has been deprecated and is no longer recommended for use. Please replace it with Get Team.",
   "method": "GET",
   "url": "/api/v2/groups/:groupId",
   "scope": null,

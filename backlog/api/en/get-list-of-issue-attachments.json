@@ -14,5 +14,8 @@
       "description": "Issue ID or Issue key"
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-list-of-issue-attachments"
 }

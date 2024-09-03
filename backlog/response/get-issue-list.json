@@ -4,9 +4,16 @@
     "assignee": {
       "id": 2,
       "lang": null,
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "eguchi@nulab.example",
       "name": "eguchi",
-      "roleType": 2
+      "nulabAccount": {
+        "name": "eguchi",
+        "nulabId": "tSaVeJfRxLURSAkgfbNAfCbM7PqddYLJ3nG3BELjx6eSTbu8LD",
+        "uniqueId": "eguchi"
+      },
+      "roleType": 2,
+      "userId": "eguchi"
     },
     "attachments": [
       {
@@ -20,8 +27,14 @@
     "createdUser": {
       "id": 1,
       "lang": "ja",
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "eguchi@nulab.example",
       "name": "admin",
+      "nulabAccount": {
+        "name": "admin",
+        "nulabId": "Prm9ZD9DQD5snNWcSYSwZiQoA9WFBUEa2ySznrSnSQRhdC2X8G",
+        "uniqueId": "admin"
+      },
       "roleType": 1,
       "userId": "admin"
     },
@@ -57,29 +70,42 @@
       "name": "Normal"
     },
     "projectId": 1,
-    "resolutions": null,
+    "resolution": null,
     "sharedFiles": [
       {
         "created": "2009-02-27T03:26:15Z",
         "createdUser": {
           "id": 5686,
           "lang": "ja",
+          "lastLoginTime": "2022-09-01T06:35:39Z",
           "mailAddress": "takada@nulab.example",
           "name": "takada",
+          "nulabAccount": {
+            "name": "takada",
+            "nulabId": "r4iGCWu4mU64aGUJykJH4GhBwdAXMTAtVRQ5RwZTDpeaECoBs2",
+            "uniqueId": "takada"
+          },
           "roleType": 2,
           "userId": "takada"
         },
         "dir": "/userIcon/",
         "id": 454403,
         "name": "01_male clerk.png",
+        "projectId": 5,
         "size": 2735,
         "type": "file",
         "updated": "2009-03-03T16:57:47Z",
         "updatedUser": {
           "id": 5686,
           "lang": "ja",
+          "lastLoginTime": "2022-09-01T06:35:39Z",
           "mailAddress": "takada@nulab.example",
           "name": "takada",
+          "nulabAccount": {
+            "name": "takada",
+            "nulabId": "r4iGCWu4mU64aGUJykJH4GhBwdAXMTAtVRQ5RwZTDpeaECoBs2",
+            "uniqueId": "takada"
+          },
           "roleType": 2,
           "userId": "takada"
         }
@@ -93,8 +119,14 @@
         "presenter": {
           "id": 2,
           "lang": "ja",
+          "lastLoginTime": "2022-09-01T06:35:39Z",
           "mailAddress": "eguchi@nulab.example",
           "name": "eguchi",
+          "nulabAccount": {
+            "name": "eguchi",
+            "nulabId": "tSaVeJfRxLURSAkgfbNAfCbM7PqddYLJ3nG3BELjx6eSTbu8LD",
+            "uniqueId": "eguchi"
+          },
           "roleType": 2,
           "userId": "eguchi"
         },
@@ -115,8 +147,14 @@
     "updatedUser": {
       "id": 1,
       "lang": "ja",
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "eguchi@nulab.example",
       "name": "admin",
+      "nulabAccount": {
+        "name": "admin",
+        "nulabId": "Prm9ZD9DQD5snNWcSYSwZiQoA9WFBUEa2ySznrSnSQRhdC2X8G",
+        "uniqueId": "admin"
+      },
       "roleType": 1,
       "userId": "admin"
     },

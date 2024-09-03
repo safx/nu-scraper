@@ -23,5 +23,8 @@
       "description": "Set to true to exclude members that part of project groups and false to get all members. Default is false."
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-project-user-list"
 }

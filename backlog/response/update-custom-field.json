@@ -5,6 +5,7 @@
   "description": "",
   "id": 2,
   "name": "Attribute for Bug",
+  "projectId": 5,
   "required": false,
   "typeId": 1
 }

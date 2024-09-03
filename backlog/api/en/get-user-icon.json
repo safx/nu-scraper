@@ -14,5 +14,8 @@
       "description": "user ID"
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-user-icon"
 }

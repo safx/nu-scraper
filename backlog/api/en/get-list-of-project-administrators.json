@@ -15,7 +15,7 @@
     }
   ],
   "roles": [
-    "Administrator"
+    "All"
   ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-list-of-project-administrators"
 }

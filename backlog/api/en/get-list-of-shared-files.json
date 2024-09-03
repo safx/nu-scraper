@@ -27,7 +27,7 @@
       "optional": true,
       "array": false,
       "type": "String",
-      "description": "\u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
+      "description": "\u201dasc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
     },
     {
       "name": "offset",

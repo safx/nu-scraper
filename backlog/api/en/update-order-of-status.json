@@ -20,7 +20,7 @@
       "optional": true,
       "array": true,
       "type": "Number",
-      "description": "Status ID List to order them. You have to send all status of project. It has following restrictions as below.\n\u201cOpen\u201d has to be first\n\u201cClose\u201d has to be last\n\u201cIn Progress\u201d has to be before \u201cResolved\u201d"
+      "description": "Status ID List to order them. You have to send all status of project. It has following restrictions as below.\n\u201dOpen\u201d has to be first\n\u201dClose\u201d has to be last\n\u201dIn Progress\u201d has to be before \u201cResolved\u201d"
     }
   ],
   "roles": [

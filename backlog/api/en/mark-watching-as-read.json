@@ -14,5 +14,8 @@
       "description": "watching ID"
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/mark-watching-as-read"
 }

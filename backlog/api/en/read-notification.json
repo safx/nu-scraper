@@ -14,5 +14,8 @@
       "description": "Notification ID"
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/read-notification"
 }

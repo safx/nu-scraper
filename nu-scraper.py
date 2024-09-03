@@ -5,11 +5,12 @@ from pyquery import PyQuery as pq
 import sys
 import json
 import os
+import re
 import time
 
 class ParamInfo(object):
     def __init__(self, trElement, optionalChecker):
-        def conv(typename):
+        def conv(typename: str):
             dic = {
                 '数値': 'Number',
                 '文字列': 'String',
@@ -80,7 +81,7 @@ class WebAPI(object):
             return ''.join([e[0].upper() + e[1:] for e in name.split('-')])
         return toCamelCase(self.hyphenName)
 
-    def writeAPIJson(self, lang = 'en'):
+    def writeAPIJson(self, lang: str = 'en'):
         obj = OrderedDict()
         obj["name"] = self.cameCaeeName
         obj["summary"] = self.summary
@@ -104,7 +105,7 @@ class WebAPI(object):
         try:
             return (json.loads(s), '')
         except:
-            s = s.replace(', ...', '')
+            s = re.sub(', *// *... *', '', s)  # .replace(', // ...', '')
             try:
                 return (json.loads(s), 'fix ellipsis')
             except:
@@ -112,7 +113,11 @@ class WebAPI(object):
                 try:
                     return (json.loads(s), '⚠️ fix typo')
                 except:
-                    return (s, '⚠️ invalid JSON')
+                    s += '}'
+                    try:
+                        return (json.loads(s), '⚠️ fix add trainling `}`')
+                    except:
+                        return (s, '⚠️ invalid JSON')
 
     def writeResponseJson(self):
         if self.response == None:
@@ -136,8 +141,8 @@ class WebAPI(object):
                 f.write(objOrStr)
             return '' if err == '' else '(%s)' % (err,)
 
-def getWebAPI(appName, apiDocumentUrl, lang = 'en'):
-    def dic(key):
+def getWebAPI(appName: str, apiDocumentUrl: str, lang: str = 'en'):
+    def dic(key: str):
         if lang == 'en': return key
         dic = {
             # en -> ja
@@ -168,7 +173,7 @@ def getWebAPI(appName, apiDocumentUrl, lang = 'en'):
     requredChecker  = lambda ns: len(ns) == 0 or ns[-1] != dic('(Required)')
     defaultChecker = requredChecker if appName == 'backlog' else optionalChecker
 
-    def toBaseName(url):
+    def toBaseName(url: str):
         return url.split('/')[-1]
 
     def q(p, default=None, squash_space=True):
@@ -207,15 +212,15 @@ def getWebAPI(appName, apiDocumentUrl, lang = 'en'):
 
 
 SITE_ROOT = 'https://developer.nulab.com'
-def getAppAPIs(appName, lang):
+def getAppAPIs(appName: str, lang: str):
     rootUrl = SITE_ROOT + ('' if lang == 'en' else ('/' + lang)) + '/docs/' + appName + '/'
     top = pq(url=rootUrl)
     count = 199
-    for i in top('a.sidebar__links'):
+    for i in top('a'):
         path = i.get('href')
         if path[-1] == '/': path = path[:-1]
 
-        if path.find('/docs/' + appName + '/api/') < 0 or path.find('/docs/typetalk/api/1/streaming') >= 0:
+        if path.find('https://') >= 0 or path.find('/docs/' + appName + '/api/') < 0 or path.find('/docs/typetalk/api/1/streaming') >= 0:
             continue
 
         api = getWebAPI(appName, SITE_ROOT + path, lang)

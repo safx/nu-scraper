@@ -8,13 +8,21 @@
       "createdUser": {
         "id": 2,
         "lang": null,
+        "lastLoginTime": "2022-09-01T06:35:39Z",
         "mailAddress": "eguchi@nulab.example",
         "name": "eguchi",
+        "nulabAccount": {
+          "name": "eguchi",
+          "nulabId": "tSaVeJfRxLURSAkgfbNAfCbM7PqddYLJ3nG3BELjx6eSTbu8LD",
+          "uniqueId": "eguchi"
+        },
         "roleType": 2,
         "userId": "eguchi"
       },
       "id": 7007,
+      "issueId": 50,
       "notifications": [],
+      "projectId": 5,
       "stars": [],
       "updated": "2013-10-31T06:58:58Z"
     },
@@ -25,9 +33,16 @@
       "assignee": {
         "id": 2,
         "lang": null,
+        "lastLoginTime": "2022-09-01T06:35:39Z",
         "mailAddress": "eguchi@nulab.example",
         "name": "eguchi",
-        "roleType": 2
+        "nulabAccount": {
+          "name": "eguchi",
+          "nulabId": "tSaVeJfRxLURSAkgfbNAfCbM7PqddYLJ3nG3BELjx6eSTbu8LD",
+          "uniqueId": "eguchi"
+        },
+        "roleType": 2,
+        "userId": "eguchi"
       },
       "attachments": [],
       "category": [],
@@ -35,8 +50,14 @@
       "createdUser": {
         "id": 1,
         "lang": "ja",
+        "lastLoginTime": "2022-09-01T06:35:39Z",
         "mailAddress": "eguchi@nulab.example",
         "name": "admin",
+        "nulabAccount": {
+          "name": "admin",
+          "nulabId": "Prm9ZD9DQD5snNWcSYSwZiQoA9WFBUEa2ySznrSnSQRhdC2X8G",
+          "uniqueId": "admin"
+        },
         "roleType": 1,
         "userId": "admin"
       },
@@ -61,7 +82,7 @@
         "name": "Normal"
       },
       "projectId": 2,
-      "resolutions": null,
+      "resolution": null,
       "sharedFiles": [],
       "stars": [],
       "startDate": "2013-08-29T15:00:00Z",
@@ -77,8 +98,14 @@
       "updatedUser": {
         "id": 1,
         "lang": "ja",
+        "lastLoginTime": "2022-09-01T06:35:39Z",
         "mailAddress": "eguchi@nulab.example",
         "name": "admin",
+        "nulabAccount": {
+          "name": "admin",
+          "nulabId": "Prm9ZD9DQD5snNWcSYSwZiQoA9WFBUEa2ySznrSnSQRhdC2X8G",
+          "uniqueId": "admin"
+        },
         "roleType": 1,
         "userId": "admin"
       },
@@ -87,13 +114,19 @@
     "project": {
       "archived": false,
       "chartEnabled": true,
-      "displayOrder": 0,
+      "displayOrder": 3,
       "id": 2,
       "name": "test2",
       "projectKey": "TEST2",
       "projectLeaderCanEditProjectLeader": false,
       "subtaskingEnabled": true,
-      "textFormattingRule": "backlog"
+      "textFormattingRule": "backlog",
+      "useDevAttributes": true,
+      "useFileSharing": true,
+      "useOriginalImageSizeAtWiki": false,
+      "useResolvedForChart": true,
+      "useWiki": true,
+      "useWikiTreeView": true
     },
     "pullRequest": null,
     "pullRequestComment": null,
@@ -102,8 +135,14 @@
     "sender": {
       "id": 2,
       "lang": null,
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "eguchi@nulab.example",
       "name": "eguchi",
+      "nulabAccount": {
+        "name": "eguchi",
+        "nulabId": "tSaVeJfRxLURSAkgfbNAfCbM7PqddYLJ3nG3BELjx6eSTbu8LD",
+        "uniqueId": "eguchi"
+      },
       "roleType": 2,
       "userId": "eguchi"
     }

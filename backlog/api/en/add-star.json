@@ -42,5 +42,8 @@
       "description": "Pull request comment ID"
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-star"
 }

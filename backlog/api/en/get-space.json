@@ -5,5 +5,8 @@
   "method": "GET",
   "url": "/api/v2/space",
   "scope": null,
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-space"
 }

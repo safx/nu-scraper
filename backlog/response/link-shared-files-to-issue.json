@@ -4,22 +4,35 @@
     "createdUser": {
       "id": 5686,
       "lang": "ja",
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "takada@nulab.example",
       "name": "takada",
+      "nulabAccount": {
+        "name": "takada",
+        "nulabId": "r4iGCWu4mU64aGUJykJH4GhBwdAXMTAtVRQ5RwZTDpeaECoBs2",
+        "uniqueId": "takada"
+      },
       "roleType": 2,
       "userId": "takada"
     },
     "dir": "/design/",
     "id": 4056,
     "name": "site.png",
+    "projectId": 5,
     "size": 2735,
     "type": "file",
     "updated": "2010-05-02T17:37:10Z",
     "updatedUser": {
       "id": 5686,
       "lang": "ja",
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "takada@nulab.example",
       "name": "takada",
+      "nulabAccount": {
+        "name": "takada",
+        "nulabId": "r4iGCWu4mU64aGUJykJH4GhBwdAXMTAtVRQ5RwZTDpeaECoBs2",
+        "uniqueId": "takada"
+      },
       "roleType": 2,
       "userId": "takada"
     }

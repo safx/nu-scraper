@@ -14,5 +14,8 @@
       "description": "Wiki page ID"
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-wiki-page"
 }

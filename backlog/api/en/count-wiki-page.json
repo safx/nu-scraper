@@ -14,5 +14,8 @@
       "description": "Project ID or Project Key"
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/count-wiki-page"
 }

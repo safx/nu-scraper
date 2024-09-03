@@ -11,7 +11,7 @@
       "optional": true,
       "array": false,
       "type": "String",
-      "description": "\u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
+      "description": "\u201dasc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
     },
     {
       "name": "offset",
@@ -27,6 +27,9 @@
       "type": "Number",
       "description": "number of records to retrieve(1-100) default=20"
     }
+  ],
+  "roles": [
+    "All"
   ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-list-of-recently-viewed-issues"
 }

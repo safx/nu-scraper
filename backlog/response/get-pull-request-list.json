@@ -3,8 +3,14 @@
     "assignee": {
       "id": 5,
       "lang": null,
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "testuser2@nulab.test",
       "name": "testuser2",
+      "nulabAccount": {
+        "name": "testuser2",
+        "nulabId": "J884YBYbiDBZcN4tj7rzcKcv8EYhekYcGfGtZ5oo7fCiGPnCjM",
+        "uniqueId": "testuser2"
+      },
       "roleType": 1,
       "userId": "testuser2"
     },
@@ -17,8 +23,14 @@
     "createdUser": {
       "id": 1,
       "lang": "ja",
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "eguchi@nulab.example",
       "name": "admin",
+      "nulabAccount": {
+        "name": "admin",
+        "nulabId": "Prm9ZD9DQD5snNWcSYSwZiQoA9WFBUEa2ySznrSnSQRhdC2X8G",
+        "uniqueId": "admin"
+      },
       "roleType": 1,
       "userId": "admin"
     },
@@ -28,6 +40,7 @@
       "id": 31
     },
     "mergeAt": null,
+    "mergeCommit": null,
     "number": 1,
     "projectId": 3,
     "repositoryId": 5,
@@ -40,8 +53,14 @@
     "updatedUser": {
       "id": 1,
       "lang": "ja",
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "eguchi@nulab.example",
       "name": "admin",
+      "nulabAccount": {
+        "name": "admin",
+        "nulabId": "Prm9ZD9DQD5snNWcSYSwZiQoA9WFBUEa2ySznrSnSQRhdC2X8G",
+        "uniqueId": "admin"
+      },
       "roleType": 1,
       "userId": "admin"
     }

@@ -34,7 +34,7 @@
       "optional": true,
       "array": false,
       "type": "String",
-      "description": "Background color : available\n\u201d#ea2c00\u201d\n\u201d#e87758\u201d\n\u201d#e07b9a\u201d\n\u201d#868cb7\u201d\n\u201d#3b9dbd\u201d\n\u201d#4caf93\u201d\n\u201d#b0be3c\u201d\n\u201d#eda62a\u201d\n\u201d#f42858\u201d\n\u201d#393939\u201d"
+      "description": "Background color : available\n\u201d#ea2c00\"\n\"#e87758\"\n\"#e07b9a\"\n\"#868cb7\"\n\"#3b9dbd\"\n\"#4caf93\"\n\"#b0be3c\"\n\"#eda62a\"\n\"#f42858\"\n\"#393939\u201d"
     }
   ],
   "roles": [

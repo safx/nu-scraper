@@ -1,7 +1,7 @@
 {
   "name": "DeleteProjectGroup",
   "summary": "Delete Project Group",
-  "description": "warning Deprecated API\nThis API has been deprecated and is no longer recommended for use. Please replace it with Delete Project Team.",
+  "description": "This API has been deprecated and is no longer recommended for use. Please replace it with Delete Project Team.",
   "method": "DELETE",
   "url": "/api/v2/projects/:projectIdOrKey/groups",
   "scope": null,

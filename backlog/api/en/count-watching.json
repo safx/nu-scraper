@@ -30,5 +30,8 @@
       "description": "This parameter is optional. Set this parameter to false to get unread watching count since the last time checked by user and true for already read watching count. When both alreadyRead and resourceAlreadyRead parameters set, resourceAlreadyRead will be ignored."
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/count-watching"
 }

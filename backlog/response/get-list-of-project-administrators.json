@@ -2,8 +2,14 @@
   {
     "id": 5686,
     "lang": "ja",
+    "lastLoginTime": "2022-09-01T06:35:39Z",
     "mailAddress": "takada@nulab.example",
     "name": "takada",
+    "nulabAccount": {
+      "name": "takada",
+      "nulabId": "r4iGCWu4mU64aGUJykJH4GhBwdAXMTAtVRQ5RwZTDpeaECoBs2",
+      "uniqueId": "takada"
+    },
     "roleType": 2,
     "userId": "takada"
   }

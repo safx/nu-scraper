@@ -30,5 +30,8 @@
       "description": "before the given date (yyyy-MM-dd)"
     }
   ],
+  "roles": [
+    "All"
+  ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/count-user-received-stars"
 }

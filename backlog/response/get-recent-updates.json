@@ -28,38 +28,35 @@
     "createdUser": {
       "id": 1,
       "lang": "ja",
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "eguchi@nulab.example",
       "name": "admin",
+      "nulabAccount": {
+        "name": "admin",
+        "nulabId": "Prm9ZD9DQD5snNWcSYSwZiQoA9WFBUEa2ySznrSnSQRhdC2X8G",
+        "uniqueId": "admin"
+      },
       "roleType": 1,
       "userId": "admin"
     },
     "id": 3153,
-    "notifications": [
-      {
-        "alreadyRead": false,
-        "id": 25,
-        "reason": 2,
-        "resourceAlreadyRead": false,
-        "user": {
-          "id": 5686,
-          "lang": "ja",
-          "mailAddress": "takada@nulab.example",
-          "name": "takada",
-          "roleType": 2,
-          "userId": "takada"
-        }
-      }
-    ],
+    "notifications": [],
     "project": {
       "archived": false,
       "chartEnabled": true,
-      "displayOrder": 0,
+      "displayOrder": 3,
       "id": 92,
       "name": "Subtasking",
       "projectKey": "SUB",
       "projectLeaderCanEditProjectLeader": false,
       "subtaskingEnabled": true,
-      "textFormattingRule": null
+      "textFormattingRule": "backlog",
+      "useDevAttributes": true,
+      "useFileSharing": true,
+      "useOriginalImageSizeAtWiki": false,
+      "useResolvedForChart": true,
+      "useWiki": true,
+      "useWikiTreeView": true
     },
     "type": 2
   }

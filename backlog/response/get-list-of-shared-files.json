@@ -4,14 +4,21 @@
     "createdUser": {
       "id": 1,
       "lang": "ja",
+      "lastLoginTime": "2022-09-01T06:35:39Z",
       "mailAddress": "eguchi@nulab.example",
       "name": "admin",
+      "nulabAccount": {
+        "name": "admin",
+        "nulabId": "Prm9ZD9DQD5snNWcSYSwZiQoA9WFBUEa2ySznrSnSQRhdC2X8G",
+        "uniqueId": "admin"
+      },
       "roleType": 1,
       "userId": "admin"
     },
     "dir": "/PressRelease/20091130/",
     "id": 825952,
     "name": "20091130.txt",
+    "projectId": 5,
     "size": 4836,
     "type": "file",
     "updated": "2009-11-30T01:22:21Z",

@@ -15,7 +15,8 @@
     }
   ],
   "roles": [
-    "Administrator"
+    "Administrator",
+    "Project Administrator"
   ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/delete-issue"
 }

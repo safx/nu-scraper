@@ -1,0 +1,21 @@
+{
+  "name": "AddRecentlyViewedIssue",
+  "summary": "Add Recently Viewed Issue",
+  "description": "Add an issue which the user viewed recently.",
+  "method": "POST",
+  "url": "/api/v2/users/myself/recentlyViewedIssues",
+  "scope": null,
+  "formParams": [
+    {
+      "name": "issueIdOrKey(Required)",
+      "optional": true,
+      "array": false,
+      "type": "String",
+      "description": "Project ID or Project Key"
+    }
+  ],
+  "roles": [
+    "All"
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-recently-viewed-issue"
+}

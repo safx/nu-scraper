@@ -1,0 +1,21 @@
+{
+  "name": "AddRecentlyViewedWiki",
+  "summary": "Add Recently Viewed Wiki",
+  "description": "Add a wiki which the user viewed recently.",
+  "method": "POST",
+  "url": "/api/v2/users/myself/recentlyViewedWikis",
+  "scope": null,
+  "formParams": [
+    {
+      "name": "wikiId(Required)",
+      "optional": true,
+      "array": false,
+      "type": "Number",
+      "description": "Wiki page ID"
+    }
+  ],
+  "roles": [
+    "All"
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/add-recently-viewed-wiki"
+}

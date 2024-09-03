@@ -1,7 +1,7 @@
 {
   "name": "AddGroup",
   "summary": "Add Group",
-  "description": "warning Deprecated API\nThis API has been deprecated and is no longer recommended for use. Please replace it with Add Team.",
+  "description": "This API has been deprecated and is no longer recommended for use. Please replace it with Add Team.",
   "method": "POST",
   "url": "/api/v2/groups",
   "scope": null,

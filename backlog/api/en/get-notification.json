@@ -32,7 +32,7 @@
       "optional": true,
       "array": false,
       "type": "String",
-      "description": "\u201casc\u201d or \u201cdesc\u201d"
+      "description": "\u201dasc\u201d or \u201cdesc\u201d"
     },
     {
       "name": "senderId",
@@ -41,6 +41,9 @@
       "type": "Number",
       "description": "sender ID"
     }
+  ],
+  "roles": [
+    "All"
   ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-notification"
 }

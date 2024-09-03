@@ -1,7 +1,7 @@
 {
   "name": "UpdateGroup",
   "summary": "Update Group",
-  "description": "warning Deprecated API\nThis API has been deprecated and is no longer recommended for use. Please replace it with Update Team.",
+  "description": "This API has been deprecated and is no longer recommended for use. Please replace it with Update Team.",
   "method": "PATCH",
   "url": "/api/v2/groups/:groupId",
   "scope": null,

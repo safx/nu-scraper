@@ -1,10 +1,17 @@
 {
   "archived": false,
   "chartEnabled": false,
+  "displayOrder": 2147483646,
   "id": 1,
   "name": "test",
   "projectKey": "TEST",
   "projectLeaderCanEditProjectLeader": false,
   "subtaskingEnabled": false,
-  "textFormattingRule": "markdown"
+  "textFormattingRule": "markdown",
+  "useDevAttributes": true,
+  "useFileSharing": true,
+  "useOriginalImageSizeAtWiki": false,
+  "useResolvedForChart": false,
+  "useWiki": true,
+  "useWikiTreeView": true
 }

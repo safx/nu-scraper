@@ -1,14 +1,22 @@
 {
   "project": {
     "archived": false,
-    "chartEnabled": false,
-    "displayOrder": 0,
+    "chartEnabled": true,
+    "displayOrder": 3,
     "id": 1,
     "name": "test",
     "projectKey": "TEST",
     "projectLeaderCanEditProjectLeader": false,
-    "subtaskingEnabled": false,
-    "textFormattingRule": "markdown"
+    "subtaskingEnabled": true,
+    "textFormattingRule": "backlog",
+    "useDevAttributes": true,
+    "useFileSharing": true,
+    "useGit": false,
+    "useOriginalImageSizeAtWiki": false,
+    "useResolvedForChart": true,
+    "useSubversion": false,
+    "useWiki": true,
+    "useWikiTreeView": true
   },
   "updated": "2014-07-11T01:59:07Z"
 }

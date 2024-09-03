@@ -48,8 +48,11 @@
       "optional": true,
       "array": false,
       "type": "String",
-      "description": "\u201casc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
+      "description": "\u201dasc\u201d or \u201cdesc\u201d default=\u201cdesc\u201d"
     }
+  ],
+  "roles": [
+    "All"
   ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-user-recent-updates"
 }

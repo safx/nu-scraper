@@ -28,11 +28,11 @@
       "description": "Enable chart"
     },
     {
-      "name": "projectLeaderCanEditProjectLeader",
+      "name": "useResolvedForChart",
       "optional": true,
       "array": false,
       "type": "Boolean",
-      "description": "Allow project administrators to manage each other"
+      "description": "Consider Resolved and statuses after as Closed"
     },
     {
       "name": "subtaskingEnabled",
@@ -42,11 +42,67 @@
       "description": "Enable subtasking"
     },
     {
+      "name": "projectLeaderCanEditProjectLeader",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Allow project administrators to manage each other"
+    },
+    {
+      "name": "useWiki",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable Wiki"
+    },
+    {
+      "name": "useFileSharing",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable shared files"
+    },
+    {
+      "name": "useWikiTreeView",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable Wiki tree view"
+    },
+    {
+      "name": "useSubversion",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable Subversion"
+    },
+    {
+      "name": "useGit",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable Git"
+    },
+    {
+      "name": "useOriginalImageSizeAtWiki",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Display images in Wikis in their original size"
+    },
+    {
       "name": "textFormattingRule",
       "optional": true,
       "array": false,
       "type": "String",
       "description": "Formatting rules \u201cbacklog\u201d or \u201cmarkdown\u201d"
+    },
+    {
+      "name": "useDevAttributes",
+      "optional": true,
+      "array": false,
+      "type": "Boolean",
+      "description": "Enable priorities, versions and milestones"
     }
   ],
   "roles": [

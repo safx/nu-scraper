@@ -1,0 +1,21 @@
+{
+  "name": "GetActivity",
+  "summary": "Get Space Activity",
+  "description": "Returns an activity",
+  "method": "GET",
+  "url": "/api/v2/activities/:activityId",
+  "scope": null,
+  "urlParams": [
+    {
+      "name": "activityId",
+      "optional": false,
+      "array": false,
+      "type": "Number",
+      "description": "activity ID"
+    }
+  ],
+  "roles": [
+    "All"
+  ],
+  "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-activity"
+}

@@ -1,7 +1,7 @@
 {
   "name": "GetGroupIcon",
   "summary": "Get Group Icon",
-  "description": "warning Deprecated API\nThis API has been deprecated and is no longer recommended for use. Please replace it with Get Team Icon.",
+  "description": "This API has been deprecated and is no longer recommended for use. Please replace it with Get Team Icon.",
   "method": "GET",
   "url": "/api/v2/groups/:groupId/icon",
   "scope": null,
@@ -13,6 +13,9 @@
       "type": "Number",
       "description": "group ID"
     }
+  ],
+  "roles": [
+    "All"
   ],
   "apiDocumentUrl": "https://developer.nulab.com/docs/backlog/api/2/get-group-icon"
 }
